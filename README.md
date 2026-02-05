@@ -59,9 +59,8 @@ git clone https://github.com/ehsan-amani/cfdmfFTFoam
 
 ## use (for one-step installation)
 
-Activate of9 environment variables by
-
 ```bash
+#Activate of9 environment variables by
 of9 #or similar alias in ~/.bashrc to set of9 environment variables, e.g., source /opt/openfoam9/etc/bashrc
 echo $WM_PROJECT_VERSION #check version 9
 cd cfdmfFTFoam
