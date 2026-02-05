@@ -50,77 +50,75 @@
  To copy files to the correct directories and compile the solver and libraries, open a 
  terminal in the current folder where this readMe file exists, and run:
 
-##use (for one-step installation)
+## use (for one-step installation)
 
 Activate of9 environment variables by
 
+```bash
 of9 #or similar alias in ~/.bashrc to set of9 environment variables
-
 ./Allwmake
+```
 
-##or (for step-by-step installation)
+## or (for step-by-step installation)
 
-###preset
+### preset
 
+```bash
 of9 #or similar alias in ~/.bashrc to set of9 environment variables
-
 mkdir -p $WM_PROJECT_USER_DIR/src/lagrangian
-
 mkdir -p $WM_PROJECT_USER_DIR/applications/solvers/multiphase
-
 mkdir -p $WM_PROJECT_USER_DIR/run/multiphase/cfdmf
+```
 
-###extracting
+### extracting
 tar -xf src.tar.xz
-
 tar -xf solvers.tar.xz
-
 tar -xf tutorials.tar.xz
-
 tar -xf doxygen.tar.xz
 
-###copying
+### copying
+```bash
 cp -rp src/frontTracking $WM_PROJECT_USER_DIR/src/lagrangian
-
 cp -rp solvers/* $WM_PROJECT_USER_DIR/applications/solvers/multiphase
-
 cp -rp tutorials/* $WM_PROJECT_USER_DIR/run/multiphase/cfdmf
-
 cp -rp doxygen $WM_PROJECT_USER_DIR/src/lagrangian/frontTracking
+```
 
-###compiling 
+### compiling 
+
+```bash
 cd $WM_PROJECT_USER_DIR/src/lagrangian/frontTracking 
-
 wclean
-
 wmake libso 2>log
+```
 
-
+```bash
 cd $WM_PROJECT_USER_DIR/applications/solvers/multiphase/cfdmfFTFoam
-
 wclean
-
 wmake 2>log
+```
 
 ------------------------------------------------------------------------------------
-
+# run a case
 to run the cases, use ./Allclean and ./Allrun. For instance: 
 
+```bash
 cd $WM_PROJECT_USER_DIR/run/multiphase/cfdmf/3DDeform/FT3DDeform
-
 ./Allclean 
-
-./Allrun 
+./Allrun
+```
 
 ------------------------------------------------------------------------------------
-
+# help
 to run the doxygen manual (do not forget to activate OF9 environment variables by of9):
 
+```bash
 xdg-open $WM_PROJECT_USER_DIR/src/lagrangian/frontTracking/doxygen/html/index.html
+```
 
 ------------------------------------------------------------------------------------
 
-case description: 
+# case description: 
 
 3DDeform/FT3DDeform: Front tracking simulation of 3D deformation test
 
