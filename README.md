@@ -138,8 +138,8 @@ RisingTaylorBubble/... : Rising Taylor drop in a vertical pipe of circular or cu
 
 ShearDeform/... : Droplet in a Poiseuille flow deformation cases
 
+------------------------------------------------------------------------------------
 
-StagDrop/... : Stagnant droplet cases
+# References: 
 
-
-stlTocfdmfFTFoamFrontMeshConvertor/ : The binary STL to cfdmfFTFoam front mesh convertor code
+E Amani, cfdmfFTFoam: A front-tracking solver for multiphase flows on general unstructured grids in OpenFOAM, 2025, Under review.
