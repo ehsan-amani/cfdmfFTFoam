@@ -1,8 +1,11 @@
 ------------------------------------------------------------------------------------
 
 # The Front-Tracking Method (FTM) package for OpenFOAM-9
- Main developer: Dr. Ehsan Amani, Head of the CFDMF group, https://sites.google.com/view/dramani, 2016-2025
- The following CFDMF group students contributed to the old versions of the codes:
+ ## Main developer: 
+ ### Dr. Ehsan Amani, 
+ Head of the CFDMF group, https://sites.google.com/view/dramani, 2016-2025
+ 
+ ### The following CFDMF group students contributed to the old versions of the codes:
  
  Mahdi Jafari
  
@@ -50,12 +53,20 @@
  To copy files to the correct directories and compile the solver and libraries, open a 
  terminal in the current folder where this readMe file exists, and run:
 
+## download the repository
+For example, in Linux by
+```bash
+git clone https://github.com/ehsan-amani/cfdmfFTFoam
+```
+
 ## use (for one-step installation)
 
 Activate of9 environment variables by
 
 ```bash
-of9 #or similar alias in ~/.bashrc to set of9 environment variables
+of9 #or similar alias in ~/.bashrc to set of9 environment variables, e.g., source /opt/openfoam9/etc/bashrc
+echo $WM_PROJECT_VERSION #check version 9
+cd cfdmfFTFoam
 ./Allwmake
 ```
 
@@ -64,17 +75,13 @@ of9 #or similar alias in ~/.bashrc to set of9 environment variables
 ### preset
 
 ```bash
-of9 #or similar alias in ~/.bashrc to set of9 environment variables
+of9 #or similar alias in ~/.bashrc to set of9 environment variables, e.g., source /opt/openfoam9/etc/bashrc
+echo $WM_PROJECT_VERSION #check version 9
+cd cfdmfFTFoam
 mkdir -p $WM_PROJECT_USER_DIR/src/lagrangian
 mkdir -p $WM_PROJECT_USER_DIR/applications/solvers/multiphase
 mkdir -p $WM_PROJECT_USER_DIR/run/multiphase/cfdmf
 ```
-
-### extracting
-tar -xf src.tar.xz
-tar -xf solvers.tar.xz
-tar -xf tutorials.tar.xz
-tar -xf doxygen.tar.xz
 
 ### copying
 ```bash
