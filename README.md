@@ -142,4 +142,4 @@ ShearDeform/... : Droplet in a Poiseuille flow deformation cases
 
 # References: 
 
-E Amani, cfdmfFTFoam: A front-tracking solver for multiphase flows on general unstructured grids in OpenFOAM, 2025, Under review.
+E Amani. "cfdmfFTFoam: A front-tracking solver for multiphase flows on general unstructured grids in OpenFOAM", 2025, Under review.
