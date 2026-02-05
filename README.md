@@ -50,8 +50,6 @@
 ------------------------------------------------------------------------------------
 # Installation: 
  Prerequisite: OpenFOAM Foundation CFD package version 9 (OpenFOAM-9)
- To copy files to the correct directories and compile the solver and libraries, open a 
- terminal in the current folder where this readMe file exists, and run:
 
 ## download the repository
 For example, in Linux by
