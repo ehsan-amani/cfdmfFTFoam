@@ -1,0 +1,462 @@
+\hypertarget{classFoam_1_1FrontToFieldModel}{}\section{Foam\+:\+:Front\+To\+Field\+Model$<$ Cloud\+Type $>$ Class Template Reference}
+\label{classFoam_1_1FrontToFieldModel}\index{Foam\+::\+Front\+To\+Field\+Model$<$ Cloud\+Type $>$@{Foam\+::\+Front\+To\+Field\+Model$<$ Cloud\+Type $>$}}
+
+
+{\ttfamily \#include $<$Front\+Tracking\+Cloud.\+H$>$}
+
+
+
+Inheritance diagram for Foam\+:\+:Front\+To\+Field\+Model$<$ Cloud\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFoam_1_1FrontToFieldModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Foam\+:\+:Front\+To\+Field\+Model$<$ Cloud\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classFoam_1_1FrontToFieldModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel_a6e113da5c0c612fe1313cffc439e44e9}{Type\+Name} (\char`\"{}front\+To\+Field\+Model\char`\"{})
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel_a9c10014640a00a66fd4c2683d511807e}{declare\+Run\+Time\+Selection\+Table} (auto\+Ptr, \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}, dictionary,(const dictionary \&dict, Cloud\+Type \&owner),(dict, owner))
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel_a01d81526dcbb6ebcd6e6426bf7133b0b}{Front\+To\+Field\+Model} (Cloud\+Type \&owner)
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel_abb2f9f2dafb8b7abc44ddb676bf31ae6}{Front\+To\+Field\+Model} (const dictionary \&dict, Cloud\+Type \&owner, const word \&type)
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel_ac7f1606fac5eab3a1bcbc08468f365bd}{Front\+To\+Field\+Model} (const \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ Cloud\+Type $>$ \&cm)
+\item 
+virtual auto\+Ptr$<$ \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ Cloud\+Type $>$ $>$ \hyperlink{classFoam_1_1FrontToFieldModel_a0c13ce2692d43dece9d9e51f6c0c5fd6}{clone} () const =0
+\item 
+virtual \hyperlink{classFoam_1_1FrontToFieldModel_aa5e52b77046856d2d6d557ee3bee28e7}{$\sim$\+Front\+To\+Field\+Model} ()
+\item 
+virtual void \hyperlink{classFoam_1_1FrontToFieldModel_a88ce933bcfddfcb36401aba9c0776ae5}{calculate} ()=0
+\item 
+scalar \hyperlink{classFoam_1_1FrontToFieldModel_a1172056c000443e082f3356e9a1717a2}{h\+Factor} () const
+\item 
+vol\+Scalar\+Field \& \hyperlink{classFoam_1_1FrontToFieldModel_aa68185706596a628eefee2a870b4c6f3}{Indicator\+Ref} ()
+\item 
+tmp$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel_a8225df17b4139b26c110870451b96de9}{Indicator} () const
+\item 
+vol\+Scalar\+Field \& \hyperlink{classFoam_1_1FrontToFieldModel_a977bc1d757adc68b17dbe985a5bdefdc}{density\+Indicator\+Ref} ()
+\item 
+tmp$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel_a6425150d02e7babd4f65504f30c699ba}{density\+Indicator} () const
+\item 
+vol\+Scalar\+Field \& \hyperlink{classFoam_1_1FrontToFieldModel_a36a55af8f324d11462adfacaf082b75b}{viscosity\+Indicator\+Ref} ()
+\item 
+tmp$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel_acd7d5c4007bd82eec12e23b6e7c0e6a4}{viscosity\+Indicator} () const
+\item 
+bool \hyperlink{classFoam_1_1FrontToFieldModel_a7a5035a704385de5435e9668c29c3d89}{two\+Fluid\+Flow} () const
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel_a6e113da5c0c612fe1313cffc439e44e9}{Type\+Name} (\char`\"{}front\+To\+Field\+Model\char`\"{})
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel_a9c10014640a00a66fd4c2683d511807e}{declare\+Run\+Time\+Selection\+Table} (auto\+Ptr, \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}, dictionary,(const dictionary \&dict, Cloud\+Type \&owner),(dict, owner))
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel_a01d81526dcbb6ebcd6e6426bf7133b0b}{Front\+To\+Field\+Model} (Cloud\+Type \&owner)
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel_abb2f9f2dafb8b7abc44ddb676bf31ae6}{Front\+To\+Field\+Model} (const dictionary \&dict, Cloud\+Type \&owner, const word \&type)
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel_ac7f1606fac5eab3a1bcbc08468f365bd}{Front\+To\+Field\+Model} (const \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ Cloud\+Type $>$ \&cm)
+\item 
+virtual auto\+Ptr$<$ \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ Cloud\+Type $>$ $>$ \hyperlink{classFoam_1_1FrontToFieldModel_a0c13ce2692d43dece9d9e51f6c0c5fd6}{clone} () const =0
+\item 
+virtual \hyperlink{classFoam_1_1FrontToFieldModel_a6a7a461032065a07562611c83ab9a869}{$\sim$\+Front\+To\+Field\+Model} ()
+\item 
+virtual void \hyperlink{classFoam_1_1FrontToFieldModel_a88ce933bcfddfcb36401aba9c0776ae5}{calculate} ()=0
+\item 
+scalar \hyperlink{classFoam_1_1FrontToFieldModel_a1f99cd00a8322735361ed653ba20a541}{h\+Factor} () const
+\item 
+vol\+Scalar\+Field \& \hyperlink{classFoam_1_1FrontToFieldModel_a44bef45020f0a232108fbc2856413f1f}{Indicator\+Ref} ()
+\item 
+tmp$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel_a6b91d473e08d4efce2e85f2eb149c87a}{Indicator} () const
+\item 
+vol\+Scalar\+Field \& \hyperlink{classFoam_1_1FrontToFieldModel_a5fcad8b6197d09e8cc0542c69c5b6b47}{density\+Indicator\+Ref} ()
+\item 
+tmp$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel_af5875747df6bfd82ca29742926d8701d}{density\+Indicator} () const
+\item 
+vol\+Scalar\+Field \& \hyperlink{classFoam_1_1FrontToFieldModel_a473af3afa64c2a730b7c6a6c067708e8}{viscosity\+Indicator\+Ref} ()
+\item 
+tmp$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel_aab2ed845099ce21bb0c3ab7ac0ac35c5}{viscosity\+Indicator} () const
+\item 
+bool \hyperlink{classFoam_1_1FrontToFieldModel_a7a5035a704385de5435e9668c29c3d89}{two\+Fluid\+Flow} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto\+Ptr$<$ \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ Cloud\+Type $>$ $>$ \hyperlink{classFoam_1_1FrontToFieldModel_a8d2ede4c3699e6e7b24c7491723d576e}{New} (const dictionary \&dict, Cloud\+Type \&owner)
+\item 
+static auto\+Ptr$<$ \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ Cloud\+Type $>$ $>$ \hyperlink{classFoam_1_1FrontToFieldModel_a7d5806a3fe473966bedb5d5815a03035}{New} (const dictionary \&dict, Cloud\+Type \&owner)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classFoam_1_1FrontToFieldModel_ad04fa93b89f90606f8f0f0111e29aef7}{two\+Fluid\+Flow\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontToFieldModel_a2eca985c837b4173dae0ab002b512c91}{h\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontToFieldModel_a775b7bec736f2ca57e1d03dcd6b7c873}{h\+Factor\+\_\+}
+\item 
+vol\+Scalar\+Field \hyperlink{classFoam_1_1FrontToFieldModel_af547073005a760654aa30b6e0fe4d41c}{cells\+To\+Refine\+\_\+}
+\item 
+auto\+Ptr$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel_a95395337010439fe57e0ecc9ca2bb23a}{Indicator\+\_\+}
+\item 
+auto\+Ptr$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel_a401f7fb4cf5ca62b7a333f9fa8dd89d7}{density\+Indicator\+\_\+}
+\item 
+auto\+Ptr$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel_ace19a4b367734365c6e4367def23a06e}{viscosity\+Indicator\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a01d81526dcbb6ebcd6e6426bf7133b0b}\label{classFoam_1_1FrontToFieldModel_a01d81526dcbb6ebcd6e6426bf7133b0b}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Front\+To\+Field\+Model@{Front\+To\+Field\+Model}}
+\index{Front\+To\+Field\+Model@{Front\+To\+Field\+Model}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Front\+To\+Field\+Model()}{FrontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model} (\begin{DoxyParamCaption}\item[{Cloud\+Type \&}]{owner }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontToFieldModel_a01d81526dcbb6ebcd6e6426bf7133b0b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_abb2f9f2dafb8b7abc44ddb676bf31ae6}\label{classFoam_1_1FrontToFieldModel_abb2f9f2dafb8b7abc44ddb676bf31ae6}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Front\+To\+Field\+Model@{Front\+To\+Field\+Model}}
+\index{Front\+To\+Field\+Model@{Front\+To\+Field\+Model}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Front\+To\+Field\+Model()}{FrontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model} (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict,  }\item[{Cloud\+Type \&}]{owner,  }\item[{const word \&}]{type }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontToFieldModel_abb2f9f2dafb8b7abc44ddb676bf31ae6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_ac7f1606fac5eab3a1bcbc08468f365bd}\label{classFoam_1_1FrontToFieldModel_ac7f1606fac5eab3a1bcbc08468f365bd}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Front\+To\+Field\+Model@{Front\+To\+Field\+Model}}
+\index{Front\+To\+Field\+Model@{Front\+To\+Field\+Model}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Front\+To\+Field\+Model()}{FrontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model} (\begin{DoxyParamCaption}\item[{const \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ Cloud\+Type $>$ \&}]{cm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_aa5e52b77046856d2d6d557ee3bee28e7}\label{classFoam_1_1FrontToFieldModel_aa5e52b77046856d2d6d557ee3bee28e7}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!````~Front\+To\+Field\+Model@{$\sim$\+Front\+To\+Field\+Model}}
+\index{````~Front\+To\+Field\+Model@{$\sim$\+Front\+To\+Field\+Model}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{$\sim$\+Front\+To\+Field\+Model()}{~FrontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::$\sim$\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontToFieldModel_aa5e52b77046856d2d6d557ee3bee28e7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a01d81526dcbb6ebcd6e6426bf7133b0b}\label{classFoam_1_1FrontToFieldModel_a01d81526dcbb6ebcd6e6426bf7133b0b}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Front\+To\+Field\+Model@{Front\+To\+Field\+Model}}
+\index{Front\+To\+Field\+Model@{Front\+To\+Field\+Model}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Front\+To\+Field\+Model()}{FrontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model} (\begin{DoxyParamCaption}\item[{Cloud\+Type \&}]{owner }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_abb2f9f2dafb8b7abc44ddb676bf31ae6}\label{classFoam_1_1FrontToFieldModel_abb2f9f2dafb8b7abc44ddb676bf31ae6}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Front\+To\+Field\+Model@{Front\+To\+Field\+Model}}
+\index{Front\+To\+Field\+Model@{Front\+To\+Field\+Model}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Front\+To\+Field\+Model()}{FrontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model} (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict,  }\item[{Cloud\+Type \&}]{owner,  }\item[{const word \&}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_ac7f1606fac5eab3a1bcbc08468f365bd}\label{classFoam_1_1FrontToFieldModel_ac7f1606fac5eab3a1bcbc08468f365bd}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Front\+To\+Field\+Model@{Front\+To\+Field\+Model}}
+\index{Front\+To\+Field\+Model@{Front\+To\+Field\+Model}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Front\+To\+Field\+Model()}{FrontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model} (\begin{DoxyParamCaption}\item[{const \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ Cloud\+Type $>$ \&}]{cm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a6a7a461032065a07562611c83ab9a869}\label{classFoam_1_1FrontToFieldModel_a6a7a461032065a07562611c83ab9a869}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!````~Front\+To\+Field\+Model@{$\sim$\+Front\+To\+Field\+Model}}
+\index{````~Front\+To\+Field\+Model@{$\sim$\+Front\+To\+Field\+Model}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{$\sim$\+Front\+To\+Field\+Model()}{~FrontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+virtual \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::$\sim$\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a88ce933bcfddfcb36401aba9c0776ae5}\label{classFoam_1_1FrontToFieldModel_a88ce933bcfddfcb36401aba9c0776ae5}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!calculate@{calculate}}
+\index{calculate@{calculate}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+virtual void \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classFoam_1_1FrontToFieldModels_1_1BaseF2FModel_a1fd66572a83b6ec47ac9c2fb86064f19}{Foam\+::\+Front\+To\+Field\+Models\+::\+Base\+F2\+F\+Model$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1BaseF2FModel_a9417a2284bfa038e22a927d5c8e7d54b}{Foam\+::\+Front\+To\+Field\+Models\+::\+Base\+F2\+F\+Model$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1NoFrontToField_a02cb174d3171c5d71c38d1718f4bed23}{Foam\+::\+Front\+To\+Field\+Models\+::\+No\+Front\+To\+Field$<$ Cloud\+Type $>$}, and \hyperlink{classFoam_1_1FrontToFieldModels_1_1NoFrontToField_a168d2df0f3829473637252d412c3a1d3}{Foam\+::\+Front\+To\+Field\+Models\+::\+No\+Front\+To\+Field$<$ Cloud\+Type $>$}.
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a88ce933bcfddfcb36401aba9c0776ae5}\label{classFoam_1_1FrontToFieldModel_a88ce933bcfddfcb36401aba9c0776ae5}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!calculate@{calculate}}
+\index{calculate@{calculate}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+virtual void \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classFoam_1_1FrontToFieldModels_1_1BaseF2FModel_a1fd66572a83b6ec47ac9c2fb86064f19}{Foam\+::\+Front\+To\+Field\+Models\+::\+Base\+F2\+F\+Model$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1BaseF2FModel_a9417a2284bfa038e22a927d5c8e7d54b}{Foam\+::\+Front\+To\+Field\+Models\+::\+Base\+F2\+F\+Model$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1NoFrontToField_a02cb174d3171c5d71c38d1718f4bed23}{Foam\+::\+Front\+To\+Field\+Models\+::\+No\+Front\+To\+Field$<$ Cloud\+Type $>$}, and \hyperlink{classFoam_1_1FrontToFieldModels_1_1NoFrontToField_a168d2df0f3829473637252d412c3a1d3}{Foam\+::\+Front\+To\+Field\+Models\+::\+No\+Front\+To\+Field$<$ Cloud\+Type $>$}.
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a0c13ce2692d43dece9d9e51f6c0c5fd6}\label{classFoam_1_1FrontToFieldModel_a0c13ce2692d43dece9d9e51f6c0c5fd6}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!clone@{clone}}
+\index{clone@{clone}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+virtual auto\+Ptr$<$\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$Cloud\+Type$>$ $>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classFoam_1_1FrontToFieldModels_1_1BaseF2FModel_a28a0e5110316e77393efe30b9f243b08}{Foam\+::\+Front\+To\+Field\+Models\+::\+Base\+F2\+F\+Model$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1BaseF2FModel_a28a0e5110316e77393efe30b9f243b08}{Foam\+::\+Front\+To\+Field\+Models\+::\+Base\+F2\+F\+Model$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1CPT_a1ba03c46bac4bba07f9ee8185baff1e6}{Foam\+::\+Front\+To\+Field\+Models\+::\+C\+P\+T$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1CPT_a1ba03c46bac4bba07f9ee8185baff1e6}{Foam\+::\+Front\+To\+Field\+Models\+::\+C\+P\+T$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1Poisson_a2427c93360419e2494a682227ee65f6e}{Foam\+::\+Front\+To\+Field\+Models\+::\+Poisson$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1Poisson_a2427c93360419e2494a682227ee65f6e}{Foam\+::\+Front\+To\+Field\+Models\+::\+Poisson$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1NoFrontToField_abd5be84576733720c4c78393d8d0851a}{Foam\+::\+Front\+To\+Field\+Models\+::\+No\+Front\+To\+Field$<$ Cloud\+Type $>$}, and \hyperlink{classFoam_1_1FrontToFieldModels_1_1NoFrontToField_abd5be84576733720c4c78393d8d0851a}{Foam\+::\+Front\+To\+Field\+Models\+::\+No\+Front\+To\+Field$<$ Cloud\+Type $>$}.
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a0c13ce2692d43dece9d9e51f6c0c5fd6}\label{classFoam_1_1FrontToFieldModel_a0c13ce2692d43dece9d9e51f6c0c5fd6}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!clone@{clone}}
+\index{clone@{clone}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+virtual auto\+Ptr$<$\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$Cloud\+Type$>$ $>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classFoam_1_1FrontToFieldModels_1_1BaseF2FModel_a28a0e5110316e77393efe30b9f243b08}{Foam\+::\+Front\+To\+Field\+Models\+::\+Base\+F2\+F\+Model$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1BaseF2FModel_a28a0e5110316e77393efe30b9f243b08}{Foam\+::\+Front\+To\+Field\+Models\+::\+Base\+F2\+F\+Model$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1CPT_a1ba03c46bac4bba07f9ee8185baff1e6}{Foam\+::\+Front\+To\+Field\+Models\+::\+C\+P\+T$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1CPT_a1ba03c46bac4bba07f9ee8185baff1e6}{Foam\+::\+Front\+To\+Field\+Models\+::\+C\+P\+T$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1Poisson_a2427c93360419e2494a682227ee65f6e}{Foam\+::\+Front\+To\+Field\+Models\+::\+Poisson$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1Poisson_a2427c93360419e2494a682227ee65f6e}{Foam\+::\+Front\+To\+Field\+Models\+::\+Poisson$<$ Cloud\+Type $>$}, \hyperlink{classFoam_1_1FrontToFieldModels_1_1NoFrontToField_abd5be84576733720c4c78393d8d0851a}{Foam\+::\+Front\+To\+Field\+Models\+::\+No\+Front\+To\+Field$<$ Cloud\+Type $>$}, and \hyperlink{classFoam_1_1FrontToFieldModels_1_1NoFrontToField_abd5be84576733720c4c78393d8d0851a}{Foam\+::\+Front\+To\+Field\+Models\+::\+No\+Front\+To\+Field$<$ Cloud\+Type $>$}.
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a9c10014640a00a66fd4c2683d511807e}\label{classFoam_1_1FrontToFieldModel_a9c10014640a00a66fd4c2683d511807e}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!declare\+Run\+Time\+Selection\+Table@{declare\+Run\+Time\+Selection\+Table}}
+\index{declare\+Run\+Time\+Selection\+Table@{declare\+Run\+Time\+Selection\+Table}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{declare\+Run\+Time\+Selection\+Table()}{declareRunTimeSelectionTable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::declare\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{auto\+Ptr}]{,  }\item[{\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ Cloud\+Type $>$}]{,  }\item[{dictionary}]{,  }\item[{(const dictionary \&dict, Cloud\+Type \&owner)}]{,  }\item[{(dict, owner)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a9c10014640a00a66fd4c2683d511807e}\label{classFoam_1_1FrontToFieldModel_a9c10014640a00a66fd4c2683d511807e}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!declare\+Run\+Time\+Selection\+Table@{declare\+Run\+Time\+Selection\+Table}}
+\index{declare\+Run\+Time\+Selection\+Table@{declare\+Run\+Time\+Selection\+Table}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{declare\+Run\+Time\+Selection\+Table()}{declareRunTimeSelectionTable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::declare\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{auto\+Ptr}]{,  }\item[{\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ Cloud\+Type $>$}]{,  }\item[{dictionary}]{,  }\item[{(const dictionary \&dict, Cloud\+Type \&owner)}]{,  }\item[{(dict, owner)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a6425150d02e7babd4f65504f30c699ba}\label{classFoam_1_1FrontToFieldModel_a6425150d02e7babd4f65504f30c699ba}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!density\+Indicator@{density\+Indicator}}
+\index{density\+Indicator@{density\+Indicator}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{density\+Indicator()}{densityIndicator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::tmp$<$ Foam\+::vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::density\+Indicator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_af5875747df6bfd82ca29742926d8701d}\label{classFoam_1_1FrontToFieldModel_af5875747df6bfd82ca29742926d8701d}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!density\+Indicator@{density\+Indicator}}
+\index{density\+Indicator@{density\+Indicator}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{density\+Indicator()}{densityIndicator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+tmp$<$vol\+Scalar\+Field$>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::density\+Indicator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a977bc1d757adc68b17dbe985a5bdefdc}\label{classFoam_1_1FrontToFieldModel_a977bc1d757adc68b17dbe985a5bdefdc}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!density\+Indicator\+Ref@{density\+Indicator\+Ref}}
+\index{density\+Indicator\+Ref@{density\+Indicator\+Ref}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{density\+Indicator\+Ref()}{densityIndicatorRef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::vol\+Scalar\+Field \& \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::density\+Indicator\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a5fcad8b6197d09e8cc0542c69c5b6b47}\label{classFoam_1_1FrontToFieldModel_a5fcad8b6197d09e8cc0542c69c5b6b47}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!density\+Indicator\+Ref@{density\+Indicator\+Ref}}
+\index{density\+Indicator\+Ref@{density\+Indicator\+Ref}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{density\+Indicator\+Ref()}{densityIndicatorRef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+vol\+Scalar\+Field\& \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::density\+Indicator\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a1f99cd00a8322735361ed653ba20a541}\label{classFoam_1_1FrontToFieldModel_a1f99cd00a8322735361ed653ba20a541}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!h\+Factor@{h\+Factor}}
+\index{h\+Factor@{h\+Factor}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{h\+Factor()}{hFactor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::h\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a1172056c000443e082f3356e9a1717a2}\label{classFoam_1_1FrontToFieldModel_a1172056c000443e082f3356e9a1717a2}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!h\+Factor@{h\+Factor}}
+\index{h\+Factor@{h\+Factor}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{h\+Factor()}{hFactor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::scalar \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::h\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a8225df17b4139b26c110870451b96de9}\label{classFoam_1_1FrontToFieldModel_a8225df17b4139b26c110870451b96de9}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Indicator@{Indicator}}
+\index{Indicator@{Indicator}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Indicator()}{Indicator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::tmp$<$ Foam\+::vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::Indicator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a6b91d473e08d4efce2e85f2eb149c87a}\label{classFoam_1_1FrontToFieldModel_a6b91d473e08d4efce2e85f2eb149c87a}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Indicator@{Indicator}}
+\index{Indicator@{Indicator}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Indicator()}{Indicator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+tmp$<$vol\+Scalar\+Field$>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::Indicator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a44bef45020f0a232108fbc2856413f1f}\label{classFoam_1_1FrontToFieldModel_a44bef45020f0a232108fbc2856413f1f}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Indicator\+Ref@{Indicator\+Ref}}
+\index{Indicator\+Ref@{Indicator\+Ref}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Indicator\+Ref()}{IndicatorRef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+vol\+Scalar\+Field\& \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::Indicator\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_aa68185706596a628eefee2a870b4c6f3}\label{classFoam_1_1FrontToFieldModel_aa68185706596a628eefee2a870b4c6f3}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Indicator\+Ref@{Indicator\+Ref}}
+\index{Indicator\+Ref@{Indicator\+Ref}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Indicator\+Ref()}{IndicatorRef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::vol\+Scalar\+Field \& \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::Indicator\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a7d5806a3fe473966bedb5d5815a03035}\label{classFoam_1_1FrontToFieldModel_a7d5806a3fe473966bedb5d5815a03035}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!New@{New}}
+\index{New@{New}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{New()}{New()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+static auto\+Ptr$<$\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$Cloud\+Type$>$ $>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::New (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict,  }\item[{Cloud\+Type \&}]{owner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a8d2ede4c3699e6e7b24c7491723d576e}\label{classFoam_1_1FrontToFieldModel_a8d2ede4c3699e6e7b24c7491723d576e}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!New@{New}}
+\index{New@{New}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{New()}{New()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::auto\+Ptr$<$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$ $>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::New (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict,  }\item[{Cloud\+Type \&}]{owner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontToFieldModel_a8d2ede4c3699e6e7b24c7491723d576e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a7a5035a704385de5435e9668c29c3d89}\label{classFoam_1_1FrontToFieldModel_a7a5035a704385de5435e9668c29c3d89}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!two\+Fluid\+Flow@{two\+Fluid\+Flow}}
+\index{two\+Fluid\+Flow@{two\+Fluid\+Flow}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{two\+Fluid\+Flow()}{twoFluidFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+bool \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::two\+Fluid\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a7a5035a704385de5435e9668c29c3d89}\label{classFoam_1_1FrontToFieldModel_a7a5035a704385de5435e9668c29c3d89}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!two\+Fluid\+Flow@{two\+Fluid\+Flow}}
+\index{two\+Fluid\+Flow@{two\+Fluid\+Flow}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{two\+Fluid\+Flow()}{twoFluidFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+bool \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::two\+Fluid\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a6e113da5c0c612fe1313cffc439e44e9}\label{classFoam_1_1FrontToFieldModel_a6e113da5c0c612fe1313cffc439e44e9}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Type\+Name@{Type\+Name}}
+\index{Type\+Name@{Type\+Name}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Type\+Name()}{TypeName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}front\+To\+Field\+Model\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a6e113da5c0c612fe1313cffc439e44e9}\label{classFoam_1_1FrontToFieldModel_a6e113da5c0c612fe1313cffc439e44e9}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Type\+Name@{Type\+Name}}
+\index{Type\+Name@{Type\+Name}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Type\+Name()}{TypeName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}front\+To\+Field\+Model\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_aab2ed845099ce21bb0c3ab7ac0ac35c5}\label{classFoam_1_1FrontToFieldModel_aab2ed845099ce21bb0c3ab7ac0ac35c5}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!viscosity\+Indicator@{viscosity\+Indicator}}
+\index{viscosity\+Indicator@{viscosity\+Indicator}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{viscosity\+Indicator()}{viscosityIndicator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+tmp$<$vol\+Scalar\+Field$>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::viscosity\+Indicator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_acd7d5c4007bd82eec12e23b6e7c0e6a4}\label{classFoam_1_1FrontToFieldModel_acd7d5c4007bd82eec12e23b6e7c0e6a4}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!viscosity\+Indicator@{viscosity\+Indicator}}
+\index{viscosity\+Indicator@{viscosity\+Indicator}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{viscosity\+Indicator()}{viscosityIndicator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::tmp$<$ Foam\+::vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::viscosity\+Indicator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a36a55af8f324d11462adfacaf082b75b}\label{classFoam_1_1FrontToFieldModel_a36a55af8f324d11462adfacaf082b75b}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!viscosity\+Indicator\+Ref@{viscosity\+Indicator\+Ref}}
+\index{viscosity\+Indicator\+Ref@{viscosity\+Indicator\+Ref}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{viscosity\+Indicator\+Ref()}{viscosityIndicatorRef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::vol\+Scalar\+Field \& \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::viscosity\+Indicator\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a473af3afa64c2a730b7c6a6c067708e8}\label{classFoam_1_1FrontToFieldModel_a473af3afa64c2a730b7c6a6c067708e8}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!viscosity\+Indicator\+Ref@{viscosity\+Indicator\+Ref}}
+\index{viscosity\+Indicator\+Ref@{viscosity\+Indicator\+Ref}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{viscosity\+Indicator\+Ref()}{viscosityIndicatorRef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+vol\+Scalar\+Field\& \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::viscosity\+Indicator\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_af547073005a760654aa30b6e0fe4d41c}\label{classFoam_1_1FrontToFieldModel_af547073005a760654aa30b6e0fe4d41c}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!cells\+To\+Refine\+\_\+@{cells\+To\+Refine\+\_\+}}
+\index{cells\+To\+Refine\+\_\+@{cells\+To\+Refine\+\_\+}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{cells\+To\+Refine\+\_\+}{cellsToRefine\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+vol\+Scalar\+Field \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::cells\+To\+Refine\+\_\+}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a401f7fb4cf5ca62b7a333f9fa8dd89d7}\label{classFoam_1_1FrontToFieldModel_a401f7fb4cf5ca62b7a333f9fa8dd89d7}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!density\+Indicator\+\_\+@{density\+Indicator\+\_\+}}
+\index{density\+Indicator\+\_\+@{density\+Indicator\+\_\+}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{density\+Indicator\+\_\+}{densityIndicator\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+auto\+Ptr$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::density\+Indicator\+\_\+}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a2eca985c837b4173dae0ab002b512c91}\label{classFoam_1_1FrontToFieldModel_a2eca985c837b4173dae0ab002b512c91}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!h\+\_\+@{h\+\_\+}}
+\index{h\+\_\+@{h\+\_\+}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{h\+\_\+}{h\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::h\+\_\+}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a775b7bec736f2ca57e1d03dcd6b7c873}\label{classFoam_1_1FrontToFieldModel_a775b7bec736f2ca57e1d03dcd6b7c873}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!h\+Factor\+\_\+@{h\+Factor\+\_\+}}
+\index{h\+Factor\+\_\+@{h\+Factor\+\_\+}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{h\+Factor\+\_\+}{hFactor\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::h\+Factor\+\_\+}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_a95395337010439fe57e0ecc9ca2bb23a}\label{classFoam_1_1FrontToFieldModel_a95395337010439fe57e0ecc9ca2bb23a}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!Indicator\+\_\+@{Indicator\+\_\+}}
+\index{Indicator\+\_\+@{Indicator\+\_\+}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{Indicator\+\_\+}{Indicator\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+auto\+Ptr$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::Indicator\+\_\+}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_ad04fa93b89f90606f8f0f0111e29aef7}\label{classFoam_1_1FrontToFieldModel_ad04fa93b89f90606f8f0f0111e29aef7}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!two\+Fluid\+Flow\+\_\+@{two\+Fluid\+Flow\+\_\+}}
+\index{two\+Fluid\+Flow\+\_\+@{two\+Fluid\+Flow\+\_\+}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{two\+Fluid\+Flow\+\_\+}{twoFluidFlow\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+bool \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::two\+Fluid\+Flow\+\_\+}
+
+\mbox{\Hypertarget{classFoam_1_1FrontToFieldModel_ace19a4b367734365c6e4367def23a06e}\label{classFoam_1_1FrontToFieldModel_ace19a4b367734365c6e4367def23a06e}} 
+\index{Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}!viscosity\+Indicator\+\_\+@{viscosity\+Indicator\+\_\+}}
+\index{viscosity\+Indicator\+\_\+@{viscosity\+Indicator\+\_\+}!Foam\+::\+Front\+To\+Field\+Model@{Foam\+::\+Front\+To\+Field\+Model}}
+\subsubsection{\texorpdfstring{viscosity\+Indicator\+\_\+}{viscosityIndicator\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+auto\+Ptr$<$ vol\+Scalar\+Field $>$ \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ Cloud\+Type $>$\+::viscosity\+Indicator\+\_\+}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+clouds/\+Templates/\+Front\+Tracking\+Cloud/\hyperlink{clouds_2Templates_2FrontTrackingCloud_2FrontTrackingCloud_8H}{Front\+Tracking\+Cloud.\+H}\item 
+ln\+Include/\hyperlink{lnInclude_2FrontToFieldModel_8H}{Front\+To\+Field\+Model.\+H}\item 
+ln\+Include/\hyperlink{lnInclude_2FrontToFieldModel_8C}{Front\+To\+Field\+Model.\+C}\end{DoxyCompactItemize}

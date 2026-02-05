@@ -1,0 +1,83 @@
+\hypertarget{lnInclude_2VolumeCorrectionModel_8H}{}\section{ln\+Include/\+Volume\+Correction\+Model.H File Reference}
+\label{lnInclude_2VolumeCorrectionModel_8H}\index{ln\+Include/\+Volume\+Correction\+Model.\+H@{ln\+Include/\+Volume\+Correction\+Model.\+H}}
+{\ttfamily \#include \char`\"{}I\+Odictionary.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}auto\+Ptr.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}run\+Time\+Selection\+Tables.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cloud\+Sub\+Model\+Base.\+H\char`\"{}}\newline
+Include dependency graph for Volume\+Correction\+Model.\+H\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lnInclude_2VolumeCorrectionModel_8H__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lnInclude_2VolumeCorrectionModel_8H__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classFoam_1_1VolumeCorrectionModel}{Foam\+::\+Volume\+Correction\+Model$<$ Cloud\+Type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceFoam}{Foam}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lnInclude_2VolumeCorrectionModel_8H_ab2b9643f4773220b97d5b4f673247378}{make\+Volume\+Correction\+Model}(Cloud\+Type)
+\item 
+\#define \hyperlink{lnInclude_2VolumeCorrectionModel_8H_a87bc6662db8579008d03d44c28a6b7c0}{make\+Volume\+Correction\+Model\+Type}(SS,  Cloud\+Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{lnInclude_2VolumeCorrectionModel_8H_ab2b9643f4773220b97d5b4f673247378}\label{lnInclude_2VolumeCorrectionModel_8H_ab2b9643f4773220b97d5b4f673247378}} 
+\index{ln\+Include/\+Volume\+Correction\+Model.\+H@{ln\+Include/\+Volume\+Correction\+Model.\+H}!make\+Volume\+Correction\+Model@{make\+Volume\+Correction\+Model}}
+\index{make\+Volume\+Correction\+Model@{make\+Volume\+Correction\+Model}!ln\+Include/\+Volume\+Correction\+Model.\+H@{ln\+Include/\+Volume\+Correction\+Model.\+H}}
+\subsubsection{\texorpdfstring{make\+Volume\+Correction\+Model}{makeVolumeCorrectionModel}}
+{\footnotesize\ttfamily \#define make\+Volume\+Correction\+Model(\begin{DoxyParamCaption}\item[{}]{Cloud\+Type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    typedef Foam::CloudType::FrontTrackingCloudType FrontTrackingCloudType;                    \(\backslash\)
+    defineNamedTemplateTypeNameAndDebug                                        \(\backslash\)
+    (                                                                          \(\backslash\)
+        Foam::VolumeCorrectionModel<FrontTrackingCloudType>,                                   \(\backslash\)
+        0                                                                      \(\backslash\)
+    );                                                                         \(\backslash\)
+                                                                               \(\backslash\)
+    namespace \hyperlink{namespaceFoam}{Foam}                                                             \(\backslash\)
+    \{                                                                          \(\backslash\)
+        defineTemplateRunTimeSelectionTable                                    \(\backslash\)
+        (                                                                      \(\backslash\)
+            VolumeCorrectionModel<FrontTrackingCloudType>,                                     \(\backslash\)
+            dictionary                                                         \(\backslash\)
+        );                                                                     \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{lnInclude_2VolumeCorrectionModel_8H_a87bc6662db8579008d03d44c28a6b7c0}\label{lnInclude_2VolumeCorrectionModel_8H_a87bc6662db8579008d03d44c28a6b7c0}} 
+\index{ln\+Include/\+Volume\+Correction\+Model.\+H@{ln\+Include/\+Volume\+Correction\+Model.\+H}!make\+Volume\+Correction\+Model\+Type@{make\+Volume\+Correction\+Model\+Type}}
+\index{make\+Volume\+Correction\+Model\+Type@{make\+Volume\+Correction\+Model\+Type}!ln\+Include/\+Volume\+Correction\+Model.\+H@{ln\+Include/\+Volume\+Correction\+Model.\+H}}
+\subsubsection{\texorpdfstring{make\+Volume\+Correction\+Model\+Type}{makeVolumeCorrectionModelType}}
+{\footnotesize\ttfamily \#define make\+Volume\+Correction\+Model\+Type(\begin{DoxyParamCaption}\item[{}]{SS,  }\item[{}]{Cloud\+Type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    typedef Foam::CloudType::FrontTrackingCloudType FrontTrackingCloudType;                    \(\backslash\)
+    defineNamedTemplateTypeNameAndDebug                                        \(\backslash\)
+        (Foam::VolumeCorrectionModels::SS<FrontTrackingCloudType>, 0);                         \(\backslash\)
+                                                                               \(\backslash\)
+    Foam::VolumeCorrectionModel<FrontTrackingCloudType>::                                      \(\backslash\)
+        adddictionaryConstructorToTable                                        \(\backslash\)
+        <Foam::VolumeCorrectionModels::SS<FrontTrackingCloudType>>                             \(\backslash\)
+            add##SS##CloudType##FrontTrackingCloudType##ConstructorToTable\_;
+\end{DoxyCode}

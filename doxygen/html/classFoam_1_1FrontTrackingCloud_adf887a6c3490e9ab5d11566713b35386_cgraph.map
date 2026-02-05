@@ -1,0 +1,4 @@
+<map id="Foam::FrontTrackingCloud::mapFrontToParcel" name="Foam::FrontTrackingCloud::mapFrontToParcel">
+<area shape="rect" id="node2" href="$classFoam_1_1FrontTrackingCloud.html#a6a3db7a4b4111c52f10a81f56b2b2429" title="Foam::FrontTrackingCloud\l::updateParcelsFromFront" alt="" coords="231,5,408,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1FrontTrackingCloud.html#a07213caaa12b062cf109d5e1c787bd7b" title="Foam::FrontTrackingCloud\l::frontCloudAdvection" alt="" coords="456,5,633,47"/>
+</map>

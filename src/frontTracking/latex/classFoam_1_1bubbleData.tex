@@ -1,0 +1,636 @@
+\hypertarget{classFoam_1_1bubbleData}{}\section{Foam\+:\+:bubble\+Data Class Reference}
+\label{classFoam_1_1bubbleData}\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+
+
+{\ttfamily \#include $<$bubble\+Data.\+H$>$}
+
+
+
+Collaboration diagram for Foam\+:\+:bubble\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classFoam_1_1bubbleData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFoam_1_1bubbleData_a78c0f6a3fff15dd2239fefd25ffbe0ff}{bubble\+Data} ()
+\item 
+virtual \hyperlink{classFoam_1_1bubbleData_adede9b130e190142e610d9b5f8cbdb7e}{$\sim$bubble\+Data} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_a01a4a0bd51dfdfd148cd09f173c42443}{start\+Pt\+Index\+From\+Zero} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_a200b32da9651717744e2c042c708550a}{find\+Nighboures} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_acda4c6cfdf009e8e11f7b8f2d6b161dc}{point\+To\+Element\+Mapping} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_ae39fb04d51d3f94e71b2f5c39e5b6c56}{pt\+Connected\+Points} ()
+\item 
+label\+List \hyperlink{classFoam_1_1bubbleData_a8b33b963edbce17b6595f75259622ada}{adjusting\+The\+Mesh\+Data\+After\+Changes} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_a7bc4465328f4b231c17305a76db1d8a1}{print\+Initial\+Fronts} (const file\+Name \&outfile\+Name)
+\item 
+void \hyperlink{classFoam_1_1bubbleData_aa62a18b88be0327ed56c49a48cc2820b}{update\+Bubble\+Volume} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_aeca8b64dfc956cf92b07fc98de0b1fb3}{update\+Bubble\+Surface} ()
+\item 
+\hyperlink{classFoam_1_1bubbleData_a78c0f6a3fff15dd2239fefd25ffbe0ff}{bubble\+Data} ()
+\item 
+virtual \hyperlink{classFoam_1_1bubbleData_adede9b130e190142e610d9b5f8cbdb7e}{$\sim$bubble\+Data} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_a01a4a0bd51dfdfd148cd09f173c42443}{start\+Pt\+Index\+From\+Zero} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_a200b32da9651717744e2c042c708550a}{find\+Nighboures} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_acda4c6cfdf009e8e11f7b8f2d6b161dc}{point\+To\+Element\+Mapping} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_ae39fb04d51d3f94e71b2f5c39e5b6c56}{pt\+Connected\+Points} ()
+\item 
+label\+List \hyperlink{classFoam_1_1bubbleData_a54f47b20e06cb8572df1ae28e5bf5902}{adjusting\+The\+Mesh\+Data\+After\+Changes} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_a7bc4465328f4b231c17305a76db1d8a1}{print\+Initial\+Fronts} (const file\+Name \&outfile\+Name)
+\item 
+void \hyperlink{classFoam_1_1bubbleData_aa62a18b88be0327ed56c49a48cc2820b}{update\+Bubble\+Volume} ()
+\item 
+void \hyperlink{classFoam_1_1bubbleData_aeca8b64dfc956cf92b07fc98de0b1fb3}{update\+Bubble\+Surface} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dynamic\+List$<$ \hyperlink{classFoam_1_1pointData}{point\+Data} $>$ \hyperlink{classFoam_1_1bubbleData_a466b40438d465e522c6cf9b6ae042638}{pL}
+\item 
+Dynamic\+List$<$ \hyperlink{classFoam_1_1elementInfo}{element\+Info} $>$ \hyperlink{classFoam_1_1bubbleData_a8b56f8139f82c448103b2f8296be3587}{eL}
+\item 
+vector \hyperlink{classFoam_1_1bubbleData_a0a3b90c342d0c81cce02aa50fe650b4f}{pressure\+Force}
+\item 
+vector \hyperlink{classFoam_1_1bubbleData_af3b01e31394ca2db56831b637c823fad}{shear\+Stress\+Force}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_abf4def2ca2031f32ef6d3d9039fe659b}{pressure\+Drag\+Force}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_ab0498b3d44aa2e83e63c60de8a2dcefa}{friction\+Drag\+Force}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a3c93a65a6c6d39068229947c01c7d06d}{pressure\+Lift\+ForceI}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a9ab24dd7989a030ca7c038336bdfcec9}{pressure\+Lift\+Force\+II}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_aba3c36d8dee4a54fd00e7f03c0e99b3e}{friction\+Lift\+ForceI}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a611eb9b38cad5263f53ae226ab5af33b}{friction\+Lift\+Force\+II}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a37593f268513154da15399f5d346161a}{total\+Drag\+Force}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a46b4565cc9a62aa11f8ababc548115d8}{total\+Lift\+ForceI}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_af405b224178a16813fed947591cb1bff}{total\+Lift\+Force\+II}
+\item 
+vector \hyperlink{classFoam_1_1bubbleData_a26444575af04c6f0b29a04fcc323e7b5}{buoyant\+Force}
+\item 
+vector \hyperlink{classFoam_1_1bubbleData_a377d050bf5cccc31cb1842a7471f0b40}{gravity\+Force}
+\item 
+vector \hyperlink{classFoam_1_1bubbleData_acd5cb743fe1daca143e57e30f6ef6487}{accelaration}
+\item 
+vector \hyperlink{classFoam_1_1bubbleData_a6f24e8e0d7d406bc0fce92c61c7b9f6a}{velocity}
+\item 
+vector \hyperlink{classFoam_1_1bubbleData_a2ddfba5a0c373cf04288b484a3f20b1e}{velocity\+Old}
+\item 
+vector \hyperlink{classFoam_1_1bubbleData_a71a1e15224b7eac3f2411eba31f9b245}{centre}
+\item 
+vector \hyperlink{classFoam_1_1bubbleData_a07eabe2600aba9ae1b8f8722baa2e929}{centre\+Old}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_af26ac17dd3c8484703b484b1a0b406f6}{volume}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a8542e54692c07cedc2c0cae2a74ba24d}{volume0}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_afa34821682366185de9b87a483dd6f43}{surface\+Area}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a956a6ca9a5125d1b0ccb94bd2487ca29}{mass}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a35633f81703ca31b7b06cdbc51218991}{density}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a181098e2c93266f0b4c6861522b478b3}{outer\+Fluid\+Density}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a82b5b5338bb0d363e79e8078d84fbdaf}{viscosity}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a20908303d8e37f882e52595d1da9beb1}{outer\+Fluid\+Viscosity}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_add40c043c47fac7ac16bff1e03823dca}{drag\+Coeff}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_ada8e7f1dc0b9a282f63a8a777a70cef5}{Lift\+CoeffI}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a7bad7043d9e915dd6aabc47608b114e5}{Lift\+Coeff\+II}
+\item 
+label \hyperlink{classFoam_1_1bubbleData_afab8b5aa167b02470788d3f3d4b3d7cd}{current\+Index}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_aec394160aa23b63eb672846179287f8e}{surface\+Tension\+Coeff}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_af3720d63ef807c83c099b3ad7dd77f5d}{Morton\+Number}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a6256640184e8fe3c9e55aade352ea782}{Eotvos\+Number}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a0427ab63bc536b2b2ac8b0e372828f5e}{sphere\+Bubble\+Diameter}
+\item 
+List$<$ scalar $>$ \hyperlink{classFoam_1_1bubbleData_a2bf3e3d90a32e574d289d88ff5b2f2ed}{diameter}
+\item 
+scalar \hyperlink{classFoam_1_1bubbleData_a7ba3dffa9c8bf20077966d44c2a3fd9d}{sphericity}
+\item 
+vector \hyperlink{classFoam_1_1bubbleData_a9f920dfaf0d1f9da22207d08b8e1cbc1}{pressure\+Jump\+At\+The\+Interface}
+\item 
+bool \hyperlink{classFoam_1_1bubbleData_aa40fd779e46229fc8c402c46d75fad8d}{keep\+Bubble}
+\item 
+bool \hyperlink{classFoam_1_1bubbleData_a9d67f3633db9de211d0a8bf4d6a70fd8}{el\+Neighbor\+Flag}
+\item 
+bool \hyperlink{classFoam_1_1bubbleData_aefeccb5501bc3d113b6fef02a3ea2bae}{el\+Points\+Flag}
+\item 
+bool \hyperlink{classFoam_1_1bubbleData_a15e8c5d0bd3a677e2d81c2b4ebe50dea}{pl\+Connection\+Flag}
+\item 
+bool \hyperlink{classFoam_1_1bubbleData_acf7c9565ddd9cc8235769a19707b3451}{el\+Surface\+Flag}
+\item 
+bool \hyperlink{classFoam_1_1bubbleData_ae83882aee8f42d1d3e3fd1c42610beb6}{volume\+Flag}
+\item 
+bool \hyperlink{classFoam_1_1bubbleData_aa9c8dd1bfe64b2f19dc441d87b888d9c}{p\+L\+Pos\+In\+Domain\+Flag}
+\item 
+bool \hyperlink{classFoam_1_1bubbleData_ae0a6387d9d99d4d6ce94e0ccb265f5d2}{el\+C\+Pos\+In\+Domain\+Flag}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a78c0f6a3fff15dd2239fefd25ffbe0ff}\label{classFoam_1_1bubbleData_a78c0f6a3fff15dd2239fefd25ffbe0ff}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!bubble\+Data@{bubble\+Data}}
+\index{bubble\+Data@{bubble\+Data}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{bubble\+Data()}{bubbleData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Foam\+::bubble\+Data\+::bubble\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_adede9b130e190142e610d9b5f8cbdb7e}\label{classFoam_1_1bubbleData_adede9b130e190142e610d9b5f8cbdb7e}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!````~bubble\+Data@{$\sim$bubble\+Data}}
+\index{````~bubble\+Data@{$\sim$bubble\+Data}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{$\sim$bubble\+Data()}{~bubbleData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual Foam\+::bubble\+Data\+::$\sim$bubble\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a78c0f6a3fff15dd2239fefd25ffbe0ff}\label{classFoam_1_1bubbleData_a78c0f6a3fff15dd2239fefd25ffbe0ff}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!bubble\+Data@{bubble\+Data}}
+\index{bubble\+Data@{bubble\+Data}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{bubble\+Data()}{bubbleData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Foam\+::bubble\+Data\+::bubble\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_adede9b130e190142e610d9b5f8cbdb7e}\label{classFoam_1_1bubbleData_adede9b130e190142e610d9b5f8cbdb7e}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!````~bubble\+Data@{$\sim$bubble\+Data}}
+\index{````~bubble\+Data@{$\sim$bubble\+Data}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{$\sim$bubble\+Data()}{~bubbleData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual Foam\+::bubble\+Data\+::$\sim$bubble\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a8b33b963edbce17b6595f75259622ada}\label{classFoam_1_1bubbleData_a8b33b963edbce17b6595f75259622ada}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!adjusting\+The\+Mesh\+Data\+After\+Changes@{adjusting\+The\+Mesh\+Data\+After\+Changes}}
+\index{adjusting\+The\+Mesh\+Data\+After\+Changes@{adjusting\+The\+Mesh\+Data\+After\+Changes}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{adjusting\+The\+Mesh\+Data\+After\+Changes()}{adjustingTheMeshDataAfterChanges()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Foam\+::label\+List Foam\+::bubble\+Data\+::adjusting\+The\+Mesh\+Data\+After\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a54f47b20e06cb8572df1ae28e5bf5902}\label{classFoam_1_1bubbleData_a54f47b20e06cb8572df1ae28e5bf5902}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!adjusting\+The\+Mesh\+Data\+After\+Changes@{adjusting\+The\+Mesh\+Data\+After\+Changes}}
+\index{adjusting\+The\+Mesh\+Data\+After\+Changes@{adjusting\+The\+Mesh\+Data\+After\+Changes}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{adjusting\+The\+Mesh\+Data\+After\+Changes()}{adjustingTheMeshDataAfterChanges()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily label\+List Foam\+::bubble\+Data\+::adjusting\+The\+Mesh\+Data\+After\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a200b32da9651717744e2c042c708550a}\label{classFoam_1_1bubbleData_a200b32da9651717744e2c042c708550a}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!find\+Nighboures@{find\+Nighboures}}
+\index{find\+Nighboures@{find\+Nighboures}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{find\+Nighboures()}{findNighboures()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::find\+Nighboures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1bubbleData_a200b32da9651717744e2c042c708550a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a200b32da9651717744e2c042c708550a}\label{classFoam_1_1bubbleData_a200b32da9651717744e2c042c708550a}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!find\+Nighboures@{find\+Nighboures}}
+\index{find\+Nighboures@{find\+Nighboures}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{find\+Nighboures()}{findNighboures()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::find\+Nighboures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_acda4c6cfdf009e8e11f7b8f2d6b161dc}\label{classFoam_1_1bubbleData_acda4c6cfdf009e8e11f7b8f2d6b161dc}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!point\+To\+Element\+Mapping@{point\+To\+Element\+Mapping}}
+\index{point\+To\+Element\+Mapping@{point\+To\+Element\+Mapping}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{point\+To\+Element\+Mapping()}{pointToElementMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::point\+To\+Element\+Mapping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_acda4c6cfdf009e8e11f7b8f2d6b161dc}\label{classFoam_1_1bubbleData_acda4c6cfdf009e8e11f7b8f2d6b161dc}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!point\+To\+Element\+Mapping@{point\+To\+Element\+Mapping}}
+\index{point\+To\+Element\+Mapping@{point\+To\+Element\+Mapping}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{point\+To\+Element\+Mapping()}{pointToElementMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::point\+To\+Element\+Mapping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1bubbleData_acda4c6cfdf009e8e11f7b8f2d6b161dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a7bc4465328f4b231c17305a76db1d8a1}\label{classFoam_1_1bubbleData_a7bc4465328f4b231c17305a76db1d8a1}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!print\+Initial\+Fronts@{print\+Initial\+Fronts}}
+\index{print\+Initial\+Fronts@{print\+Initial\+Fronts}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{print\+Initial\+Fronts()}{printInitialFronts()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::print\+Initial\+Fronts (\begin{DoxyParamCaption}\item[{const file\+Name \&}]{outfile\+Name }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1bubbleData_a7bc4465328f4b231c17305a76db1d8a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a7bc4465328f4b231c17305a76db1d8a1}\label{classFoam_1_1bubbleData_a7bc4465328f4b231c17305a76db1d8a1}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!print\+Initial\+Fronts@{print\+Initial\+Fronts}}
+\index{print\+Initial\+Fronts@{print\+Initial\+Fronts}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{print\+Initial\+Fronts()}{printInitialFronts()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::print\+Initial\+Fronts (\begin{DoxyParamCaption}\item[{const file\+Name \&}]{outfile\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_ae39fb04d51d3f94e71b2f5c39e5b6c56}\label{classFoam_1_1bubbleData_ae39fb04d51d3f94e71b2f5c39e5b6c56}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!pt\+Connected\+Points@{pt\+Connected\+Points}}
+\index{pt\+Connected\+Points@{pt\+Connected\+Points}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{pt\+Connected\+Points()}{ptConnectedPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::pt\+Connected\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1bubbleData_ae39fb04d51d3f94e71b2f5c39e5b6c56_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1bubbleData_ae39fb04d51d3f94e71b2f5c39e5b6c56_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1bubbleData_ae39fb04d51d3f94e71b2f5c39e5b6c56}\label{classFoam_1_1bubbleData_ae39fb04d51d3f94e71b2f5c39e5b6c56}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!pt\+Connected\+Points@{pt\+Connected\+Points}}
+\index{pt\+Connected\+Points@{pt\+Connected\+Points}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{pt\+Connected\+Points()}{ptConnectedPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::pt\+Connected\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a01a4a0bd51dfdfd148cd09f173c42443}\label{classFoam_1_1bubbleData_a01a4a0bd51dfdfd148cd09f173c42443}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!start\+Pt\+Index\+From\+Zero@{start\+Pt\+Index\+From\+Zero}}
+\index{start\+Pt\+Index\+From\+Zero@{start\+Pt\+Index\+From\+Zero}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{start\+Pt\+Index\+From\+Zero()}{startPtIndexFromZero()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::start\+Pt\+Index\+From\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a01a4a0bd51dfdfd148cd09f173c42443}\label{classFoam_1_1bubbleData_a01a4a0bd51dfdfd148cd09f173c42443}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!start\+Pt\+Index\+From\+Zero@{start\+Pt\+Index\+From\+Zero}}
+\index{start\+Pt\+Index\+From\+Zero@{start\+Pt\+Index\+From\+Zero}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{start\+Pt\+Index\+From\+Zero()}{startPtIndexFromZero()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::start\+Pt\+Index\+From\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1bubbleData_a01a4a0bd51dfdfd148cd09f173c42443_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1bubbleData_aeca8b64dfc956cf92b07fc98de0b1fb3}\label{classFoam_1_1bubbleData_aeca8b64dfc956cf92b07fc98de0b1fb3}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!update\+Bubble\+Surface@{update\+Bubble\+Surface}}
+\index{update\+Bubble\+Surface@{update\+Bubble\+Surface}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{update\+Bubble\+Surface()}{updateBubbleSurface()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::update\+Bubble\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_aeca8b64dfc956cf92b07fc98de0b1fb3}\label{classFoam_1_1bubbleData_aeca8b64dfc956cf92b07fc98de0b1fb3}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!update\+Bubble\+Surface@{update\+Bubble\+Surface}}
+\index{update\+Bubble\+Surface@{update\+Bubble\+Surface}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{update\+Bubble\+Surface()}{updateBubbleSurface()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::update\+Bubble\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1bubbleData_aeca8b64dfc956cf92b07fc98de0b1fb3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1bubbleData_aeca8b64dfc956cf92b07fc98de0b1fb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1bubbleData_aa62a18b88be0327ed56c49a48cc2820b}\label{classFoam_1_1bubbleData_aa62a18b88be0327ed56c49a48cc2820b}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!update\+Bubble\+Volume@{update\+Bubble\+Volume}}
+\index{update\+Bubble\+Volume@{update\+Bubble\+Volume}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{update\+Bubble\+Volume()}{updateBubbleVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::update\+Bubble\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_aa62a18b88be0327ed56c49a48cc2820b}\label{classFoam_1_1bubbleData_aa62a18b88be0327ed56c49a48cc2820b}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!update\+Bubble\+Volume@{update\+Bubble\+Volume}}
+\index{update\+Bubble\+Volume@{update\+Bubble\+Volume}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{update\+Bubble\+Volume()}{updateBubbleVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Foam\+::bubble\+Data\+::update\+Bubble\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1bubbleData_aa62a18b88be0327ed56c49a48cc2820b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1bubbleData_acd5cb743fe1daca143e57e30f6ef6487}\label{classFoam_1_1bubbleData_acd5cb743fe1daca143e57e30f6ef6487}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!accelaration@{accelaration}}
+\index{accelaration@{accelaration}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{accelaration}{accelaration}}
+{\footnotesize\ttfamily vector Foam\+::bubble\+Data\+::accelaration}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a26444575af04c6f0b29a04fcc323e7b5}\label{classFoam_1_1bubbleData_a26444575af04c6f0b29a04fcc323e7b5}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!buoyant\+Force@{buoyant\+Force}}
+\index{buoyant\+Force@{buoyant\+Force}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{buoyant\+Force}{buoyantForce}}
+{\footnotesize\ttfamily vector Foam\+::bubble\+Data\+::buoyant\+Force}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a71a1e15224b7eac3f2411eba31f9b245}\label{classFoam_1_1bubbleData_a71a1e15224b7eac3f2411eba31f9b245}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!centre@{centre}}
+\index{centre@{centre}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{centre}{centre}}
+{\footnotesize\ttfamily vector Foam\+::bubble\+Data\+::centre}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a07eabe2600aba9ae1b8f8722baa2e929}\label{classFoam_1_1bubbleData_a07eabe2600aba9ae1b8f8722baa2e929}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!centre\+Old@{centre\+Old}}
+\index{centre\+Old@{centre\+Old}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{centre\+Old}{centreOld}}
+{\footnotesize\ttfamily vector Foam\+::bubble\+Data\+::centre\+Old}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_afab8b5aa167b02470788d3f3d4b3d7cd}\label{classFoam_1_1bubbleData_afab8b5aa167b02470788d3f3d4b3d7cd}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!current\+Index@{current\+Index}}
+\index{current\+Index@{current\+Index}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{current\+Index}{currentIndex}}
+{\footnotesize\ttfamily label Foam\+::bubble\+Data\+::current\+Index}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a35633f81703ca31b7b06cdbc51218991}\label{classFoam_1_1bubbleData_a35633f81703ca31b7b06cdbc51218991}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!density@{density}}
+\index{density@{density}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{density}{density}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::density}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a2bf3e3d90a32e574d289d88ff5b2f2ed}\label{classFoam_1_1bubbleData_a2bf3e3d90a32e574d289d88ff5b2f2ed}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!diameter@{diameter}}
+\index{diameter@{diameter}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{diameter}{diameter}}
+{\footnotesize\ttfamily List$<$ scalar $>$ Foam\+::bubble\+Data\+::diameter}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_add40c043c47fac7ac16bff1e03823dca}\label{classFoam_1_1bubbleData_add40c043c47fac7ac16bff1e03823dca}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!drag\+Coeff@{drag\+Coeff}}
+\index{drag\+Coeff@{drag\+Coeff}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{drag\+Coeff}{dragCoeff}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::drag\+Coeff}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a8b56f8139f82c448103b2f8296be3587}\label{classFoam_1_1bubbleData_a8b56f8139f82c448103b2f8296be3587}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!eL@{eL}}
+\index{eL@{eL}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{eL}{eL}}
+{\footnotesize\ttfamily Dynamic\+List$<$ \hyperlink{classFoam_1_1elementInfo}{element\+Info} $>$ Foam\+::bubble\+Data\+::eL}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_ae0a6387d9d99d4d6ce94e0ccb265f5d2}\label{classFoam_1_1bubbleData_ae0a6387d9d99d4d6ce94e0ccb265f5d2}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!el\+C\+Pos\+In\+Domain\+Flag@{el\+C\+Pos\+In\+Domain\+Flag}}
+\index{el\+C\+Pos\+In\+Domain\+Flag@{el\+C\+Pos\+In\+Domain\+Flag}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{el\+C\+Pos\+In\+Domain\+Flag}{elCPosInDomainFlag}}
+{\footnotesize\ttfamily bool Foam\+::bubble\+Data\+::el\+C\+Pos\+In\+Domain\+Flag}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a9d67f3633db9de211d0a8bf4d6a70fd8}\label{classFoam_1_1bubbleData_a9d67f3633db9de211d0a8bf4d6a70fd8}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!el\+Neighbor\+Flag@{el\+Neighbor\+Flag}}
+\index{el\+Neighbor\+Flag@{el\+Neighbor\+Flag}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{el\+Neighbor\+Flag}{elNeighborFlag}}
+{\footnotesize\ttfamily bool Foam\+::bubble\+Data\+::el\+Neighbor\+Flag}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_aefeccb5501bc3d113b6fef02a3ea2bae}\label{classFoam_1_1bubbleData_aefeccb5501bc3d113b6fef02a3ea2bae}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!el\+Points\+Flag@{el\+Points\+Flag}}
+\index{el\+Points\+Flag@{el\+Points\+Flag}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{el\+Points\+Flag}{elPointsFlag}}
+{\footnotesize\ttfamily bool Foam\+::bubble\+Data\+::el\+Points\+Flag}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_acf7c9565ddd9cc8235769a19707b3451}\label{classFoam_1_1bubbleData_acf7c9565ddd9cc8235769a19707b3451}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!el\+Surface\+Flag@{el\+Surface\+Flag}}
+\index{el\+Surface\+Flag@{el\+Surface\+Flag}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{el\+Surface\+Flag}{elSurfaceFlag}}
+{\footnotesize\ttfamily bool Foam\+::bubble\+Data\+::el\+Surface\+Flag}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a6256640184e8fe3c9e55aade352ea782}\label{classFoam_1_1bubbleData_a6256640184e8fe3c9e55aade352ea782}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!Eotvos\+Number@{Eotvos\+Number}}
+\index{Eotvos\+Number@{Eotvos\+Number}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{Eotvos\+Number}{EotvosNumber}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::\+Eotvos\+Number}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_ab0498b3d44aa2e83e63c60de8a2dcefa}\label{classFoam_1_1bubbleData_ab0498b3d44aa2e83e63c60de8a2dcefa}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!friction\+Drag\+Force@{friction\+Drag\+Force}}
+\index{friction\+Drag\+Force@{friction\+Drag\+Force}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{friction\+Drag\+Force}{frictionDragForce}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::friction\+Drag\+Force}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_aba3c36d8dee4a54fd00e7f03c0e99b3e}\label{classFoam_1_1bubbleData_aba3c36d8dee4a54fd00e7f03c0e99b3e}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!friction\+Lift\+ForceI@{friction\+Lift\+ForceI}}
+\index{friction\+Lift\+ForceI@{friction\+Lift\+ForceI}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{friction\+Lift\+ForceI}{frictionLiftForceI}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::friction\+Lift\+ForceI}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a611eb9b38cad5263f53ae226ab5af33b}\label{classFoam_1_1bubbleData_a611eb9b38cad5263f53ae226ab5af33b}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!friction\+Lift\+Force\+II@{friction\+Lift\+Force\+II}}
+\index{friction\+Lift\+Force\+II@{friction\+Lift\+Force\+II}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{friction\+Lift\+Force\+II}{frictionLiftForceII}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::friction\+Lift\+Force\+II}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a377d050bf5cccc31cb1842a7471f0b40}\label{classFoam_1_1bubbleData_a377d050bf5cccc31cb1842a7471f0b40}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!gravity\+Force@{gravity\+Force}}
+\index{gravity\+Force@{gravity\+Force}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{gravity\+Force}{gravityForce}}
+{\footnotesize\ttfamily vector Foam\+::bubble\+Data\+::gravity\+Force}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_aa40fd779e46229fc8c402c46d75fad8d}\label{classFoam_1_1bubbleData_aa40fd779e46229fc8c402c46d75fad8d}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!keep\+Bubble@{keep\+Bubble}}
+\index{keep\+Bubble@{keep\+Bubble}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{keep\+Bubble}{keepBubble}}
+{\footnotesize\ttfamily bool Foam\+::bubble\+Data\+::keep\+Bubble}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_ada8e7f1dc0b9a282f63a8a777a70cef5}\label{classFoam_1_1bubbleData_ada8e7f1dc0b9a282f63a8a777a70cef5}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!Lift\+CoeffI@{Lift\+CoeffI}}
+\index{Lift\+CoeffI@{Lift\+CoeffI}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{Lift\+CoeffI}{LiftCoeffI}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::\+Lift\+CoeffI}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a7bad7043d9e915dd6aabc47608b114e5}\label{classFoam_1_1bubbleData_a7bad7043d9e915dd6aabc47608b114e5}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!Lift\+Coeff\+II@{Lift\+Coeff\+II}}
+\index{Lift\+Coeff\+II@{Lift\+Coeff\+II}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{Lift\+Coeff\+II}{LiftCoeffII}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::\+Lift\+Coeff\+II}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a956a6ca9a5125d1b0ccb94bd2487ca29}\label{classFoam_1_1bubbleData_a956a6ca9a5125d1b0ccb94bd2487ca29}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!mass@{mass}}
+\index{mass@{mass}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{mass}{mass}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::mass}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_af3720d63ef807c83c099b3ad7dd77f5d}\label{classFoam_1_1bubbleData_af3720d63ef807c83c099b3ad7dd77f5d}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!Morton\+Number@{Morton\+Number}}
+\index{Morton\+Number@{Morton\+Number}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{Morton\+Number}{MortonNumber}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::\+Morton\+Number}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a181098e2c93266f0b4c6861522b478b3}\label{classFoam_1_1bubbleData_a181098e2c93266f0b4c6861522b478b3}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!outer\+Fluid\+Density@{outer\+Fluid\+Density}}
+\index{outer\+Fluid\+Density@{outer\+Fluid\+Density}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{outer\+Fluid\+Density}{outerFluidDensity}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::outer\+Fluid\+Density}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a20908303d8e37f882e52595d1da9beb1}\label{classFoam_1_1bubbleData_a20908303d8e37f882e52595d1da9beb1}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!outer\+Fluid\+Viscosity@{outer\+Fluid\+Viscosity}}
+\index{outer\+Fluid\+Viscosity@{outer\+Fluid\+Viscosity}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{outer\+Fluid\+Viscosity}{outerFluidViscosity}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::outer\+Fluid\+Viscosity}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a466b40438d465e522c6cf9b6ae042638}\label{classFoam_1_1bubbleData_a466b40438d465e522c6cf9b6ae042638}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!pL@{pL}}
+\index{pL@{pL}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{pL}{pL}}
+{\footnotesize\ttfamily Dynamic\+List$<$ \hyperlink{classFoam_1_1pointData}{point\+Data} $>$ Foam\+::bubble\+Data\+::pL}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a15e8c5d0bd3a677e2d81c2b4ebe50dea}\label{classFoam_1_1bubbleData_a15e8c5d0bd3a677e2d81c2b4ebe50dea}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!pl\+Connection\+Flag@{pl\+Connection\+Flag}}
+\index{pl\+Connection\+Flag@{pl\+Connection\+Flag}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{pl\+Connection\+Flag}{plConnectionFlag}}
+{\footnotesize\ttfamily bool Foam\+::bubble\+Data\+::pl\+Connection\+Flag}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_aa9c8dd1bfe64b2f19dc441d87b888d9c}\label{classFoam_1_1bubbleData_aa9c8dd1bfe64b2f19dc441d87b888d9c}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!p\+L\+Pos\+In\+Domain\+Flag@{p\+L\+Pos\+In\+Domain\+Flag}}
+\index{p\+L\+Pos\+In\+Domain\+Flag@{p\+L\+Pos\+In\+Domain\+Flag}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{p\+L\+Pos\+In\+Domain\+Flag}{pLPosInDomainFlag}}
+{\footnotesize\ttfamily bool Foam\+::bubble\+Data\+::p\+L\+Pos\+In\+Domain\+Flag}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_abf4def2ca2031f32ef6d3d9039fe659b}\label{classFoam_1_1bubbleData_abf4def2ca2031f32ef6d3d9039fe659b}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!pressure\+Drag\+Force@{pressure\+Drag\+Force}}
+\index{pressure\+Drag\+Force@{pressure\+Drag\+Force}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{pressure\+Drag\+Force}{pressureDragForce}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::pressure\+Drag\+Force}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a0a3b90c342d0c81cce02aa50fe650b4f}\label{classFoam_1_1bubbleData_a0a3b90c342d0c81cce02aa50fe650b4f}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!pressure\+Force@{pressure\+Force}}
+\index{pressure\+Force@{pressure\+Force}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{pressure\+Force}{pressureForce}}
+{\footnotesize\ttfamily vector Foam\+::bubble\+Data\+::pressure\+Force}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a9f920dfaf0d1f9da22207d08b8e1cbc1}\label{classFoam_1_1bubbleData_a9f920dfaf0d1f9da22207d08b8e1cbc1}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!pressure\+Jump\+At\+The\+Interface@{pressure\+Jump\+At\+The\+Interface}}
+\index{pressure\+Jump\+At\+The\+Interface@{pressure\+Jump\+At\+The\+Interface}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{pressure\+Jump\+At\+The\+Interface}{pressureJumpAtTheInterface}}
+{\footnotesize\ttfamily vector Foam\+::bubble\+Data\+::pressure\+Jump\+At\+The\+Interface}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a3c93a65a6c6d39068229947c01c7d06d}\label{classFoam_1_1bubbleData_a3c93a65a6c6d39068229947c01c7d06d}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!pressure\+Lift\+ForceI@{pressure\+Lift\+ForceI}}
+\index{pressure\+Lift\+ForceI@{pressure\+Lift\+ForceI}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{pressure\+Lift\+ForceI}{pressureLiftForceI}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::pressure\+Lift\+ForceI}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a9ab24dd7989a030ca7c038336bdfcec9}\label{classFoam_1_1bubbleData_a9ab24dd7989a030ca7c038336bdfcec9}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!pressure\+Lift\+Force\+II@{pressure\+Lift\+Force\+II}}
+\index{pressure\+Lift\+Force\+II@{pressure\+Lift\+Force\+II}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{pressure\+Lift\+Force\+II}{pressureLiftForceII}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::pressure\+Lift\+Force\+II}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_af3b01e31394ca2db56831b637c823fad}\label{classFoam_1_1bubbleData_af3b01e31394ca2db56831b637c823fad}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!shear\+Stress\+Force@{shear\+Stress\+Force}}
+\index{shear\+Stress\+Force@{shear\+Stress\+Force}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{shear\+Stress\+Force}{shearStressForce}}
+{\footnotesize\ttfamily vector Foam\+::bubble\+Data\+::shear\+Stress\+Force}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a0427ab63bc536b2b2ac8b0e372828f5e}\label{classFoam_1_1bubbleData_a0427ab63bc536b2b2ac8b0e372828f5e}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!sphere\+Bubble\+Diameter@{sphere\+Bubble\+Diameter}}
+\index{sphere\+Bubble\+Diameter@{sphere\+Bubble\+Diameter}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{sphere\+Bubble\+Diameter}{sphereBubbleDiameter}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::sphere\+Bubble\+Diameter}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a7ba3dffa9c8bf20077966d44c2a3fd9d}\label{classFoam_1_1bubbleData_a7ba3dffa9c8bf20077966d44c2a3fd9d}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!sphericity@{sphericity}}
+\index{sphericity@{sphericity}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{sphericity}{sphericity}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::sphericity}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_afa34821682366185de9b87a483dd6f43}\label{classFoam_1_1bubbleData_afa34821682366185de9b87a483dd6f43}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!surface\+Area@{surface\+Area}}
+\index{surface\+Area@{surface\+Area}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{surface\+Area}{surfaceArea}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::surface\+Area}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_aec394160aa23b63eb672846179287f8e}\label{classFoam_1_1bubbleData_aec394160aa23b63eb672846179287f8e}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!surface\+Tension\+Coeff@{surface\+Tension\+Coeff}}
+\index{surface\+Tension\+Coeff@{surface\+Tension\+Coeff}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{surface\+Tension\+Coeff}{surfaceTensionCoeff}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::surface\+Tension\+Coeff}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a37593f268513154da15399f5d346161a}\label{classFoam_1_1bubbleData_a37593f268513154da15399f5d346161a}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!total\+Drag\+Force@{total\+Drag\+Force}}
+\index{total\+Drag\+Force@{total\+Drag\+Force}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{total\+Drag\+Force}{totalDragForce}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::total\+Drag\+Force}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a46b4565cc9a62aa11f8ababc548115d8}\label{classFoam_1_1bubbleData_a46b4565cc9a62aa11f8ababc548115d8}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!total\+Lift\+ForceI@{total\+Lift\+ForceI}}
+\index{total\+Lift\+ForceI@{total\+Lift\+ForceI}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{total\+Lift\+ForceI}{totalLiftForceI}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::total\+Lift\+ForceI}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_af405b224178a16813fed947591cb1bff}\label{classFoam_1_1bubbleData_af405b224178a16813fed947591cb1bff}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!total\+Lift\+Force\+II@{total\+Lift\+Force\+II}}
+\index{total\+Lift\+Force\+II@{total\+Lift\+Force\+II}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{total\+Lift\+Force\+II}{totalLiftForceII}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::total\+Lift\+Force\+II}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a6f24e8e0d7d406bc0fce92c61c7b9f6a}\label{classFoam_1_1bubbleData_a6f24e8e0d7d406bc0fce92c61c7b9f6a}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!velocity@{velocity}}
+\index{velocity@{velocity}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily vector Foam\+::bubble\+Data\+::velocity}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a2ddfba5a0c373cf04288b484a3f20b1e}\label{classFoam_1_1bubbleData_a2ddfba5a0c373cf04288b484a3f20b1e}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!velocity\+Old@{velocity\+Old}}
+\index{velocity\+Old@{velocity\+Old}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{velocity\+Old}{velocityOld}}
+{\footnotesize\ttfamily vector Foam\+::bubble\+Data\+::velocity\+Old}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a82b5b5338bb0d363e79e8078d84fbdaf}\label{classFoam_1_1bubbleData_a82b5b5338bb0d363e79e8078d84fbdaf}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!viscosity@{viscosity}}
+\index{viscosity@{viscosity}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{viscosity}{viscosity}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::viscosity}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_af26ac17dd3c8484703b484b1a0b406f6}\label{classFoam_1_1bubbleData_af26ac17dd3c8484703b484b1a0b406f6}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!volume@{volume}}
+\index{volume@{volume}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{volume}{volume}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::volume}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_a8542e54692c07cedc2c0cae2a74ba24d}\label{classFoam_1_1bubbleData_a8542e54692c07cedc2c0cae2a74ba24d}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!volume0@{volume0}}
+\index{volume0@{volume0}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{volume0}{volume0}}
+{\footnotesize\ttfamily scalar Foam\+::bubble\+Data\+::volume0}
+
+\mbox{\Hypertarget{classFoam_1_1bubbleData_ae83882aee8f42d1d3e3fd1c42610beb6}\label{classFoam_1_1bubbleData_ae83882aee8f42d1d3e3fd1c42610beb6}} 
+\index{Foam\+::bubble\+Data@{Foam\+::bubble\+Data}!volume\+Flag@{volume\+Flag}}
+\index{volume\+Flag@{volume\+Flag}!Foam\+::bubble\+Data@{Foam\+::bubble\+Data}}
+\subsubsection{\texorpdfstring{volume\+Flag}{volumeFlag}}
+{\footnotesize\ttfamily bool Foam\+::bubble\+Data\+::volume\+Flag}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+clouds/\+Templates/\+Front\+Tracking\+Cloud/bubble\+Data/\hyperlink{clouds_2Templates_2FrontTrackingCloud_2bubbleData_2bubbleData_8H}{bubble\+Data.\+H}\item 
+clouds/\+Templates/\+Front\+Tracking\+Cloud/bubble\+Data/\hyperlink{clouds_2Templates_2FrontTrackingCloud_2bubbleData_2bubbleData_8C}{bubble\+Data.\+C}\item 
+clouds/\+Templates/\+Front\+Tracking\+Cloud/bubble\+Data/\hyperlink{clouds_2Templates_2FrontTrackingCloud_2bubbleData_2bubbleDataI_8H}{bubble\+Data\+I.\+H}\end{DoxyCompactItemize}

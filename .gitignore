@@ -1,0 +1,16 @@
+# OpenFOAM build files
+*.o
+*.dep
+*.so
+*.a
+lnInclude/
+Make/linux*
+Make/*/linux*
+
+# Temporary files
+*~
+*.swp
+
+# OS
+.DS_Store
+

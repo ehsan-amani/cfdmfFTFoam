@@ -1,0 +1,19 @@
+set title "Rise Velocity"
+set ylabel 'Rise Velocity'
+set grid xtics ytics
+set xlabel 'Time'
+set terminal pngcairo size 1024,768
+set output "riseVelocity.png"
+set key right bottom
+#default color sequence podo|default
+set colorsequence classic 
+set style line 1  lt 2 lw 4
+plot "postProcessing/swakExpression_riseVelocity/0/riseVelocity" using 1:2 \
+with lines title "Present Study(45*90*45)",\
+"postCoarse/swakExpression_riseVelocity/0/riseVelocity" using 1:2 \
+with lines title "Present Study(32*64*32)",\
+"benchmark/riseVelocity/TC1_riseVelocity_OpenFOAM.txt" using 1:2 with lines title"Benchmark(OpenFoam-128*256*128)",\
+"benchmark/riseVelocity/TC1_riseVelocity_NaSt3D.txt" using 1:2 with lines title"Benchmark(NaSt3D)",\
+"benchmark/riseVelocity/TC1_riseVelocity_DROPS.txt" using 1:2 with lines title"Benchmark(DROPS)"
+
+

@@ -1,0 +1,132 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  9.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     9.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     cfdmfFTFoam; 
+
+startFrom       startTime; //firstTime; //latestTime
+
+//startTime       latestTime;
+startTime       0;
+
+stopAt          endTime;
+
+endTime         3.0;
+
+deltaT          2.5e-4;
+
+writeControl    adjustableRunTime; //timeStep;
+
+writeInterval   0.02;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression uncompressed;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable no;
+
+adjustTimeStep  no;
+
+maxCo           0.2;
+maxAlphaCo      0.2;
+
+maxDeltaT       1;
+
+functions
+{
+    prescribedVelocity
+    {
+        type            coded;
+        libs            ("libutilityFunctionObjects.so");
+        writeControl    timeStep;
+        executeControl  timeStep;
+        enabled         yes;
+
+        codeExecute
+        #{
+			scalar periodicTime = 3.0;
+
+            volVectorField& U = const_cast<volVectorField&>
+            (
+                mesh().lookupObject<volVectorField>("U")
+            );
+			vectorField& Ui = U.primitiveFieldRef();
+
+            scalar t = mesh().time().value();
+            const vectorField& ctrs = mesh().C();  // cell centers
+
+			scalar pi = Foam::constant::mathematical::pi;
+
+            forAll(Ui, celli)
+            {
+				scalar x = ctrs[celli].x();
+		        scalar y = ctrs[celli].y();
+		        scalar z = ctrs[celli].z();
+		        Ui[celli].x() = 2. * Foam::cos(pi*t/periodicTime) * sqr(Foam::sin(pi*x)) * Foam::sin(2.*pi*y) * Foam::sin(2.*pi*z);
+		        Ui[celli].y() = -Foam::cos(pi*t/periodicTime) * sqr(Foam::sin(pi*y)) * Foam::sin(2.*pi*x) * Foam::sin(2.*pi*z);
+		        Ui[celli].z() = -Foam::cos(pi*t/periodicTime) * sqr(Foam::sin(pi*z)) * Foam::sin(2.*pi*x) * Foam::sin(2.*pi*y);
+            }
+
+            U.correctBoundaryConditions();
+
+            surfaceScalarField& phi = const_cast<surfaceScalarField&>
+            (
+                mesh().lookupObject<surfaceScalarField>("phi")
+            );
+            phi == fvc::flux(U);
+			surfaceScalarField& rhoPhi = const_cast<surfaceScalarField&>
+            (
+                mesh().lookupObject<surfaceScalarField>("rhoPhi")
+            );
+			volScalarField& rho = const_cast<volScalarField&>
+            (
+                mesh().lookupObject<volScalarField>("rho")
+            );
+			rhoPhi == fvc::interpolate(rho)*phi; 
+
+            Info<< "Prescribed velocity, phi, and rhoPhi updated at t = " << t << endl;
+        #};
+    }
+/*
+	writeIndicator0
+    {
+        type            writeObjects;
+        libs            ("libutilityFunctionObjects.so");
+
+        writeControl timeStep;
+        writeInterval 1;
+
+        fields
+        (
+            indicator
+        );
+
+        timeStart   0;
+        timeEnd     2.5e-4;
+    }
+*/
+}
+
+
+// ************************************************************************* //

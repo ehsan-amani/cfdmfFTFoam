@@ -1,0 +1,148 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      frontTrackingCloudProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+type        FrontTrackingCloud;
+
+solution
+{
+    active          true; //active
+    coupled         false; //two-way coupling
+    transient       yes;
+    cellValueSourceCorrection off;
+    maxCo           0.25; 
+    
+
+    interpolationSchemes
+    {
+        rho         	cellPoint;
+        U           	cellPoint; 
+        mu          	cellPoint;
+    }
+
+    integrationSchemes
+    {
+		U               Euler; //temp, not used
+    }
+
+    sourceTerms
+    {
+        schemes
+        {
+            U semiImplicit 1; //temp, not used
+        }
+    }
+}
+
+constantProperties
+{
+    rho0            0; 
+    alphaMax        0.99;
+}
+
+
+
+subModels
+{
+    particleForces
+    {
+        //sphereDrag;
+        //gravity;
+    }
+
+    dispersionModel none; 
+    
+	patchInteractionModel localInteraction;
+
+    localInteractionCoeffs
+    {
+        patches
+        (
+            ".*"
+            {
+                type rebound;
+                e    1.0; //0.97;
+                mu   0.0; //0.09;
+            }
+        );
+    }
+
+    heatTransferModel none;
+
+    surfaceFilmModel none;
+
+	fCellScaleOption fixed; //bubbleAverage; //frontAverage/fixed/gridLocal(future)
+
+ 	fixedCoeffs
+    {
+		//h		0.00522; //(m)
+		factorForMinEdge    0.25; 
+		factorForMaxEdge    0.6; 
+		maxAspectRatio    1.5;
+    }	
+
+	frontToFieldModel poisson; //none;
+
+ 	poissonCoeffs
+    {
+		spreadingOption  bubbleLocal;
+		front2field		RKPM; //basic
+		hFactor    2.0;
+		twoFluidFlow true;
+		numberOfIndicatorFiltering    0;
+		filteringWeight    1.0; //0.5;
+    }	
+
+	volumeCorrectionModel vc2; //none;
+
+	vc2Coeffs
+    {
+		volumeCorrectionTolerance    1.0e-7; // error tolerance
+        VCMaxIter        10;
+    }
+
+	surfaceTensionModel directElementBased; //none
+
+	undulationRemovalModel vcsiv; //none/vcsiii/vcsiv
+
+	vcsivCoeffs
+    {
+		undulationRemovalInterval    25; // number of time steps suitible to removal undulations.
+		URRepeatNum 1;
+		combined false;
+    }
+
+    stochasticCollisionModel none;
+
+    radiation off;
+
+	pressureJumpAtTheInterfaceOption    true; // true/false
+
+	initialMakingFileOfTheBubbles    externalMesh; //initialMakingFileOfTheBubbles;
+
+	frontMeshInput    finerCalculated;// roughlyCalculated/finerCalculated/manually
+
+	finerCalculatedMeshInputCoeffs
+	{
+		howFinner    1.0; 
+	}
+}
+
+cloudFunctions
+{
+}
+
+
+// ************************************************************************* //

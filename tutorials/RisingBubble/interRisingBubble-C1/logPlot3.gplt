@@ -1,0 +1,18 @@
+set title "Center Of Mass"
+set ylabel 'Droplet Center Of Mass'
+set xlabel 'Time'
+set terminal pngcairo size 1024,768
+set output "centerOfMass.png"
+set key left top
+#default color sequence podo|default
+set colorsequence classic 
+set for [i=1:4] style line i lw 3
+plot "postProcessing/swakExpression_barycenter/0/barycenter" using 1:2 \
+with lines title "Present Study(45*90*45)",\
+"postCoarse/swakExpression_barycenter/0/barycenter" using 1:2 \
+with lines title "Present Study(32*64*32)",\
+"benchmark/centerOfMass/TC1_centerOfMass_OpenFOAM.txt" using 1:2 with lines title"Benchmark(OpenFoam)",\
+"benchmark/centerOfMass/TC1_centerOfMass_NaSt3D.txt" using 1:2 with lines title"Benchmark(NaSt3D)",\
+"benchmark/centerOfMass/TC1_centerOfMass_DROPS.txt" using 1:2 with lines title"Benchmark(DROPS)"
+
+

@@ -1,0 +1,25 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # run from this directory
+
+# Source tutorial clean functions
+. $WM_PROJECT_DIR/bin/tools/CleanFunctions
+#rm -rf 0.orig/lagrangian
+cleanCase
+rm -rf FTResult/printFrontsForAllTimesPLT
+rm -rf FTResult/BubblePositionsPLT
+rm -rf FTResult/BubbleVelocityAndAccelarationPLT
+rm -rf FTResult/BubbleSphericityPLT
+rm -rf FTResult/BubbleDragCoefsPLT
+rm -rf FTResult/BubbleLiftCoefsPLT
+rm -rf FTResult/BubbleDiameterComponentsPLT
+
+rm -rf FTResult/*.plt
+rm -rf *.plt
+rm -rf *.dat
+rm -rf *.obj
+
+rm -rf Tecplot360
+rm -rf 0 
+
+rm -rf bubbleData
+# ----------------------------------------------------------------- end-of-file

@@ -1,0 +1,45 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  9.0                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         9.0;
+    format          ascii;
+    class           dictionary;
+    object          sampleDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+type            probes;
+
+interpolationScheme cellPoint;
+
+libs            ("libsampling.so");
+
+setFormat     raw;
+
+fields
+(
+    p
+);
+
+probeLocations
+(
+    (1 1 1)
+    (0.3 0.3 0.3)
+	(0.3 0.3 1.7)
+	(0.3 1.7 0.3)
+	(0.3 1.7 1.7)
+	(1.7 0.3 0.3)
+	(1.7 0.3 1.7)
+	(1.7 1.7 0.3)
+	(1.7 1.7 1.7)
+);
+
+// ************************************************************************* //

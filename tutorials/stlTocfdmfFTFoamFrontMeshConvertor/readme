@@ -1,0 +1,12 @@
+Installing Octave:
+
+sudo add-apt-repository ppa:octave/stable
+sudo apt update
+sudo apt install octave
+
+Running octave on the convertor:
+
+1- The stl file should be in binary format
+2- Put the stl file in the folder where main.m, stlread.m, and convFTmsh.m exist.
+3- Change the input parameters inside main.m file based on your case if desired
+3- run octave on the main file by: octave ./main.m

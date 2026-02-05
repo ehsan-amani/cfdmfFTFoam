@@ -1,0 +1,4 @@
+<map id="Foam::VolumeCorrectionModel&lt; CloudType &gt;" name="Foam::VolumeCorrectionModel&lt; CloudType &gt;">
+<area shape="rect" id="node3" href="$classFoam_1_1VolumeCorrectionModels_1_1NoVolumeCorrection.html" title="{Foam::VolumeCorrectionModels\l::NoVolumeCorrection\&lt; CloudType \&gt;\n||+ TypeName()\l+ NoVolumeCorrection()\l+ NoVolumeCorrection()\l+ clone()\l+ ~NoVolumeCorrection()\l+ calculate()\l+ TypeName()\l+ NoVolumeCorrection()\l+ NoVolumeCorrection()\l+ clone()\l+ ~NoVolumeCorrection()\l+ calculate()\l}" alt="" coords="5,469,244,722"/>
+<area shape="rect" id="node4" href="$classFoam_1_1VolumeCorrectionModels_1_1VC2.html" title="{Foam::VolumeCorrectionModels\l::VC2\&lt; CloudType \&gt;\n|+ volumeCorrectionTolerance_\l+ VCMaxIter_\l|+ TypeName()\l+ VC2()\l+ VC2()\l+ clone()\l+ ~VC2()\l+ calculate()\l+ TypeName()\l+ VC2()\l+ VC2()\l+ clone()\l+ ~VC2()\l+ calculate()\l}" alt="" coords="268,461,477,729"/>
+</map>

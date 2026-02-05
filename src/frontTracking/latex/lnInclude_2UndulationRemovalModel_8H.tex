@@ -1,0 +1,83 @@
+\hypertarget{lnInclude_2UndulationRemovalModel_8H}{}\section{ln\+Include/\+Undulation\+Removal\+Model.H File Reference}
+\label{lnInclude_2UndulationRemovalModel_8H}\index{ln\+Include/\+Undulation\+Removal\+Model.\+H@{ln\+Include/\+Undulation\+Removal\+Model.\+H}}
+{\ttfamily \#include \char`\"{}I\+Odictionary.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}auto\+Ptr.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}run\+Time\+Selection\+Tables.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cloud\+Sub\+Model\+Base.\+H\char`\"{}}\newline
+Include dependency graph for Undulation\+Removal\+Model.\+H\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lnInclude_2UndulationRemovalModel_8H__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lnInclude_2UndulationRemovalModel_8H__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classFoam_1_1UndulationRemovalModel}{Foam\+::\+Undulation\+Removal\+Model$<$ Cloud\+Type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceFoam}{Foam}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lnInclude_2UndulationRemovalModel_8H_a97f412c57542b5a1d3007c499a76d948}{make\+Undulation\+Removal\+Model}(Cloud\+Type)
+\item 
+\#define \hyperlink{lnInclude_2UndulationRemovalModel_8H_a768b880c5c8e2225e1b0eca2633c7167}{make\+Undulation\+Removal\+Model\+Type}(SS,  Cloud\+Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{lnInclude_2UndulationRemovalModel_8H_a97f412c57542b5a1d3007c499a76d948}\label{lnInclude_2UndulationRemovalModel_8H_a97f412c57542b5a1d3007c499a76d948}} 
+\index{ln\+Include/\+Undulation\+Removal\+Model.\+H@{ln\+Include/\+Undulation\+Removal\+Model.\+H}!make\+Undulation\+Removal\+Model@{make\+Undulation\+Removal\+Model}}
+\index{make\+Undulation\+Removal\+Model@{make\+Undulation\+Removal\+Model}!ln\+Include/\+Undulation\+Removal\+Model.\+H@{ln\+Include/\+Undulation\+Removal\+Model.\+H}}
+\subsubsection{\texorpdfstring{make\+Undulation\+Removal\+Model}{makeUndulationRemovalModel}}
+{\footnotesize\ttfamily \#define make\+Undulation\+Removal\+Model(\begin{DoxyParamCaption}\item[{}]{Cloud\+Type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    typedef Foam::CloudType::FrontTrackingCloudType FrontTrackingCloudType;                    \(\backslash\)
+    defineNamedTemplateTypeNameAndDebug                                        \(\backslash\)
+    (                                                                          \(\backslash\)
+        Foam::UndulationRemovalModel<FrontTrackingCloudType>,                                   \(\backslash\)
+        0                                                                      \(\backslash\)
+    );                                                                         \(\backslash\)
+                                                                               \(\backslash\)
+    namespace \hyperlink{namespaceFoam}{Foam}                                                             \(\backslash\)
+    \{                                                                          \(\backslash\)
+        defineTemplateRunTimeSelectionTable                                    \(\backslash\)
+        (                                                                      \(\backslash\)
+            UndulationRemovalModel<FrontTrackingCloudType>,                                     \(\backslash\)
+            dictionary                                                         \(\backslash\)
+        );                                                                     \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{lnInclude_2UndulationRemovalModel_8H_a768b880c5c8e2225e1b0eca2633c7167}\label{lnInclude_2UndulationRemovalModel_8H_a768b880c5c8e2225e1b0eca2633c7167}} 
+\index{ln\+Include/\+Undulation\+Removal\+Model.\+H@{ln\+Include/\+Undulation\+Removal\+Model.\+H}!make\+Undulation\+Removal\+Model\+Type@{make\+Undulation\+Removal\+Model\+Type}}
+\index{make\+Undulation\+Removal\+Model\+Type@{make\+Undulation\+Removal\+Model\+Type}!ln\+Include/\+Undulation\+Removal\+Model.\+H@{ln\+Include/\+Undulation\+Removal\+Model.\+H}}
+\subsubsection{\texorpdfstring{make\+Undulation\+Removal\+Model\+Type}{makeUndulationRemovalModelType}}
+{\footnotesize\ttfamily \#define make\+Undulation\+Removal\+Model\+Type(\begin{DoxyParamCaption}\item[{}]{SS,  }\item[{}]{Cloud\+Type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    typedef Foam::CloudType::FrontTrackingCloudType FrontTrackingCloudType;                    \(\backslash\)
+    defineNamedTemplateTypeNameAndDebug                                        \(\backslash\)
+        (Foam::UndulationRemovalModels::SS<FrontTrackingCloudType>, 0);                         \(\backslash\)
+                                                                               \(\backslash\)
+    Foam::UndulationRemovalModel<FrontTrackingCloudType>::                                      \(\backslash\)
+        adddictionaryConstructorToTable                                        \(\backslash\)
+        <Foam::UndulationRemovalModels::SS<FrontTrackingCloudType>>                             \(\backslash\)
+            add##SS##CloudType##FrontTrackingCloudType##ConstructorToTable\_;
+\end{DoxyCode}

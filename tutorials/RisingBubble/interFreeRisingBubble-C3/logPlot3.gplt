@@ -1,0 +1,13 @@
+set title "Center Of Mass"
+set ylabel 'Droplet Center Of Mass'
+set xlabel 'Time'
+set terminal pngcairo size 1024,768
+set output "centerOfMass.png"
+set key left top
+#default color sequence podo|default
+set colorsequence classic 
+set for [i=1:4] style line i lw 3
+plot "postProcessing/swakExpression_barycenter/0/barycenter" using 1:2 \
+with lines title "Present Study"
+
+

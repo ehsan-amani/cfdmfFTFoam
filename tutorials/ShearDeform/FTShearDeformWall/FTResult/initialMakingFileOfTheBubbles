@@ -1,0 +1,23 @@
+# Please insert youre bubble as following
+#
+# bubbleNum = number of bubbles in domain/A
+# radin     = "initial bubbble radius"/B
+# nps       = "initial number of bubbble points"/C
+# bubblePos = "center of bubbble"/D
+# e         = "e is nonzero to create deformed bubbles"/E
+# bubbleOuterFluidDensity         = "refered to fluid density outside the bubble (based fluid density)"/F
+# bubbleDensity         = "refered to bubble density"/G
+# bubbleOuterFluidViscosity         = "refered to fluid viscosity outside the bubble (based fluid viscosity)"/H
+# bubbleViscosity         = "refered to bubble viscosity"/I
+# surfaceTensionCoeff         = "refered to bubble surface tension Coef"/J
+# EotvosNumber         = "refered to bubble Eotvos number"/K
+# MortonNumber         = "refered to bubble Morton number"/L
+#
+# Example:
+# A(is the number of bubbles)
+# B1 C1 D1 E1 F1 G1 H1 I1 J1 ......
+# .  .  .  .  .  .  .  .  .  ......
+# .  .  .  .  .  .  .  .  .  ......
+# BN CN DN EN FN GN HN IN JN ......
+  1
+  0.90  20  0.0 0.0 1.2  0.0    1000 1000  4000 4000  8000 0 0

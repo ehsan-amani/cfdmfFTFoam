@@ -1,0 +1,64 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # run from this directory
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+# Get application directory
+application=`getApplication`
+
+echo $application
+
+
+refineMeshByCellSet()
+{
+   local steps=$(( $1 + 1 ))
+   local i=1
+   while [ "$i" -lt "$steps" ]; do
+      if [ ! -e log.refineMesh.${i} ]; then
+          echo "Creating cell set for mesh refinement. Step: $i"
+          #cp system/topoSetDict.$1 system/topoSetDict
+          topoSet > log.topoSet.${i} 2>&1
+
+          echo "Refining the mesh. Step: $i"
+          refineMesh -dict system/refineMeshDict -overwrite > log.refineMesh.${i} 2>&1
+      fi
+	  i=$((i + 1))
+   done
+}
+
+
+#cp 0/alpha.water.org 0/alpha.water
+cp -r 0.org 0
+cp -r constant/dynamicMeshDict.org constant/dynamicMeshDict
+cp -r system/fvSchemes.DMR system/fvSchemes
+
+m4 -P box.m4 > system/blockMeshDict
+
+
+runApplication blockMesh
+runApplication checkMesh
+
+#refineMeshByCellSet 2 # 2 levels refinement
+
+#mv log.checkMesh log.checkMesh0 
+#runApplication checkMesh
+
+runApplication setFields
+
+runApplication renumberMesh -overwrite
+
+runApplication decomposePar
+
+mv log.checkMesh log.checkMesh0 
+runParallel checkMesh
+
+#runApplication mpirun -np 4 renumberMesh -overwrite -parallel
+#mv log.mpirun log.renumberMesh
+
+runParallel $application
+
+runApplication reconstructParMesh
+runApplication reconstructPar
+
+./plots.sh

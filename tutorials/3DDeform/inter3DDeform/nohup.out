@@ -1,0 +1,10 @@
+interFoam
+Running blockMesh on /home/mehran/OpenFOAM/mehran-9/run/multiphase/cfdmf/3DDeform/inter3DDeform
+Running checkMesh on /home/mehran/OpenFOAM/mehran-9/run/multiphase/cfdmf/3DDeform/inter3DDeform
+Running setFields on /home/mehran/OpenFOAM/mehran-9/run/multiphase/cfdmf/3DDeform/inter3DDeform
+Running renumberMesh on /home/mehran/OpenFOAM/mehran-9/run/multiphase/cfdmf/3DDeform/inter3DDeform
+Running decomposePar on /home/mehran/OpenFOAM/mehran-9/run/multiphase/cfdmf/3DDeform/inter3DDeform
+Running checkMesh in parallel on /home/mehran/OpenFOAM/mehran-9/run/multiphase/cfdmf/3DDeform/inter3DDeform using 4 processes
+Running interFoam in parallel on /home/mehran/OpenFOAM/mehran-9/run/multiphase/cfdmf/3DDeform/inter3DDeform using 4 processes
+Running reconstructParMesh on /home/mehran/OpenFOAM/mehran-9/run/multiphase/cfdmf/3DDeform/inter3DDeform
+Running reconstructPar on /home/mehran/OpenFOAM/mehran-9/run/multiphase/cfdmf/3DDeform/inter3DDeform

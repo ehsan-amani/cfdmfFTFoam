@@ -1,0 +1,7 @@
+digraph "Foam::bubbleData"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Foam::bubbleData\n|+ pL\l+ eL\l+ pressureForce\l+ shearStressForce\l+ pressureDragForce\l+ frictionDragForce\l+ pressureLiftForceI\l+ pressureLiftForceII\l+ frictionLiftForceI\l+ frictionLiftForceII\land 37 more...\l|+ bubbleData()\l+ ~bubbleData()\l+ startPtIndexFromZero()\l+ findNighboures()\l+ pointToElementMapping()\l+ ptConnectedPoints()\l+ adjustingTheMeshDataAfter\lChanges()\l+ printInitialFronts()\l+ updateBubbleVolume()\l+ updateBubbleSurface()\land 10 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

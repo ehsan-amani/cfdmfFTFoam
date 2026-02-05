@@ -1,0 +1,26 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # Run from this directory
+
+#preset
+#of9 #or similar alias in ~/.bashrc to set of9 environment variables
+mkdir -p $WM_PROJECT_USER_DIR/src/lagrangian
+mkdir -p $WM_PROJECT_USER_DIR/applications/solvers/multiphase
+mkdir -p $WM_PROJECT_USER_DIR/run/multiphase/cfdmf
+
+#copying
+cp -rp src/frontTracking $WM_PROJECT_USER_DIR/src/lagrangian
+cp -rp solvers/* $WM_PROJECT_USER_DIR/applications/solvers/multiphase
+cp -rp tutorials/* $WM_PROJECT_USER_DIR/run/multiphase/cfdmf
+cp -rp doxygen $WM_PROJECT_USER_DIR/src/lagrangian/frontTracking
+
+#compiling 
+cd $WM_PROJECT_USER_DIR/src/lagrangian/frontTracking 
+wclean
+wmake libso 2>log
+
+cd $WM_PROJECT_USER_DIR/applications/solvers/multiphase/cfdmfFTFoam
+wclean
+wmake 2>log
+
+
+#------------------------------------------------------------------------------

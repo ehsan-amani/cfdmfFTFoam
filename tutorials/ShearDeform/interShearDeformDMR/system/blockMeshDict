@@ -1,0 +1,364 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// 090512: Original files by Håkan Nilsson, Chalmers University of Technology
+// 2014   Modified by Ehsan Amani, Amirkabir University of Technology.
+
+//Run using:
+//m4 -P blockMeshDict.m4 > blockMeshDict
+
+//m4 definitions:
+
+
+
+
+
+//Mathematical constants:
+
+
+//*******************************************************************************
+
+//Geometry
+ //Small radius ok
+//m4_define(rOut, 100) //Large radius ok
+//m4_define(chLength, 500) //Chamber lenght ok
+ //inlet lenght ok
+
+//Number of cells:
+//Radial direction:
+  // in the first O-grid
+//Tangential direction:
+
+//Axial direction:
+
+
+
+//Radial grading:
+
+//m4_define(rGrading2, 8)
+//m4_define(rGrading3, 1)
+
+//Axial grading:
+
+//m4_define(zGradingBC, 8)
+
+//*******************************************************************************
+
+//Plane A:
+
+
+
+
+
+//Plane B:
+
+//m4_define(rB, rOut)
+
+//m4_define(rB2nd, calc(0.5*(rB1st+rB)))
+
+
+
+//Plane C:
+//m4_define(zC, chLength)
+//m4_define(rC, rOut)
+//m4_define(rC1st, rIn)
+//m4_define(rC2nd, calc(0.5*(rC1st+rC)))
+//m4_define(rRelC, 0.7)
+//m4_define(rRelCc, 0.8)
+
+//*******************************************************************************
+
+convertToMeters 1;
+
+vertices
+(
+//Plane A:
+(0.49497474682932 -0.494974746831846 0) // Vertex A0 = 0 
+(0.49497474682932 0.494974746831846 0) // Vertex A1 = 1 
+(-0.49497474682932 0.494974746831846 0) // Vertex A2 = 2 
+(-0.49497474682932 -0.494974746831846 0) // Vertex A3 = 3 
+(0.707106781184743 -0.707106781188352 0) // Vertex A4 = 4 
+(0.707106781184743 0.707106781188352 0) // Vertex A5 = 5 
+(-0.707106781184743 0.707106781188352 0) // Vertex A6 = 6 
+(-0.707106781184743 -0.707106781188352 0) // Vertex A7 = 7 
+
+//Plane B:
+(0.49497474682932 -0.494974746831846 6) // Vertex B0 = 8 
+(0.49497474682932 0.494974746831846 6) // Vertex B1 = 9 
+(-0.49497474682932 0.494974746831846 6) // Vertex B2 = 10 
+(-0.49497474682932 -0.494974746831846 6) // Vertex B3 = 11 
+(0.707106781184743 -0.707106781188352 6) // Vertex B4 = 12 
+(0.707106781184743 0.707106781188352 6) // Vertex B5 = 13 
+(-0.707106781184743 0.707106781188352 6) // Vertex B6 = 14 
+(-0.707106781184743 -0.707106781188352 6) // Vertex B7 = 15 
+//(calc(rB2nd*cos(pi/4)) -calc(rB2nd*sin(pi/4)) zB) vlabel(B8)
+//(calc(rB2nd*cos(pi/4)) calc(rB2nd*sin(pi/4)) zB) vlabel(B9)
+//(calc(-rB2nd*cos(pi/4)) calc(rB2nd*sin(pi/4)) zB) vlabel(B10)
+//(calc(-rB2nd*cos(pi/4)) -calc(rB2nd*sin(pi/4)) zB) vlabel(B11)
+//(calc(rB*cos(pi/4)) -calc(rB*sin(pi/4)) zB) vlabel(B8)
+//(calc(rB*cos(pi/4)) calc(rB*sin(pi/4)) zB) vlabel(B9)
+//(calc(-rB*cos(pi/4)) calc(rB*sin(pi/4)) zB) vlabel(B10)
+//(calc(-rB*cos(pi/4)) -calc(rB*sin(pi/4)) zB) vlabel(B11)
+//(calc(rB*cos(pi/4)) -calc(rB*sin(pi/4)) zB) vlabel(B12)
+//(calc(rB*cos(pi/4)) calc(rB*sin(pi/4)) zB) vlabel(B13)
+//(calc(-rB*cos(pi/4)) calc(rB*sin(pi/4)) zB) vlabel(B14)
+//(calc(-rB*cos(pi/4)) -calc(rB*sin(pi/4)) zB) vlabel(B15)
+
+//Plane C:
+//(calc(rRelC*rC1st*cos(pi/4)) -calc(rRelC*rC1st*sin(pi/4)) zC) vlabel(C0)
+//(calc(rRelC*rC1st*cos(pi/4)) calc(rRelC*rC1st*sin(pi/4)) zC) vlabel(C1)
+//(calc(-rRelC*rC1st*cos(pi/4)) calc(rRelC*rC1st*sin(pi/4)) zC) vlabel(C2)
+//(calc(-rRelC*rC1st*cos(pi/4)) -calc(rRelC*rC1st*sin(pi/4)) zC) vlabel(C3)
+//(calc(rC1st*cos(pi/4)) -calc(rC1st*sin(pi/4)) zC) vlabel(C4)
+//(calc(rC1st*cos(pi/4)) calc(rC1st*sin(pi/4)) zC) vlabel(C5)
+//(calc(-rC1st*cos(pi/4)) calc(rC1st*sin(pi/4)) zC) vlabel(C6)
+//(calc(-rC1st*cos(pi/4)) -calc(rC1st*sin(pi/4)) zC) vlabel(C7)
+//(calc(rC2nd*cos(pi/4)) -calc(rC2nd*sin(pi/4)) zC) vlabel(C8)
+//(calc(rC2nd*cos(pi/4)) calc(rC2nd*sin(pi/4)) zC) vlabel(C9)
+//(calc(-rC2nd*cos(pi/4)) calc(rC2nd*sin(pi/4)) zC) vlabel(C10)
+//(calc(-rC2nd*cos(pi/4)) -calc(rC2nd*sin(pi/4)) zC) vlabel(C11)
+//(calc(rC*cos(pi/4)) -calc(rC*sin(pi/4)) zC) vlabel(C8)
+//(calc(rC*cos(pi/4)) calc(rC*sin(pi/4)) zC) vlabel(C9)
+//(calc(-rC*cos(pi/4)) calc(rC*sin(pi/4)) zC) vlabel(C10)
+//(calc(-rC*cos(pi/4)) -calc(rC*sin(pi/4)) zC) vlabel(C11)
+//(calc(rC*cos(pi/4)) -calc(rC*sin(pi/4)) zC) vlabel(C12)
+//(calc(rC*cos(pi/4)) calc(rC*sin(pi/4)) zC) vlabel(C13)
+//(calc(-rC*cos(pi/4)) calc(rC*sin(pi/4)) zC) vlabel(C14)
+//(calc(-rC*cos(pi/4)) -calc(rC*sin(pi/4)) zC) vlabel(C15)
+);
+
+
+// Defining blocks:
+blocks
+(
+
+    //Blocks between plane A and plane B:
+    // block0 - positive x O-grid block
+    hex (5 1 0 4 13 9 8 12 ) AB
+    (12 30 160)
+    simpleGrading (1 1 1)
+    // block1 - positive y O-grid block
+    hex (6 2 1 5 14 10 9 13 ) AB
+    (12 30 160)
+    simpleGrading (1 1 1)
+    // block2 - negative x O-grid block
+    hex (7 3 2 6 15 11 10 14 ) AB
+    (12 30 160)
+    simpleGrading (1 1 1)
+    // block3 - negative y O-grid block
+    hex (4 0 3 7 12 8 11 15 ) AB
+    (12 30 160)
+    simpleGrading (1 1 1)
+    // block4 - central O-grid block
+    hex (0 1 2 3 8 9 10 11 ) AB
+    (30 30 160)
+    simpleGrading (1 1 1)
+
+/*
+    //Blocks between plane B and plane C:
+    // block0 - positive x O-grid block 1st belt
+    hex (13 9 8 12 C5 C1 C0 C4 ) BC
+    (12 30 zBCnumberOfCells)
+    simpleGrading (1 1 zGradingBC)
+    // block1 - positive y O-grid block 1st belt
+    hex (14 10 9 13 C6 C2 C1 C5 ) BC
+    (12 30 zBCnumberOfCells)
+    simpleGrading (1 1 zGradingBC)
+    // block2 - negative x O-grid block 1st belt
+    hex (15 11 10 14 C7 C3 C2 C6 ) BC
+    (12 30 zBCnumberOfCells)
+    simpleGrading (1 1 zGradingBC)
+    // block3 - negative y O-grid block 1st belt
+    hex (12 8 11 15 C4 C0 C3 C7 ) BC
+    (12 30 zBCnumberOfCells)
+    simpleGrading (1 1 zGradingBC)
+    // block4 - central O-grid block 
+    hex (8 9 10 11 C0 C1 C2 C3 ) BC
+    (30 30 zBCnumberOfCells)
+    simpleGrading (1 1 zGradingBC)
+    // block5 - positive x O-grid block 2nd belt 
+    hex (B9 13 12 B8 C9 C5 C4 C8 ) BC
+    (rNumberOfCells2nd 30 zBCnumberOfCells)
+    simpleGrading (rGrading2 1 zGradingBC)
+    // block6 - positive y O-grid block 2nd belt
+    hex (B10 14 13 B9 C10 C6 C5 C9 ) BC
+    (rNumberOfCells2nd 30 zBCnumberOfCells)
+    simpleGrading (rGrading2 1 zGradingBC)
+    // block7 - negative x O-grid block 2nd belt
+    hex (B11 15 14 B10 C11 C7 C6 C10 ) BC
+    (rNumberOfCells2nd 30 zBCnumberOfCells)
+    simpleGrading (rGrading2 1 zGradingBC)
+    // block8 - negative y O-grid block 2nd belt
+    hex (B8 12 15 B11 C8 C4 C7 C11 ) BC
+    (rNumberOfCells2nd 30 zBCnumberOfCells)
+    simpleGrading (rGrading2 1 zGradingBC)
+
+    // block9 - positive x O-grid block 3rd belt
+    hex (B13 B9 B8 B12 C13 C9 C8 C12 ) BC
+    (rNumberOfCells3rd 30 zBCnumberOfCells)
+    simpleGrading (rGrading3 1 zGradingBC)
+    // block10 - positive y O-grid block 3rd belt
+    hex (B14 B10 B9 B13 C14 C10 C9 C13 ) BC
+    (rNumberOfCells3rd 30 zBCnumberOfCells)
+    simpleGrading (rGrading3 1 zGradingBC)
+    // block11 - negative x O-grid block 3rd belt
+    hex (B15 B11 B10 B14 C15 C11 C10 C14 ) BC
+    (rNumberOfCells3rd 30 zBCnumberOfCells)
+    simpleGrading (rGrading3 1 zGradingBC)
+    // block12 - negative y O-grid block 3rd belt
+    hex (B12 B8 B11 B15 C12 C8 C11 C15 ) BC
+    (rNumberOfCells3rd 30 zBCnumberOfCells)
+    simpleGrading (rGrading3 1 zGradingBC)
+*/
+);
+
+edges
+(
+    
+    //Plane A:
+    arc 0 1 (0.56 0 0)
+    arc 1 2 (0 0.56 0)
+    arc 2 3 (-0.56 0 0)
+    arc 3 0 (0 -0.56 0)
+    arc 4 5 (1 0 0)
+    arc 5 6 (0 1 0)
+    arc 6 7 (-1 0 0)
+    arc 7 4 (0 -1 0)
+
+    //Plane B:
+    arc 8  9  (0.56 0 6)
+    arc 9  10  (0 0.56 6)
+    arc 10  11  (-0.56 0 6)
+    arc 11  8  (0 -0.56 6)
+    arc 12  13  (1 0 6)
+    arc 13  14  (0 1 6)
+    arc 14  15  (-1 0 6)
+    arc 15  12  (0 -1 6)
+    //arc B8  B9  (rB2nd 0 zB)
+    //arc B9  B10 (0 rB2nd zB)
+    //arc B10 B11 (-rB2nd 0 zB)
+    //arc B11 B8  (0 -rB2nd zB)
+    //arc B8  B9  (rB 0 zB)
+    //arc B9  B10 (0 rB zB)
+    //arc B10 B11 (-rB 0 zB)
+    //arc B11 B8  (0 -rB zB)
+    //arc B12 B13 (rB 0 zB)
+    //arc B13 B14 (0 rB zB)
+    //arc B14 B15 (-rB 0 zB)
+    //arc B15 B12 (0 -rB zB)
+
+    //Plane C:
+    //arc C0  C1 (calc(rRelCc*rRelC*rC1st) 0 zC)
+    //arc C1  C2 (0 calc(rRelCc*rRelC*rC1st) zC)
+    //arc C2  C3 (-calc(rRelCc*rRelC*rC1st) 0 zC)
+    //arc C3  C0 (0 -calc(rRelCc*rRelC*rC1st) zC)
+    //arc C4  C5 (rC1st 0 zC)
+    //arc C5  C6 (0 rC1st zC)
+    //arc C6  C7 (-rC1st 0 zC)
+    //arc C7  C4 (0 -rC1st zC)
+    //arc C8  C9  (rC2nd 0 zC)
+    //arc C9  C10 (0 rC2nd zC)
+    //arc C10 C11 (-rC2nd 0 zC)
+    //arc C11 C8  (0 -rC2nd zC)
+    //arc C8  C9  (rC 0 zC)
+    //arc C9  C10 (0 rC zC)
+    //arc C10 C11 (-rC 0 zC)
+    //arc C11 C8  (0 -rC zC)
+    //arc C12 C13 (rC 0 zC)
+    //arc C13 C14 (0 rC zC)
+    //arc C14 C15 (-rC 0 zC)
+    //arc C15 C12 (0 -rC zC)
+
+);
+
+// Defining patches:
+boundary
+(
+    inlet
+    {
+		type patch;
+		faces
+		(
+		   (1 5 4 0)
+		   (2 6 5 1)
+		   (3 7 6 2)
+		   (0 4 7 3)
+		   (3 2 1 0)
+		);
+    }
+    walls
+    {
+		type wall;
+		faces
+		(
+		   (4 5 13 12)
+		   (5 6 14 13)
+		   (6 7 15 14)
+		   (7 4 12 15)
+
+		   //(B5 B9 B8 B4)
+		   //(B6 B10 B9 B5)
+		   //(B7 B11 B10 B6)
+		   //(B4 B8 B11 B7)
+		   //(B9 B13 B12 B8)
+		   //(B10 B14 B13 B9)
+		   //(B11 B15 B14 B10)
+		   //(B8 B12 B15 B11)
+
+		   //(B12 B13 C13 C12)
+		   //(B13 B14 C14 C13)
+		   //(B14 B15 C15 C14)
+		   //(B15 B12 C12 C15)
+		   //(B8 B9 C9 C8)
+		   //(B9 B10 C10 C9)
+		   //(B10 B11 C11 C10)
+		   //(B11 B8 C8 C11)   
+		);  
+    }
+    outlet
+    {
+		type patch;
+		faces
+		(
+		   //(C0 C4 C5 C1)
+		   //(C1 C5 C6 C2)
+		   //(C2 C6 C7 C3)
+		   //(C3 C7 C4 C0)
+		   //(C0 C1 C2 C3)
+		   (8 12 13 9)
+		   (9 13 14 10)
+		   (10 14 15 11)
+		   (11 15 12 8)
+		   (8 9 10 11)
+
+		   //(C4 C8 C9 C5)
+		   //(C5 C9 C10 C6)
+		   //(C6 C10 C11 C7)
+		   //(C7 C11 C8 C4)
+
+		   //(C8 C12 C13 C9)
+		   //(C9 C13 C14 C10)
+		   //(C10 C14 C15 C11)
+		   //(C11 C15 C12 C8)
+		);
+    }
+);
+
+mergePatchPairs 
+(
+);
+
+// ************************************************************************* //

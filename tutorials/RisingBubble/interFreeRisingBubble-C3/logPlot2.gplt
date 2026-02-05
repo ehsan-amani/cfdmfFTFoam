@@ -1,0 +1,14 @@
+set title "Rise Velocity"
+set ylabel 'Rise Velocity'
+set grid xtics ytics
+set xlabel 'Time'
+set terminal pngcairo size 1024,768
+set output "riseVelocity.png"
+set key right bottom
+#default color sequence podo|default
+set colorsequence classic 
+set style line 1  lt 2 lw 4
+plot "postProcessing/swakExpression_riseVelocity/0/riseVelocity" using 1:2 \
+with lines title "Present Study"
+
+

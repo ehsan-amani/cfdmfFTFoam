@@ -1,0 +1,24 @@
+PARCELS=parcels
+BASEPARCELS=$(PARCELS)/baseClasses
+DERIVEDPARCELS=$(PARCELS)/derived
+
+CLOUDS=clouds
+BASECLOUDS=$(CLOUDS)/baseClasses
+DERIVEDCLOUDS=$(CLOUDS)/derived
+
+# cloud names
+$(CLOUDS)/Templates/FrontTrackingCloud/FrontTrackingCloudName.C
+
+# clouds
+$(DERIVEDCLOUDS)/frontTrackingCloud/frontTrackingCloud.C
+
+# parcel names
+$(PARCELS)/Templates/FrontTrackingParcel/FrontTrackingParcelName.C
+
+# sub-models
+$(DERIVEDPARCELS)/frontTrackingParcel/makeFrontTrackingParcelSubmodels.C
+
+# additional helper classes
+clouds/Templates/FrontTrackingCloud/bubbleData/bubbleData.C
+
+LIB = $(FOAM_USER_LIBBIN)/liblagrangianFrontTracking

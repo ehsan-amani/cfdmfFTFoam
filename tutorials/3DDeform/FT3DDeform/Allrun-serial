@@ -1,0 +1,22 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # run from this directory
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+application=`getApplication`
+
+echo $application
+
+#mkdir constant/polyMesh
+m4 -P box.m4 > system/blockMeshDict
+
+cp -r 0.org 0
+
+runApplication blockMesh
+runApplication renumberMesh
+runApplication checkMesh
+runApplication $application
+
+#runApplication postProcess -func "max(mag(U))" -latestTime #-time "0.5:1.0"
+# ----------------------------------------------------------------- end-of-file

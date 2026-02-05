@@ -1,0 +1,30 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # run from this directory
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+# Get application directory
+application=`getApplication`
+
+echo $application
+
+cp -r ../pointwise/polyMesh constant/
+cp -r 0.org 0
+
+runApplication checkMesh
+runApplication polyDualMesh 60 -overwrite
+mv log.checkMesh log.checkMesh0 
+runApplication checkMesh
+
+runApplication renumberMesh -overwrite
+
+runApplication decomposePar
+
+mv log.checkMesh log.checkMesh1 
+runParallel checkMesh
+
+runParallel $application
+
+runApplication reconstructParMesh
+runApplication reconstructPar

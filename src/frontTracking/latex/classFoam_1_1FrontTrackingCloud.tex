@@ -1,0 +1,1749 @@
+\hypertarget{classFoam_1_1FrontTrackingCloud}{}\section{Foam\+:\+:Front\+Tracking\+Cloud$<$ Cloud\+Type $>$ Class Template Reference}
+\label{classFoam_1_1FrontTrackingCloud}\index{Foam\+::\+Front\+Tracking\+Cloud$<$ Cloud\+Type $>$@{Foam\+::\+Front\+Tracking\+Cloud$<$ Cloud\+Type $>$}}
+
+
+{\ttfamily \#include $<$Front\+Tracking\+Cloud.\+H$>$}
+
+
+
+Inheritance diagram for Foam\+:\+:Front\+Tracking\+Cloud$<$ Cloud\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFoam_1_1FrontTrackingCloud__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Foam\+:\+:Front\+Tracking\+Cloud$<$ Cloud\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFoam_1_1FrontTrackingCloud__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Cloud\+Type \hyperlink{classFoam_1_1FrontTrackingCloud_aa902341b7e8a28b529bd81515b13b5a6}{cloud\+Type}
+\item 
+typedef Cloud\+Type\+::parcel\+Type \hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type}
+\item 
+typedef \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a2a9868cc5ecf74928b8ac51ee41e659d}{Front\+Tracking\+Cloud\+Type}
+\item 
+typedef Cloud\+Type \hyperlink{classFoam_1_1FrontTrackingCloud_aa902341b7e8a28b529bd81515b13b5a6}{cloud\+Type}
+\item 
+typedef Cloud\+Type\+::parcel\+Type \hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type}
+\item 
+typedef \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a2a9868cc5ecf74928b8ac51ee41e659d}{Front\+Tracking\+Cloud\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFoam_1_1FrontTrackingCloud_ae9da3f76099b9b82be67cf99ae64ab28}{Front\+Tracking\+Cloud} (const word \&cloud\+Name, const vol\+Scalar\+Field \&rho, const vol\+Vector\+Field \&U, const vol\+Scalar\+Field \&mu, const dimensioned\+Vector \&g, const bool read\+Fields=true)
+\item 
+\hyperlink{classFoam_1_1FrontTrackingCloud_ad185ad598e5280fdea20a85d8aff1e91}{Front\+Tracking\+Cloud} (const word \&cloud\+Name, const vol\+Scalar\+Field \&rho, const vol\+Vector\+Field \&U, const dimensioned\+Vector \&g, const fluid\+Thermo \&carrier\+Thermo, const bool read\+Fields=true)
+\item 
+\hyperlink{classFoam_1_1FrontTrackingCloud_aaf498c2097937a9147685bd0de6a85bb}{Front\+Tracking\+Cloud} (\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&c, const word \&name)
+\item 
+\hyperlink{classFoam_1_1FrontTrackingCloud_a87899dfd5f7408b0da887eafe1fb2a43}{Front\+Tracking\+Cloud} (const fv\+Mesh \&mesh, const word \&name, const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&c)
+\item 
+\hyperlink{classFoam_1_1FrontTrackingCloud_ac8860f6c62a4086d2cc0d00e28ed88de}{Front\+Tracking\+Cloud} (const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} \&)=delete
+\item 
+virtual auto\+Ptr$<$ Cloud$<$ \hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type} $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_ad82d33465c7a25d3d72f5ec29707edd4}{clone} (const word \&name)
+\item 
+virtual auto\+Ptr$<$ Cloud$<$ \hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type} $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_aaee595291402fafdae131c72fe7c8a38}{clone\+Bare} (const word \&name) const
+\item 
+virtual \hyperlink{classFoam_1_1FrontTrackingCloud_a8aaede4a1c43afed7a499fdbe20ba62a}{$\sim$\+Front\+Tracking\+Cloud} ()
+\item 
+const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} \& \hyperlink{classFoam_1_1FrontTrackingCloud_a5de0cfc162d5fca7f01c09bec6484a80}{cloud\+Copy} () const
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_aa56916fe7ca5b51f58aebb1579733ce7}{update\+Density\+From\+FT} (vol\+Scalar\+Field \&rho)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a431fe5f20e5f9f9de43b1ffa7d208504}{update\+Viscosity\+From\+FT} (vol\+Scalar\+Field \&mu)
+\item 
+vol\+Vector\+Field\+::\+Internal \& \hyperlink{classFoam_1_1FrontTrackingCloud_ad53ea56fc9ffc915c31829cca0ea31db}{s\+Tension\+Force\+From\+F\+T\+Ref} ()
+\item 
+tmp$<$ vol\+Vector\+Field\+::\+Internal $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a0ae6d786992668f3b1c4d95eb793b9e7}{s\+Tension\+Force\+From\+FT} () const
+\item 
+vol\+Vector\+Field\+::\+Internal \& \hyperlink{classFoam_1_1FrontTrackingCloud_a96c2b9704ee7cead115cca5df4556e78}{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref} ()
+\item 
+tmp$<$ vol\+Vector\+Field\+::\+Internal $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a670a8c0837d0b52b671eb2df4689dfb2}{pressure\+Jump\+At\+The\+Interface\+From\+FT} () const
+\item 
+const \hyperlink{classFoam_1_1SurfaceTensionModel}{Surface\+Tension\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a5b19489cbba64adfe1ac441f1415b5ac}{surface\+Tension\+Model} () const
+\item 
+\hyperlink{classFoam_1_1SurfaceTensionModel}{Surface\+Tension\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a5caa79e8ad33026aeb369369f5e20803}{surface\+Tension\+Model} ()
+\item 
+const \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a96c6c87cd96ab04e16913b7c9738e83b}{front\+To\+Field\+Model} () const
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a1647e6f7debf6dd01efce9e35d213508}{front\+To\+Field\+Model} ()
+\item 
+const \hyperlink{classFoam_1_1VolumeCorrectionModel}{Volume\+Correction\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a13e331ab53bd43354e7d106bd6d1e66e}{volume\+Correction\+Model} () const
+\item 
+\hyperlink{classFoam_1_1VolumeCorrectionModel}{Volume\+Correction\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a64d9bd3b8314e7e00da69f5ba862258f}{volume\+Correction\+Model} ()
+\item 
+const \hyperlink{classFoam_1_1UndulationRemovalModel}{Undulation\+Removal\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a1d06be478c0ca9d2f7835f7c6a9b375e}{undulation\+Removal\+Model} () const
+\item 
+\hyperlink{classFoam_1_1UndulationRemovalModel}{Undulation\+Removal\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a8c60743be0c8eab0391134f1b4206781}{undulation\+Removal\+Model} ()
+\item 
+const Dynamic\+List$<$ \hyperlink{classFoam_1_1bubbleData}{bubble\+Data} $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a2facef866c2c46b20c00baf6e2836df8}{b\+DataL} () const
+\item 
+Dynamic\+List$<$ \hyperlink{classFoam_1_1bubbleData}{bubble\+Data} $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_ad609a644410a3223f9c6e089f491ad33}{b\+DataL} ()
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a7198b91c55f61b2544380d2696c785d2}{length\+Scale\+Of\+The\+Mesh} () const
+\item 
+List$<$ Dynamic\+List$<$ label $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a3cc5fbc7520219ddd33f6bc589722b82}{all\+Cells\+In\+Eeach\+Masket} () const
+\item 
+List$<$ scalar $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_afb318a2851b231842c8c45b5efd11724}{length\+Scale\+Near\+The\+Front} () const
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ab42c0d5842ebbe4deef24d207c1f6a44}{store\+State} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a32db2743973df01d6e8b509ffcbcab23}{restore\+State} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a250cbdc0d51e8b7a90e341bd2e78b877}{evolve} ()
+\item 
+{\footnotesize template$<$class Track\+Cloud\+Type $>$ }\\void \hyperlink{classFoam_1_1FrontTrackingCloud_a88a815f4b61ca82999166c43accda650}{motion} (Track\+Cloud\+Type \&cloud, typename parcel\+Type\+::tracking\+Data \&td)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ab56e418175f86982ef3b36c6e74e4fdc}{cloud\+Cleaning} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_adf887a6c3490e9ab5d11566713b35386}{map\+Front\+To\+Parcel} ()
+\item 
+{\footnotesize template$<$class Track\+Cloud\+Type $>$ }\\void \hyperlink{classFoam_1_1FrontTrackingCloud_a6a3db7a4b4111c52f10a81f56b2b2429}{update\+Parcels\+From\+Front} (Track\+Cloud\+Type \&cloud, typename parcel\+Type\+::tracking\+Data \&td)
+\item 
+{\footnotesize template$<$class Track\+Cloud\+Type $>$ }\\void \hyperlink{classFoam_1_1FrontTrackingCloud_a07213caaa12b062cf109d5e1c787bd7b}{front\+Cloud\+Advection} (Track\+Cloud\+Type \&cloud, typename parcel\+Type\+::tracking\+Data \&td)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a1b7c9f2c13ef22253a0ffc6610b62c09}{map\+Point\+To\+Parcel} (label b\+DI, \hyperlink{classFoam_1_1pointData}{point\+Data} \&ptD)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a5719f87b5899aa9675daf150a997f37a}{constructing\+Initial\+Front} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a356c54185b3b13a1b75a8400e2676cf7}{read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name} ()
+\item 
+Foam\+::scalar \hyperlink{classFoam_1_1FrontTrackingCloud_aa8d4bc5e201416b5b147c184c11940df}{calc\+Length\+Scale\+Of\+The\+Mesh} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a7122d2164461e7766c0aa1a101814944}{set\+Length\+Scales\+Near\+The\+Front} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ab7706a4a237ef93320cf8194480a4847}{communications\+Of\+The\+Front\+And\+Eulerian\+Grid} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ad891f47822721d3da1f015da2800df7c}{search\+All\+Cells\+In\+Eeach\+Masket} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a0bb2522d2ddf9404386ba4b5a5a288ee}{processing\+Thefront\+Meshes} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ab2c887bd558ca828970699810da950fb}{update\+Pl\+Pos\+In\+Domain} (\hyperlink{classFoam_1_1bubbleData}{bubble\+Data} \&b\+Data)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_aa6fe428d5f06ec56363494e50dcddbef}{update\+El\+Centre\+Pos\+In\+Domain} (\hyperlink{classFoam_1_1bubbleData}{bubble\+Data} \&b\+Data)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ada5f5e05db21f49b7d61c74fecc37db0}{adjusting\+The\+Cloud\+Data\+After\+Changes} (label\+List \&loc\+In\+Point\+Data\+List, label b\+DI)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_af71f0286cb6f689c9aa0e392b4ca8eca}{front\+Refining} (label b\+DI, Dynamic\+List$<$ \hyperlink{classFoam_1_1pointData}{point\+Data} $>$ \&pt\+Data\+List, Dynamic\+List$<$ \hyperlink{classFoam_1_1elementInfo}{element\+Info} $>$ \&el\+Info\+List, scalar min\+Edge, scalar max\+Edge, scalar max\+Aspect\+Ratio)
+\item 
+bool \hyperlink{classFoam_1_1FrontTrackingCloud_acd0406a159d2deeccb2b112fdbb9d3ca}{is\+Element\+Small} (\hyperlink{classFoam_1_1elementInfo}{element\+Info} el, scalar min\+Edge, scalar max\+Edge, scalar max\+Aspect\+Ratio, scalar \&s1, scalar \&s2, scalar \&s3, label \&n1, label \&n2, label \&n3)
+\item 
+bool \hyperlink{classFoam_1_1FrontTrackingCloud_a10b7243bf15e0edbac31b1a32d226237}{is\+Element\+Refined} (\hyperlink{classFoam_1_1elementInfo}{element\+Info} el, scalar min\+Edge, scalar max\+Edge, scalar max\+Aspect\+Ratio, scalar \&s1, scalar \&s2, scalar \&s3, label \&n1, label \&n2, label \&n3)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_af6a86830e32ecf4700c0dfe908f8455b}{front\+Coarsening} (label b\+DI, Dynamic\+List$<$ \hyperlink{classFoam_1_1pointData}{point\+Data} $>$ \&pt\+Data\+List, Dynamic\+List$<$ \hyperlink{classFoam_1_1elementInfo}{element\+Info} $>$ \&el\+Info\+List, scalar min\+Edge, scalar max\+Edge, scalar max\+Aspect\+Ratio)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a147fdd88043c9633e0591711c040ed86}{map\+Parcel\+To\+Front} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a4454726d277c31c277cfabb11b37dfa5}{set\+Motion\+Flags} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a2c98143d36515d589f04cd973de83edc}{set\+C\+R\+Flags} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a94e1d0ebd73a8a41a79f0c178ca51e9d}{printing\+All\+Important\+Run\+Time\+Data} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ad5f38cae41120ba49f55c71ae46e6323}{output\+Time\+Post\+Processing} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a9d5d59f9f43a2a45c8788b0cc3e9ea0b}{bubble\+Post\+Processing} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ac141c7f5cca70abc443c730c2ce48720}{write\+Bubble\+Positions} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ae0c2a7df61bf67ddecc30b59c8606010}{write\+Bubble\+Velocity\+And\+Accelaration} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ab5c55ecf9166e47afc104f89d9aaed02}{write\+Bubble\+Sphericity} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a5637e3be2d96f505313e700e31d96d3f}{calc\+Bubble\+Non\+Dimensional\+Numbers} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ac41e53c2edf0af4d0194555602435a5d}{print\+Fronts\+For\+All\+Times} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a5efc9601f8386505e595ed22cf7e425f}{write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a82ef9c3e72fcdb1bef553503dc773705}{operator=} (const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} \&)=delete
+\item 
+\hyperlink{classFoam_1_1FrontTrackingCloud_ae9da3f76099b9b82be67cf99ae64ab28}{Front\+Tracking\+Cloud} (const word \&cloud\+Name, const vol\+Scalar\+Field \&rho, const vol\+Vector\+Field \&U, const vol\+Scalar\+Field \&mu, const dimensioned\+Vector \&g, const bool read\+Fields=true)
+\item 
+\hyperlink{classFoam_1_1FrontTrackingCloud_ad185ad598e5280fdea20a85d8aff1e91}{Front\+Tracking\+Cloud} (const word \&cloud\+Name, const vol\+Scalar\+Field \&rho, const vol\+Vector\+Field \&U, const dimensioned\+Vector \&g, const fluid\+Thermo \&carrier\+Thermo, const bool read\+Fields=true)
+\item 
+\hyperlink{classFoam_1_1FrontTrackingCloud_aaf498c2097937a9147685bd0de6a85bb}{Front\+Tracking\+Cloud} (\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&c, const word \&name)
+\item 
+\hyperlink{classFoam_1_1FrontTrackingCloud_a87899dfd5f7408b0da887eafe1fb2a43}{Front\+Tracking\+Cloud} (const fv\+Mesh \&mesh, const word \&name, const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&c)
+\item 
+\hyperlink{classFoam_1_1FrontTrackingCloud_ac8860f6c62a4086d2cc0d00e28ed88de}{Front\+Tracking\+Cloud} (const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} \&)=delete
+\item 
+virtual auto\+Ptr$<$ Cloud$<$ \hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type} $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_ad82d33465c7a25d3d72f5ec29707edd4}{clone} (const word \&name)
+\item 
+virtual auto\+Ptr$<$ Cloud$<$ \hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type} $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_aaee595291402fafdae131c72fe7c8a38}{clone\+Bare} (const word \&name) const
+\item 
+virtual \hyperlink{classFoam_1_1FrontTrackingCloud_adcba24981e24cd97517d109b4197d2c8}{$\sim$\+Front\+Tracking\+Cloud} ()
+\item 
+const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} \& \hyperlink{classFoam_1_1FrontTrackingCloud_a916ec076f5dac6164f4908e49759d5d3}{cloud\+Copy} () const
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_aa56916fe7ca5b51f58aebb1579733ce7}{update\+Density\+From\+FT} (vol\+Scalar\+Field \&rho)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a431fe5f20e5f9f9de43b1ffa7d208504}{update\+Viscosity\+From\+FT} (vol\+Scalar\+Field \&mu)
+\item 
+vol\+Vector\+Field\+::\+Internal \& \hyperlink{classFoam_1_1FrontTrackingCloud_a60533eab6ea8ce9ef1a7d3a4751e9f97}{s\+Tension\+Force\+From\+F\+T\+Ref} ()
+\item 
+tmp$<$ vol\+Vector\+Field\+::\+Internal $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a02932aae4789fd058874353c721a8418}{s\+Tension\+Force\+From\+FT} () const
+\item 
+vol\+Vector\+Field\+::\+Internal \& \hyperlink{classFoam_1_1FrontTrackingCloud_a469be911ad5cefdad34c29eb6256f6f7}{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref} ()
+\item 
+tmp$<$ vol\+Vector\+Field\+::\+Internal $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_aa10f81f9d39800c7b8a62f5fb6b23c51}{pressure\+Jump\+At\+The\+Interface\+From\+FT} () const
+\item 
+const \hyperlink{classFoam_1_1SurfaceTensionModel}{Surface\+Tension\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a1dca4cd978105ce62b3fe4ad3dcdbba6}{surface\+Tension\+Model} () const
+\item 
+\hyperlink{classFoam_1_1SurfaceTensionModel}{Surface\+Tension\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_abe536bf6a88024005fcbb9aa1daaaa71}{surface\+Tension\+Model} ()
+\item 
+const \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_ad6554ad2acf4fd4b844c6404d65d9e78}{front\+To\+Field\+Model} () const
+\item 
+\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a09c3a8c132c3bf452d37e8056cd47677}{front\+To\+Field\+Model} ()
+\item 
+const \hyperlink{classFoam_1_1VolumeCorrectionModel}{Volume\+Correction\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a77925665dad6d56392702a9273c7d698}{volume\+Correction\+Model} () const
+\item 
+\hyperlink{classFoam_1_1VolumeCorrectionModel}{Volume\+Correction\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_ae8081308aa2c529f4c5ae6341a28fdeb}{volume\+Correction\+Model} ()
+\item 
+const \hyperlink{classFoam_1_1UndulationRemovalModel}{Undulation\+Removal\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a1d06be478c0ca9d2f7835f7c6a9b375e}{undulation\+Removal\+Model} () const
+\item 
+\hyperlink{classFoam_1_1UndulationRemovalModel}{Undulation\+Removal\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_a8c60743be0c8eab0391134f1b4206781}{undulation\+Removal\+Model} ()
+\item 
+const Dynamic\+List$<$ \hyperlink{classFoam_1_1bubbleData}{bubble\+Data} $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_aad777230d88c98be784780bbdd6ec4d8}{b\+DataL} () const
+\item 
+Dynamic\+List$<$ \hyperlink{classFoam_1_1bubbleData}{bubble\+Data} $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud_af54f24334180fe52e27dce8b1496403c}{b\+DataL} ()
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a379ccad5883f38e93d65e5f5e69a36b5}{length\+Scale\+Of\+The\+Mesh} () const
+\item 
+List$<$ Dynamic\+List$<$ label $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a64fb8f2d5fe450ed751ec77733f12641}{all\+Cells\+In\+Eeach\+Masket} () const
+\item 
+List$<$ scalar $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a550dbea553308b6b30721371bad76748}{length\+Scale\+Near\+The\+Front} () const
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ab42c0d5842ebbe4deef24d207c1f6a44}{store\+State} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a32db2743973df01d6e8b509ffcbcab23}{restore\+State} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a250cbdc0d51e8b7a90e341bd2e78b877}{evolve} ()
+\item 
+{\footnotesize template$<$class Track\+Cloud\+Type $>$ }\\void \hyperlink{classFoam_1_1FrontTrackingCloud_a88a815f4b61ca82999166c43accda650}{motion} (Track\+Cloud\+Type \&cloud, typename parcel\+Type\+::tracking\+Data \&td)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ab56e418175f86982ef3b36c6e74e4fdc}{cloud\+Cleaning} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_adf887a6c3490e9ab5d11566713b35386}{map\+Front\+To\+Parcel} ()
+\item 
+{\footnotesize template$<$class Track\+Cloud\+Type $>$ }\\void \hyperlink{classFoam_1_1FrontTrackingCloud_a6a3db7a4b4111c52f10a81f56b2b2429}{update\+Parcels\+From\+Front} (Track\+Cloud\+Type \&cloud, typename parcel\+Type\+::tracking\+Data \&td)
+\item 
+{\footnotesize template$<$class Track\+Cloud\+Type $>$ }\\void \hyperlink{classFoam_1_1FrontTrackingCloud_a07213caaa12b062cf109d5e1c787bd7b}{front\+Cloud\+Advection} (Track\+Cloud\+Type \&cloud, typename parcel\+Type\+::tracking\+Data \&td)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a1b7c9f2c13ef22253a0ffc6610b62c09}{map\+Point\+To\+Parcel} (label b\+DI, \hyperlink{classFoam_1_1pointData}{point\+Data} \&ptD)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a5719f87b5899aa9675daf150a997f37a}{constructing\+Initial\+Front} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a356c54185b3b13a1b75a8400e2676cf7}{read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name} ()
+\item 
+Foam\+::scalar \hyperlink{classFoam_1_1FrontTrackingCloud_aa8d4bc5e201416b5b147c184c11940df}{calc\+Length\+Scale\+Of\+The\+Mesh} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a7122d2164461e7766c0aa1a101814944}{set\+Length\+Scales\+Near\+The\+Front} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ab7706a4a237ef93320cf8194480a4847}{communications\+Of\+The\+Front\+And\+Eulerian\+Grid} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ad891f47822721d3da1f015da2800df7c}{search\+All\+Cells\+In\+Eeach\+Masket} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a0bb2522d2ddf9404386ba4b5a5a288ee}{processing\+Thefront\+Meshes} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ab2c887bd558ca828970699810da950fb}{update\+Pl\+Pos\+In\+Domain} (\hyperlink{classFoam_1_1bubbleData}{bubble\+Data} \&b\+Data)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_aa6fe428d5f06ec56363494e50dcddbef}{update\+El\+Centre\+Pos\+In\+Domain} (\hyperlink{classFoam_1_1bubbleData}{bubble\+Data} \&b\+Data)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ada5f5e05db21f49b7d61c74fecc37db0}{adjusting\+The\+Cloud\+Data\+After\+Changes} (label\+List \&loc\+In\+Point\+Data\+List, label b\+DI)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_af71f0286cb6f689c9aa0e392b4ca8eca}{front\+Refining} (label b\+DI, Dynamic\+List$<$ \hyperlink{classFoam_1_1pointData}{point\+Data} $>$ \&pt\+Data\+List, Dynamic\+List$<$ \hyperlink{classFoam_1_1elementInfo}{element\+Info} $>$ \&el\+Info\+List, scalar min\+Edge, scalar max\+Edge, scalar max\+Aspect\+Ratio)
+\item 
+bool \hyperlink{classFoam_1_1FrontTrackingCloud_acd0406a159d2deeccb2b112fdbb9d3ca}{is\+Element\+Small} (\hyperlink{classFoam_1_1elementInfo}{element\+Info} el, scalar min\+Edge, scalar max\+Edge, scalar max\+Aspect\+Ratio, scalar \&s1, scalar \&s2, scalar \&s3, label \&n1, label \&n2, label \&n3)
+\item 
+bool \hyperlink{classFoam_1_1FrontTrackingCloud_a10b7243bf15e0edbac31b1a32d226237}{is\+Element\+Refined} (\hyperlink{classFoam_1_1elementInfo}{element\+Info} el, scalar min\+Edge, scalar max\+Edge, scalar max\+Aspect\+Ratio, scalar \&s1, scalar \&s2, scalar \&s3, label \&n1, label \&n2, label \&n3)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_af6a86830e32ecf4700c0dfe908f8455b}{front\+Coarsening} (label b\+DI, Dynamic\+List$<$ \hyperlink{classFoam_1_1pointData}{point\+Data} $>$ \&pt\+Data\+List, Dynamic\+List$<$ \hyperlink{classFoam_1_1elementInfo}{element\+Info} $>$ \&el\+Info\+List, scalar min\+Edge, scalar max\+Edge, scalar max\+Aspect\+Ratio)
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a147fdd88043c9633e0591711c040ed86}{map\+Parcel\+To\+Front} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a4454726d277c31c277cfabb11b37dfa5}{set\+Motion\+Flags} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a2c98143d36515d589f04cd973de83edc}{set\+C\+R\+Flags} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a94e1d0ebd73a8a41a79f0c178ca51e9d}{printing\+All\+Important\+Run\+Time\+Data} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ad5f38cae41120ba49f55c71ae46e6323}{output\+Time\+Post\+Processing} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a9d5d59f9f43a2a45c8788b0cc3e9ea0b}{bubble\+Post\+Processing} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ac141c7f5cca70abc443c730c2ce48720}{write\+Bubble\+Positions} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ae0c2a7df61bf67ddecc30b59c8606010}{write\+Bubble\+Velocity\+And\+Accelaration} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ab5c55ecf9166e47afc104f89d9aaed02}{write\+Bubble\+Sphericity} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a5637e3be2d96f505313e700e31d96d3f}{calc\+Bubble\+Non\+Dimensional\+Numbers} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_ac41e53c2edf0af4d0194555602435a5d}{print\+Fronts\+For\+All\+Times} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a5efc9601f8386505e595ed22cf7e425f}{write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a82ef9c3e72fcdb1bef553503dc773705}{operator=} (const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{classFoam_1_1FrontTrackingCloud_a340940adc01357596d1d3887ae251644}{get\+Line\+No\+Comment} (I\+Fstream \&is)
+\item 
+static string \hyperlink{classFoam_1_1FrontTrackingCloud_a340940adc01357596d1d3887ae251644}{get\+Line\+No\+Comment} (I\+Fstream \&is)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a27620f56aef54f92d9a050992af958ad}{read\+Initial\+Bubbles} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a26181a6d9e732d8657f4152c0c08d612}{set\+Models} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a27620f56aef54f92d9a050992af958ad}{read\+Initial\+Bubbles} ()
+\item 
+void \hyperlink{classFoam_1_1FrontTrackingCloud_a26181a6d9e732d8657f4152c0c08d612}{set\+Models} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+auto\+Ptr$<$ vol\+Vector\+Field\+::\+Internal $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a62ad4e7ad79dc942f18db94c257eb350}{s\+Tension\+Force\+From\+F\+T\+\_\+}
+\item 
+auto\+Ptr$<$ vol\+Vector\+Field\+::\+Internal $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a7543062bf7e222d98d4f7babd4843792}{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+\_\+}
+\item 
+word \hyperlink{classFoam_1_1FrontTrackingCloud_a5311d35e04d6868a8ab01e31ee294568}{initial\+Making\+File\+Of\+The\+Bubbles\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a7553675459d13a86f4fec209b0a4ed6d}{time\+Old\+\_\+} = 0.\+0
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a5272c63af64dbb739eaa4307313c1596}{mag\+Flow\+Velocity\+\_\+} = 0.\+0
+\item 
+Dynamic\+List$<$ \hyperlink{classFoam_1_1bubbleData}{bubble\+Data} $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a78ecf54e866d0c0903234ca848614453}{b\+Data\+L\+\_\+}
+\item 
+word \hyperlink{classFoam_1_1FrontTrackingCloud_ad5a0713261e5986c3969bd827cbffd6e}{front\+Mesh\+Input\+Option\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a1a105d6a169fcc985dccf8da021de988}{length\+Scale\+Of\+The\+Mesh\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a87f5e00da8144c161926c69478479386}{min\+Edge\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a7b2bc061f619b1390c8a4504248123e5}{max\+Edge\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a0609c051b76b8b9bc3e560c92bbeccc1}{max\+Aspect\+Ratio\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a8055c749c5cf09a1f66a3a00450ea7b9}{how\+Finner\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a4f69a13dbcc1db3e2ae1e8bf8168dece}{factor\+For\+Min\+Edge\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a5cc86159fbaaf89837276e412b514231}{factor\+For\+Max\+Edge\+\_\+}
+\item 
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud_a3a7ac928e82e6c43883efea1b3fbdbe5}{factor\+For\+Max\+Aspect\+Ratio\+\_\+}
+\item 
+List$<$ Dynamic\+List$<$ label $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a466080e2cde04ca36315706417b594ca}{all\+Cells\+In\+Eeach\+Masket\+\_\+}
+\item 
+List$<$ scalar $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a24414ca8fd554587955f269713fba000}{length\+Scale\+Near\+The\+Front\+\_\+}
+\item 
+auto\+Ptr$<$ \hyperlink{classFoam_1_1SurfaceTensionModel}{Surface\+Tension\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a4c266354f4fecf0c98279ef3526a974c}{surface\+Tension\+Model\+\_\+}
+\item 
+auto\+Ptr$<$ \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_a89592a0ec164c9163666a4937b077fa6}{front\+To\+Field\+Model\+\_\+}
+\item 
+auto\+Ptr$<$ \hyperlink{classFoam_1_1VolumeCorrectionModel}{Volume\+Correction\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_ae3f484bc2bfa4e24e6f2dea4edfe4d32}{volume\+Correction\+Model\+\_\+}
+\item 
+auto\+Ptr$<$ \hyperlink{classFoam_1_1UndulationRemovalModel}{Undulation\+Removal\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_ad4ce78df1bea024e276ce3aceb8f235a}{undulation\+Removal\+Model\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+auto\+Ptr$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud_abd84abb127ee5015b03174b19d3afdd2}{cloud\+Copy\+Ptr\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aa902341b7e8a28b529bd81515b13b5a6}\label{classFoam_1_1FrontTrackingCloud_aa902341b7e8a28b529bd81515b13b5a6}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!cloud\+Type@{cloud\+Type}}
+\index{cloud\+Type@{cloud\+Type}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{cloud\+Type}{cloudType}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+typedef Cloud\+Type \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud_aa902341b7e8a28b529bd81515b13b5a6}{cloud\+Type}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aa902341b7e8a28b529bd81515b13b5a6}\label{classFoam_1_1FrontTrackingCloud_aa902341b7e8a28b529bd81515b13b5a6}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!cloud\+Type@{cloud\+Type}}
+\index{cloud\+Type@{cloud\+Type}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{cloud\+Type}{cloudType}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+typedef Cloud\+Type \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud_aa902341b7e8a28b529bd81515b13b5a6}{cloud\+Type}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a2a9868cc5ecf74928b8ac51ee41e659d}\label{classFoam_1_1FrontTrackingCloud_a2a9868cc5ecf74928b8ac51ee41e659d}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud\+Type@{Front\+Tracking\+Cloud\+Type}}
+\index{Front\+Tracking\+Cloud\+Type@{Front\+Tracking\+Cloud\+Type}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud\+Type}{FrontTrackingCloudType}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+typedef \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud_a2a9868cc5ecf74928b8ac51ee41e659d}{Front\+Tracking\+Cloud\+Type}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a2a9868cc5ecf74928b8ac51ee41e659d}\label{classFoam_1_1FrontTrackingCloud_a2a9868cc5ecf74928b8ac51ee41e659d}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud\+Type@{Front\+Tracking\+Cloud\+Type}}
+\index{Front\+Tracking\+Cloud\+Type@{Front\+Tracking\+Cloud\+Type}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud\+Type}{FrontTrackingCloudType}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+typedef \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud_a2a9868cc5ecf74928b8ac51ee41e659d}{Front\+Tracking\+Cloud\+Type}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}\label{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!parcel\+Type@{parcel\+Type}}
+\index{parcel\+Type@{parcel\+Type}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{parcel\+Type}{parcelType}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+typedef Cloud\+Type\+::parcel\+Type \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}\label{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!parcel\+Type@{parcel\+Type}}
+\index{parcel\+Type@{parcel\+Type}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{parcel\+Type}{parcelType}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+typedef Cloud\+Type\+::parcel\+Type \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ae9da3f76099b9b82be67cf99ae64ab28}\label{classFoam_1_1FrontTrackingCloud_ae9da3f76099b9b82be67cf99ae64ab28}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}}
+\index{Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud()}{FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}\item[{const word \&}]{cloud\+Name,  }\item[{const vol\+Scalar\+Field \&}]{rho,  }\item[{const vol\+Vector\+Field \&}]{U,  }\item[{const vol\+Scalar\+Field \&}]{mu,  }\item[{const dimensioned\+Vector \&}]{g,  }\item[{const bool}]{read\+Fields = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_ae9da3f76099b9b82be67cf99ae64ab28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad185ad598e5280fdea20a85d8aff1e91}\label{classFoam_1_1FrontTrackingCloud_ad185ad598e5280fdea20a85d8aff1e91}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}}
+\index{Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud()}{FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}\item[{const word \&}]{cloud\+Name,  }\item[{const vol\+Scalar\+Field \&}]{rho,  }\item[{const vol\+Vector\+Field \&}]{U,  }\item[{const dimensioned\+Vector \&}]{g,  }\item[{const fluid\+Thermo \&}]{carrier\+Thermo,  }\item[{const bool}]{read\+Fields = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_ad185ad598e5280fdea20a85d8aff1e91_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aaf498c2097937a9147685bd0de6a85bb}\label{classFoam_1_1FrontTrackingCloud_aaf498c2097937a9147685bd0de6a85bb}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}}
+\index{Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud()}{FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}\item[{\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&}]{c,  }\item[{const word \&}]{name }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_aaf498c2097937a9147685bd0de6a85bb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a87899dfd5f7408b0da887eafe1fb2a43}\label{classFoam_1_1FrontTrackingCloud_a87899dfd5f7408b0da887eafe1fb2a43}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}}
+\index{Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud()}{FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh,  }\item[{const word \&}]{name,  }\item[{const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ac8860f6c62a4086d2cc0d00e28ed88de}\label{classFoam_1_1FrontTrackingCloud_ac8860f6c62a4086d2cc0d00e28ed88de}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}}
+\index{Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud()}{FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}\item[{const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a8aaede4a1c43afed7a499fdbe20ba62a}\label{classFoam_1_1FrontTrackingCloud_a8aaede4a1c43afed7a499fdbe20ba62a}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!````~Front\+Tracking\+Cloud@{$\sim$\+Front\+Tracking\+Cloud}}
+\index{````~Front\+Tracking\+Cloud@{$\sim$\+Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{$\sim$\+Front\+Tracking\+Cloud()}{~FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::$\sim$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ae9da3f76099b9b82be67cf99ae64ab28}\label{classFoam_1_1FrontTrackingCloud_ae9da3f76099b9b82be67cf99ae64ab28}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}}
+\index{Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud()}{FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}\item[{const word \&}]{cloud\+Name,  }\item[{const vol\+Scalar\+Field \&}]{rho,  }\item[{const vol\+Vector\+Field \&}]{U,  }\item[{const vol\+Scalar\+Field \&}]{mu,  }\item[{const dimensioned\+Vector \&}]{g,  }\item[{const bool}]{read\+Fields = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad185ad598e5280fdea20a85d8aff1e91}\label{classFoam_1_1FrontTrackingCloud_ad185ad598e5280fdea20a85d8aff1e91}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}}
+\index{Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud()}{FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}\item[{const word \&}]{cloud\+Name,  }\item[{const vol\+Scalar\+Field \&}]{rho,  }\item[{const vol\+Vector\+Field \&}]{U,  }\item[{const dimensioned\+Vector \&}]{g,  }\item[{const fluid\+Thermo \&}]{carrier\+Thermo,  }\item[{const bool}]{read\+Fields = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aaf498c2097937a9147685bd0de6a85bb}\label{classFoam_1_1FrontTrackingCloud_aaf498c2097937a9147685bd0de6a85bb}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}}
+\index{Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud()}{FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}\item[{\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&}]{c,  }\item[{const word \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a87899dfd5f7408b0da887eafe1fb2a43}\label{classFoam_1_1FrontTrackingCloud_a87899dfd5f7408b0da887eafe1fb2a43}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}}
+\index{Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud()}{FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh,  }\item[{const word \&}]{name,  }\item[{const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ac8860f6c62a4086d2cc0d00e28ed88de}\label{classFoam_1_1FrontTrackingCloud_ac8860f6c62a4086d2cc0d00e28ed88de}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}}
+\index{Front\+Tracking\+Cloud@{Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{Front\+Tracking\+Cloud()}{FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}\item[{const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_adcba24981e24cd97517d109b4197d2c8}\label{classFoam_1_1FrontTrackingCloud_adcba24981e24cd97517d109b4197d2c8}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!````~Front\+Tracking\+Cloud@{$\sim$\+Front\+Tracking\+Cloud}}
+\index{````~Front\+Tracking\+Cloud@{$\sim$\+Front\+Tracking\+Cloud}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{$\sim$\+Front\+Tracking\+Cloud()}{~FrontTrackingCloud()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+virtual \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::$\sim$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ada5f5e05db21f49b7d61c74fecc37db0}\label{classFoam_1_1FrontTrackingCloud_ada5f5e05db21f49b7d61c74fecc37db0}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!adjusting\+The\+Cloud\+Data\+After\+Changes@{adjusting\+The\+Cloud\+Data\+After\+Changes}}
+\index{adjusting\+The\+Cloud\+Data\+After\+Changes@{adjusting\+The\+Cloud\+Data\+After\+Changes}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{adjusting\+The\+Cloud\+Data\+After\+Changes()}{adjustingTheCloudDataAfterChanges()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::adjusting\+The\+Cloud\+Data\+After\+Changes (\begin{DoxyParamCaption}\item[{label\+List \&}]{loc\+In\+Point\+Data\+List,  }\item[{label}]{b\+DI }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_ada5f5e05db21f49b7d61c74fecc37db0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_ada5f5e05db21f49b7d61c74fecc37db0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ada5f5e05db21f49b7d61c74fecc37db0}\label{classFoam_1_1FrontTrackingCloud_ada5f5e05db21f49b7d61c74fecc37db0}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!adjusting\+The\+Cloud\+Data\+After\+Changes@{adjusting\+The\+Cloud\+Data\+After\+Changes}}
+\index{adjusting\+The\+Cloud\+Data\+After\+Changes@{adjusting\+The\+Cloud\+Data\+After\+Changes}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{adjusting\+The\+Cloud\+Data\+After\+Changes()}{adjustingTheCloudDataAfterChanges()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::adjusting\+The\+Cloud\+Data\+After\+Changes (\begin{DoxyParamCaption}\item[{label\+List \&}]{loc\+In\+Point\+Data\+List,  }\item[{label}]{b\+DI }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a3cc5fbc7520219ddd33f6bc589722b82}\label{classFoam_1_1FrontTrackingCloud_a3cc5fbc7520219ddd33f6bc589722b82}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!all\+Cells\+In\+Eeach\+Masket@{all\+Cells\+In\+Eeach\+Masket}}
+\index{all\+Cells\+In\+Eeach\+Masket@{all\+Cells\+In\+Eeach\+Masket}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{all\+Cells\+In\+Eeach\+Masket()}{allCellsInEeachMasket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::\+List$<$ Dynamic\+List$<$ label $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::all\+Cells\+In\+Eeach\+Masket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a64fb8f2d5fe450ed751ec77733f12641}\label{classFoam_1_1FrontTrackingCloud_a64fb8f2d5fe450ed751ec77733f12641}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!all\+Cells\+In\+Eeach\+Masket@{all\+Cells\+In\+Eeach\+Masket}}
+\index{all\+Cells\+In\+Eeach\+Masket@{all\+Cells\+In\+Eeach\+Masket}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{all\+Cells\+In\+Eeach\+Masket()}{allCellsInEeachMasket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+List$<$Dynamic\+List$<$label$>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::all\+Cells\+In\+Eeach\+Masket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a2facef866c2c46b20c00baf6e2836df8}\label{classFoam_1_1FrontTrackingCloud_a2facef866c2c46b20c00baf6e2836df8}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!b\+DataL@{b\+DataL}}
+\index{b\+DataL@{b\+DataL}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{b\+Data\+L()}{bDataL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+const Foam\+::\+Dynamic\+List$<$ \hyperlink{classFoam_1_1bubbleData}{bubble\+Data} $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::b\+DataL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aad777230d88c98be784780bbdd6ec4d8}\label{classFoam_1_1FrontTrackingCloud_aad777230d88c98be784780bbdd6ec4d8}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!b\+DataL@{b\+DataL}}
+\index{b\+DataL@{b\+DataL}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{b\+Data\+L()}{bDataL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+const Dynamic\+List$<$\hyperlink{classFoam_1_1bubbleData}{bubble\+Data}$>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::b\+DataL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad609a644410a3223f9c6e089f491ad33}\label{classFoam_1_1FrontTrackingCloud_ad609a644410a3223f9c6e089f491ad33}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!b\+DataL@{b\+DataL}}
+\index{b\+DataL@{b\+DataL}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{b\+Data\+L()}{bDataL()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::\+Dynamic\+List$<$ \hyperlink{classFoam_1_1bubbleData}{bubble\+Data} $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::b\+DataL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_af54f24334180fe52e27dce8b1496403c}\label{classFoam_1_1FrontTrackingCloud_af54f24334180fe52e27dce8b1496403c}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!b\+DataL@{b\+DataL}}
+\index{b\+DataL@{b\+DataL}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{b\+Data\+L()}{bDataL()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+Dynamic\+List$<$\hyperlink{classFoam_1_1bubbleData}{bubble\+Data}$>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::b\+DataL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a9d5d59f9f43a2a45c8788b0cc3e9ea0b}\label{classFoam_1_1FrontTrackingCloud_a9d5d59f9f43a2a45c8788b0cc3e9ea0b}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!bubble\+Post\+Processing@{bubble\+Post\+Processing}}
+\index{bubble\+Post\+Processing@{bubble\+Post\+Processing}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{bubble\+Post\+Processing()}{bubblePostProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::bubble\+Post\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a9d5d59f9f43a2a45c8788b0cc3e9ea0b}\label{classFoam_1_1FrontTrackingCloud_a9d5d59f9f43a2a45c8788b0cc3e9ea0b}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!bubble\+Post\+Processing@{bubble\+Post\+Processing}}
+\index{bubble\+Post\+Processing@{bubble\+Post\+Processing}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{bubble\+Post\+Processing()}{bubblePostProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::bubble\+Post\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5637e3be2d96f505313e700e31d96d3f}\label{classFoam_1_1FrontTrackingCloud_a5637e3be2d96f505313e700e31d96d3f}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!calc\+Bubble\+Non\+Dimensional\+Numbers@{calc\+Bubble\+Non\+Dimensional\+Numbers}}
+\index{calc\+Bubble\+Non\+Dimensional\+Numbers@{calc\+Bubble\+Non\+Dimensional\+Numbers}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{calc\+Bubble\+Non\+Dimensional\+Numbers()}{calcBubbleNonDimensionalNumbers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::calc\+Bubble\+Non\+Dimensional\+Numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5637e3be2d96f505313e700e31d96d3f}\label{classFoam_1_1FrontTrackingCloud_a5637e3be2d96f505313e700e31d96d3f}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!calc\+Bubble\+Non\+Dimensional\+Numbers@{calc\+Bubble\+Non\+Dimensional\+Numbers}}
+\index{calc\+Bubble\+Non\+Dimensional\+Numbers@{calc\+Bubble\+Non\+Dimensional\+Numbers}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{calc\+Bubble\+Non\+Dimensional\+Numbers()}{calcBubbleNonDimensionalNumbers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::calc\+Bubble\+Non\+Dimensional\+Numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aa8d4bc5e201416b5b147c184c11940df}\label{classFoam_1_1FrontTrackingCloud_aa8d4bc5e201416b5b147c184c11940df}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!calc\+Length\+Scale\+Of\+The\+Mesh@{calc\+Length\+Scale\+Of\+The\+Mesh}}
+\index{calc\+Length\+Scale\+Of\+The\+Mesh@{calc\+Length\+Scale\+Of\+The\+Mesh}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{calc\+Length\+Scale\+Of\+The\+Mesh()}{calcLengthScaleOfTheMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::calc\+Length\+Scale\+Of\+The\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aa8d4bc5e201416b5b147c184c11940df}\label{classFoam_1_1FrontTrackingCloud_aa8d4bc5e201416b5b147c184c11940df}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!calc\+Length\+Scale\+Of\+The\+Mesh@{calc\+Length\+Scale\+Of\+The\+Mesh}}
+\index{calc\+Length\+Scale\+Of\+The\+Mesh@{calc\+Length\+Scale\+Of\+The\+Mesh}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{calc\+Length\+Scale\+Of\+The\+Mesh()}{calcLengthScaleOfTheMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+Foam\+::scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::calc\+Length\+Scale\+Of\+The\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad82d33465c7a25d3d72f5ec29707edd4}\label{classFoam_1_1FrontTrackingCloud_ad82d33465c7a25d3d72f5ec29707edd4}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!clone@{clone}}
+\index{clone@{clone}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+virtual auto\+Ptr$<$Cloud$<$\hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type}$>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::clone (\begin{DoxyParamCaption}\item[{const word \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad82d33465c7a25d3d72f5ec29707edd4}\label{classFoam_1_1FrontTrackingCloud_ad82d33465c7a25d3d72f5ec29707edd4}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!clone@{clone}}
+\index{clone@{clone}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+virtual auto\+Ptr$<$Cloud$<$\hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type}$>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::clone (\begin{DoxyParamCaption}\item[{const word \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aaee595291402fafdae131c72fe7c8a38}\label{classFoam_1_1FrontTrackingCloud_aaee595291402fafdae131c72fe7c8a38}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!clone\+Bare@{clone\+Bare}}
+\index{clone\+Bare@{clone\+Bare}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{clone\+Bare()}{cloneBare()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+virtual auto\+Ptr$<$Cloud$<$\hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type}$>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::clone\+Bare (\begin{DoxyParamCaption}\item[{const word \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aaee595291402fafdae131c72fe7c8a38}\label{classFoam_1_1FrontTrackingCloud_aaee595291402fafdae131c72fe7c8a38}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!clone\+Bare@{clone\+Bare}}
+\index{clone\+Bare@{clone\+Bare}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{clone\+Bare()}{cloneBare()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+virtual auto\+Ptr$<$Cloud$<$\hyperlink{classFoam_1_1FrontTrackingCloud_a18be05626026eec2bf2a990da073a350}{parcel\+Type}$>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::clone\+Bare (\begin{DoxyParamCaption}\item[{const word \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ab56e418175f86982ef3b36c6e74e4fdc}\label{classFoam_1_1FrontTrackingCloud_ab56e418175f86982ef3b36c6e74e4fdc}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!cloud\+Cleaning@{cloud\+Cleaning}}
+\index{cloud\+Cleaning@{cloud\+Cleaning}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{cloud\+Cleaning()}{cloudCleaning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::cloud\+Cleaning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ab56e418175f86982ef3b36c6e74e4fdc}\label{classFoam_1_1FrontTrackingCloud_ab56e418175f86982ef3b36c6e74e4fdc}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!cloud\+Cleaning@{cloud\+Cleaning}}
+\index{cloud\+Cleaning@{cloud\+Cleaning}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{cloud\+Cleaning()}{cloudCleaning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::cloud\+Cleaning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a916ec076f5dac6164f4908e49759d5d3}\label{classFoam_1_1FrontTrackingCloud_a916ec076f5dac6164f4908e49759d5d3}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!cloud\+Copy@{cloud\+Copy}}
+\index{cloud\+Copy@{cloud\+Copy}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{cloud\+Copy()}{cloudCopy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::cloud\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5de0cfc162d5fca7f01c09bec6484a80}\label{classFoam_1_1FrontTrackingCloud_a5de0cfc162d5fca7f01c09bec6484a80}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!cloud\+Copy@{cloud\+Copy}}
+\index{cloud\+Copy@{cloud\+Copy}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{cloud\+Copy()}{cloudCopy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+const \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::cloud\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a5de0cfc162d5fca7f01c09bec6484a80_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ab7706a4a237ef93320cf8194480a4847}\label{classFoam_1_1FrontTrackingCloud_ab7706a4a237ef93320cf8194480a4847}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!communications\+Of\+The\+Front\+And\+Eulerian\+Grid@{communications\+Of\+The\+Front\+And\+Eulerian\+Grid}}
+\index{communications\+Of\+The\+Front\+And\+Eulerian\+Grid@{communications\+Of\+The\+Front\+And\+Eulerian\+Grid}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{communications\+Of\+The\+Front\+And\+Eulerian\+Grid()}{communicationsOfTheFrontAndEulerianGrid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::communications\+Of\+The\+Front\+And\+Eulerian\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ab7706a4a237ef93320cf8194480a4847}\label{classFoam_1_1FrontTrackingCloud_ab7706a4a237ef93320cf8194480a4847}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!communications\+Of\+The\+Front\+And\+Eulerian\+Grid@{communications\+Of\+The\+Front\+And\+Eulerian\+Grid}}
+\index{communications\+Of\+The\+Front\+And\+Eulerian\+Grid@{communications\+Of\+The\+Front\+And\+Eulerian\+Grid}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{communications\+Of\+The\+Front\+And\+Eulerian\+Grid()}{communicationsOfTheFrontAndEulerianGrid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::communications\+Of\+The\+Front\+And\+Eulerian\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5719f87b5899aa9675daf150a997f37a}\label{classFoam_1_1FrontTrackingCloud_a5719f87b5899aa9675daf150a997f37a}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!constructing\+Initial\+Front@{constructing\+Initial\+Front}}
+\index{constructing\+Initial\+Front@{constructing\+Initial\+Front}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{constructing\+Initial\+Front()}{constructingInitialFront()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::constructing\+Initial\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a5719f87b5899aa9675daf150a997f37a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5719f87b5899aa9675daf150a997f37a}\label{classFoam_1_1FrontTrackingCloud_a5719f87b5899aa9675daf150a997f37a}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!constructing\+Initial\+Front@{constructing\+Initial\+Front}}
+\index{constructing\+Initial\+Front@{constructing\+Initial\+Front}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{constructing\+Initial\+Front()}{constructingInitialFront()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::constructing\+Initial\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a250cbdc0d51e8b7a90e341bd2e78b877}\label{classFoam_1_1FrontTrackingCloud_a250cbdc0d51e8b7a90e341bd2e78b877}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!evolve@{evolve}}
+\index{evolve@{evolve}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{evolve()}{evolve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::evolve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a250cbdc0d51e8b7a90e341bd2e78b877}\label{classFoam_1_1FrontTrackingCloud_a250cbdc0d51e8b7a90e341bd2e78b877}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!evolve@{evolve}}
+\index{evolve@{evolve}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{evolve()}{evolve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::evolve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a250cbdc0d51e8b7a90e341bd2e78b877_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a07213caaa12b062cf109d5e1c787bd7b}\label{classFoam_1_1FrontTrackingCloud_a07213caaa12b062cf109d5e1c787bd7b}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+Cloud\+Advection@{front\+Cloud\+Advection}}
+\index{front\+Cloud\+Advection@{front\+Cloud\+Advection}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+Cloud\+Advection()}{frontCloudAdvection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+template$<$class Track\+Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+Cloud\+Advection (\begin{DoxyParamCaption}\item[{Track\+Cloud\+Type \&}]{cloud,  }\item[{typename parcel\+Type\+::tracking\+Data \&}]{td }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a07213caaa12b062cf109d5e1c787bd7b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a07213caaa12b062cf109d5e1c787bd7b}\label{classFoam_1_1FrontTrackingCloud_a07213caaa12b062cf109d5e1c787bd7b}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+Cloud\+Advection@{front\+Cloud\+Advection}}
+\index{front\+Cloud\+Advection@{front\+Cloud\+Advection}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+Cloud\+Advection()}{frontCloudAdvection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+template$<$class Track\+Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+Cloud\+Advection (\begin{DoxyParamCaption}\item[{Track\+Cloud\+Type \&}]{cloud,  }\item[{typename parcel\+Type\+::tracking\+Data \&}]{td }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_af6a86830e32ecf4700c0dfe908f8455b}\label{classFoam_1_1FrontTrackingCloud_af6a86830e32ecf4700c0dfe908f8455b}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+Coarsening@{front\+Coarsening}}
+\index{front\+Coarsening@{front\+Coarsening}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+Coarsening()}{frontCoarsening()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+Coarsening (\begin{DoxyParamCaption}\item[{label}]{b\+DI,  }\item[{Dynamic\+List$<$ \hyperlink{classFoam_1_1pointData}{point\+Data} $>$ \&}]{pt\+Data\+List,  }\item[{Dynamic\+List$<$ \hyperlink{classFoam_1_1elementInfo}{element\+Info} $>$ \&}]{el\+Info\+List,  }\item[{scalar}]{min\+Edge,  }\item[{scalar}]{max\+Edge,  }\item[{scalar}]{max\+Aspect\+Ratio }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_af6a86830e32ecf4700c0dfe908f8455b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_af6a86830e32ecf4700c0dfe908f8455b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_af6a86830e32ecf4700c0dfe908f8455b}\label{classFoam_1_1FrontTrackingCloud_af6a86830e32ecf4700c0dfe908f8455b}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+Coarsening@{front\+Coarsening}}
+\index{front\+Coarsening@{front\+Coarsening}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+Coarsening()}{frontCoarsening()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+Coarsening (\begin{DoxyParamCaption}\item[{label}]{b\+DI,  }\item[{Dynamic\+List$<$ \hyperlink{classFoam_1_1pointData}{point\+Data} $>$ \&}]{pt\+Data\+List,  }\item[{Dynamic\+List$<$ \hyperlink{classFoam_1_1elementInfo}{element\+Info} $>$ \&}]{el\+Info\+List,  }\item[{scalar}]{min\+Edge,  }\item[{scalar}]{max\+Edge,  }\item[{scalar}]{max\+Aspect\+Ratio }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_af71f0286cb6f689c9aa0e392b4ca8eca}\label{classFoam_1_1FrontTrackingCloud_af71f0286cb6f689c9aa0e392b4ca8eca}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+Refining@{front\+Refining}}
+\index{front\+Refining@{front\+Refining}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+Refining()}{frontRefining()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+Refining (\begin{DoxyParamCaption}\item[{label}]{b\+DI,  }\item[{Dynamic\+List$<$ \hyperlink{classFoam_1_1pointData}{point\+Data} $>$ \&}]{pt\+Data\+List,  }\item[{Dynamic\+List$<$ \hyperlink{classFoam_1_1elementInfo}{element\+Info} $>$ \&}]{el\+Info\+List,  }\item[{scalar}]{min\+Edge,  }\item[{scalar}]{max\+Edge,  }\item[{scalar}]{max\+Aspect\+Ratio }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_af71f0286cb6f689c9aa0e392b4ca8eca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_af71f0286cb6f689c9aa0e392b4ca8eca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_af71f0286cb6f689c9aa0e392b4ca8eca}\label{classFoam_1_1FrontTrackingCloud_af71f0286cb6f689c9aa0e392b4ca8eca}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+Refining@{front\+Refining}}
+\index{front\+Refining@{front\+Refining}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+Refining()}{frontRefining()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+Refining (\begin{DoxyParamCaption}\item[{label}]{b\+DI,  }\item[{Dynamic\+List$<$ \hyperlink{classFoam_1_1pointData}{point\+Data} $>$ \&}]{pt\+Data\+List,  }\item[{Dynamic\+List$<$ \hyperlink{classFoam_1_1elementInfo}{element\+Info} $>$ \&}]{el\+Info\+List,  }\item[{scalar}]{min\+Edge,  }\item[{scalar}]{max\+Edge,  }\item[{scalar}]{max\+Aspect\+Ratio }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad6554ad2acf4fd4b844c6404d65d9e78}\label{classFoam_1_1FrontTrackingCloud_ad6554ad2acf4fd4b844c6404d65d9e78}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+To\+Field\+Model@{front\+To\+Field\+Model}}
+\index{front\+To\+Field\+Model@{front\+To\+Field\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+To\+Field\+Model()}{frontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+const \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ $>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+To\+Field\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a96c6c87cd96ab04e16913b7c9738e83b}\label{classFoam_1_1FrontTrackingCloud_a96c6c87cd96ab04e16913b7c9738e83b}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+To\+Field\+Model@{front\+To\+Field\+Model}}
+\index{front\+To\+Field\+Model@{front\+To\+Field\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+To\+Field\+Model()}{frontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+const \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+To\+Field\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a09c3a8c132c3bf452d37e8056cd47677}\label{classFoam_1_1FrontTrackingCloud_a09c3a8c132c3bf452d37e8056cd47677}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+To\+Field\+Model@{front\+To\+Field\+Model}}
+\index{front\+To\+Field\+Model@{front\+To\+Field\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+To\+Field\+Model()}{frontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ $>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+To\+Field\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a1647e6f7debf6dd01efce9e35d213508}\label{classFoam_1_1FrontTrackingCloud_a1647e6f7debf6dd01efce9e35d213508}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+To\+Field\+Model@{front\+To\+Field\+Model}}
+\index{front\+To\+Field\+Model@{front\+To\+Field\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+To\+Field\+Model()}{frontToFieldModel()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+To\+Field\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a340940adc01357596d1d3887ae251644}\label{classFoam_1_1FrontTrackingCloud_a340940adc01357596d1d3887ae251644}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!get\+Line\+No\+Comment@{get\+Line\+No\+Comment}}
+\index{get\+Line\+No\+Comment@{get\+Line\+No\+Comment}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{get\+Line\+No\+Comment()}{getLineNoComment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+static string \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::get\+Line\+No\+Comment (\begin{DoxyParamCaption}\item[{I\+Fstream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a340940adc01357596d1d3887ae251644}\label{classFoam_1_1FrontTrackingCloud_a340940adc01357596d1d3887ae251644}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!get\+Line\+No\+Comment@{get\+Line\+No\+Comment}}
+\index{get\+Line\+No\+Comment@{get\+Line\+No\+Comment}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{get\+Line\+No\+Comment()}{getLineNoComment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+static string \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::get\+Line\+No\+Comment (\begin{DoxyParamCaption}\item[{I\+Fstream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a10b7243bf15e0edbac31b1a32d226237}\label{classFoam_1_1FrontTrackingCloud_a10b7243bf15e0edbac31b1a32d226237}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!is\+Element\+Refined@{is\+Element\+Refined}}
+\index{is\+Element\+Refined@{is\+Element\+Refined}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{is\+Element\+Refined()}{isElementRefined()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+bool \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::is\+Element\+Refined (\begin{DoxyParamCaption}\item[{\hyperlink{classFoam_1_1elementInfo}{element\+Info}}]{el,  }\item[{scalar}]{min\+Edge,  }\item[{scalar}]{max\+Edge,  }\item[{scalar}]{max\+Aspect\+Ratio,  }\item[{scalar \&}]{s1,  }\item[{scalar \&}]{s2,  }\item[{scalar \&}]{s3,  }\item[{label \&}]{n1,  }\item[{label \&}]{n2,  }\item[{label \&}]{n3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a10b7243bf15e0edbac31b1a32d226237_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a10b7243bf15e0edbac31b1a32d226237}\label{classFoam_1_1FrontTrackingCloud_a10b7243bf15e0edbac31b1a32d226237}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!is\+Element\+Refined@{is\+Element\+Refined}}
+\index{is\+Element\+Refined@{is\+Element\+Refined}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{is\+Element\+Refined()}{isElementRefined()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+bool \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::is\+Element\+Refined (\begin{DoxyParamCaption}\item[{\hyperlink{classFoam_1_1elementInfo}{element\+Info}}]{el,  }\item[{scalar}]{min\+Edge,  }\item[{scalar}]{max\+Edge,  }\item[{scalar}]{max\+Aspect\+Ratio,  }\item[{scalar \&}]{s1,  }\item[{scalar \&}]{s2,  }\item[{scalar \&}]{s3,  }\item[{label \&}]{n1,  }\item[{label \&}]{n2,  }\item[{label \&}]{n3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_acd0406a159d2deeccb2b112fdbb9d3ca}\label{classFoam_1_1FrontTrackingCloud_acd0406a159d2deeccb2b112fdbb9d3ca}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!is\+Element\+Small@{is\+Element\+Small}}
+\index{is\+Element\+Small@{is\+Element\+Small}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{is\+Element\+Small()}{isElementSmall()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+bool \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::is\+Element\+Small (\begin{DoxyParamCaption}\item[{\hyperlink{classFoam_1_1elementInfo}{element\+Info}}]{el,  }\item[{scalar}]{min\+Edge,  }\item[{scalar}]{max\+Edge,  }\item[{scalar}]{max\+Aspect\+Ratio,  }\item[{scalar \&}]{s1,  }\item[{scalar \&}]{s2,  }\item[{scalar \&}]{s3,  }\item[{label \&}]{n1,  }\item[{label \&}]{n2,  }\item[{label \&}]{n3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_acd0406a159d2deeccb2b112fdbb9d3ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_acd0406a159d2deeccb2b112fdbb9d3ca}\label{classFoam_1_1FrontTrackingCloud_acd0406a159d2deeccb2b112fdbb9d3ca}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!is\+Element\+Small@{is\+Element\+Small}}
+\index{is\+Element\+Small@{is\+Element\+Small}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{is\+Element\+Small()}{isElementSmall()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+bool \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::is\+Element\+Small (\begin{DoxyParamCaption}\item[{\hyperlink{classFoam_1_1elementInfo}{element\+Info}}]{el,  }\item[{scalar}]{min\+Edge,  }\item[{scalar}]{max\+Edge,  }\item[{scalar}]{max\+Aspect\+Ratio,  }\item[{scalar \&}]{s1,  }\item[{scalar \&}]{s2,  }\item[{scalar \&}]{s3,  }\item[{label \&}]{n1,  }\item[{label \&}]{n2,  }\item[{label \&}]{n3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a550dbea553308b6b30721371bad76748}\label{classFoam_1_1FrontTrackingCloud_a550dbea553308b6b30721371bad76748}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!length\+Scale\+Near\+The\+Front@{length\+Scale\+Near\+The\+Front}}
+\index{length\+Scale\+Near\+The\+Front@{length\+Scale\+Near\+The\+Front}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{length\+Scale\+Near\+The\+Front()}{lengthScaleNearTheFront()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+List$<$scalar$>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::length\+Scale\+Near\+The\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_afb318a2851b231842c8c45b5efd11724}\label{classFoam_1_1FrontTrackingCloud_afb318a2851b231842c8c45b5efd11724}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!length\+Scale\+Near\+The\+Front@{length\+Scale\+Near\+The\+Front}}
+\index{length\+Scale\+Near\+The\+Front@{length\+Scale\+Near\+The\+Front}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{length\+Scale\+Near\+The\+Front()}{lengthScaleNearTheFront()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::\+List$<$ scalar $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::length\+Scale\+Near\+The\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a379ccad5883f38e93d65e5f5e69a36b5}\label{classFoam_1_1FrontTrackingCloud_a379ccad5883f38e93d65e5f5e69a36b5}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!length\+Scale\+Of\+The\+Mesh@{length\+Scale\+Of\+The\+Mesh}}
+\index{length\+Scale\+Of\+The\+Mesh@{length\+Scale\+Of\+The\+Mesh}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{length\+Scale\+Of\+The\+Mesh()}{lengthScaleOfTheMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::length\+Scale\+Of\+The\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a7198b91c55f61b2544380d2696c785d2}\label{classFoam_1_1FrontTrackingCloud_a7198b91c55f61b2544380d2696c785d2}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!length\+Scale\+Of\+The\+Mesh@{length\+Scale\+Of\+The\+Mesh}}
+\index{length\+Scale\+Of\+The\+Mesh@{length\+Scale\+Of\+The\+Mesh}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{length\+Scale\+Of\+The\+Mesh()}{lengthScaleOfTheMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::length\+Scale\+Of\+The\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_adf887a6c3490e9ab5d11566713b35386}\label{classFoam_1_1FrontTrackingCloud_adf887a6c3490e9ab5d11566713b35386}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!map\+Front\+To\+Parcel@{map\+Front\+To\+Parcel}}
+\index{map\+Front\+To\+Parcel@{map\+Front\+To\+Parcel}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{map\+Front\+To\+Parcel()}{mapFrontToParcel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::map\+Front\+To\+Parcel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_adf887a6c3490e9ab5d11566713b35386}\label{classFoam_1_1FrontTrackingCloud_adf887a6c3490e9ab5d11566713b35386}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!map\+Front\+To\+Parcel@{map\+Front\+To\+Parcel}}
+\index{map\+Front\+To\+Parcel@{map\+Front\+To\+Parcel}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{map\+Front\+To\+Parcel()}{mapFrontToParcel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::map\+Front\+To\+Parcel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_adf887a6c3490e9ab5d11566713b35386_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a147fdd88043c9633e0591711c040ed86}\label{classFoam_1_1FrontTrackingCloud_a147fdd88043c9633e0591711c040ed86}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!map\+Parcel\+To\+Front@{map\+Parcel\+To\+Front}}
+\index{map\+Parcel\+To\+Front@{map\+Parcel\+To\+Front}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{map\+Parcel\+To\+Front()}{mapParcelToFront()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::map\+Parcel\+To\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a147fdd88043c9633e0591711c040ed86}\label{classFoam_1_1FrontTrackingCloud_a147fdd88043c9633e0591711c040ed86}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!map\+Parcel\+To\+Front@{map\+Parcel\+To\+Front}}
+\index{map\+Parcel\+To\+Front@{map\+Parcel\+To\+Front}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{map\+Parcel\+To\+Front()}{mapParcelToFront()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::map\+Parcel\+To\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a1b7c9f2c13ef22253a0ffc6610b62c09}\label{classFoam_1_1FrontTrackingCloud_a1b7c9f2c13ef22253a0ffc6610b62c09}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!map\+Point\+To\+Parcel@{map\+Point\+To\+Parcel}}
+\index{map\+Point\+To\+Parcel@{map\+Point\+To\+Parcel}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{map\+Point\+To\+Parcel()}{mapPointToParcel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::map\+Point\+To\+Parcel (\begin{DoxyParamCaption}\item[{label}]{b\+DI,  }\item[{\hyperlink{classFoam_1_1pointData}{point\+Data} \&}]{ptD }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a1b7c9f2c13ef22253a0ffc6610b62c09_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a1b7c9f2c13ef22253a0ffc6610b62c09}\label{classFoam_1_1FrontTrackingCloud_a1b7c9f2c13ef22253a0ffc6610b62c09}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!map\+Point\+To\+Parcel@{map\+Point\+To\+Parcel}}
+\index{map\+Point\+To\+Parcel@{map\+Point\+To\+Parcel}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{map\+Point\+To\+Parcel()}{mapPointToParcel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::map\+Point\+To\+Parcel (\begin{DoxyParamCaption}\item[{label}]{b\+DI,  }\item[{\hyperlink{classFoam_1_1pointData}{point\+Data} \&}]{ptD }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a88a815f4b61ca82999166c43accda650}\label{classFoam_1_1FrontTrackingCloud_a88a815f4b61ca82999166c43accda650}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!motion@{motion}}
+\index{motion@{motion}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{motion()}{motion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+template$<$class Track\+Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::motion (\begin{DoxyParamCaption}\item[{Track\+Cloud\+Type \&}]{cloud,  }\item[{typename parcel\+Type\+::tracking\+Data \&}]{td }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a88a815f4b61ca82999166c43accda650}\label{classFoam_1_1FrontTrackingCloud_a88a815f4b61ca82999166c43accda650}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!motion@{motion}}
+\index{motion@{motion}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{motion()}{motion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+template$<$class Track\+Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::motion (\begin{DoxyParamCaption}\item[{Track\+Cloud\+Type \&}]{cloud,  }\item[{typename parcel\+Type\+::tracking\+Data \&}]{td }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a88a815f4b61ca82999166c43accda650_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a82ef9c3e72fcdb1bef553503dc773705}\label{classFoam_1_1FrontTrackingCloud_a82ef9c3e72fcdb1bef553503dc773705}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!operator=@{operator=}}
+\index{operator=@{operator=}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a82ef9c3e72fcdb1bef553503dc773705}\label{classFoam_1_1FrontTrackingCloud_a82ef9c3e72fcdb1bef553503dc773705}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!operator=@{operator=}}
+\index{operator=@{operator=}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad5f38cae41120ba49f55c71ae46e6323}\label{classFoam_1_1FrontTrackingCloud_ad5f38cae41120ba49f55c71ae46e6323}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!output\+Time\+Post\+Processing@{output\+Time\+Post\+Processing}}
+\index{output\+Time\+Post\+Processing@{output\+Time\+Post\+Processing}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{output\+Time\+Post\+Processing()}{outputTimePostProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::output\+Time\+Post\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad5f38cae41120ba49f55c71ae46e6323}\label{classFoam_1_1FrontTrackingCloud_ad5f38cae41120ba49f55c71ae46e6323}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!output\+Time\+Post\+Processing@{output\+Time\+Post\+Processing}}
+\index{output\+Time\+Post\+Processing@{output\+Time\+Post\+Processing}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{output\+Time\+Post\+Processing()}{outputTimePostProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::output\+Time\+Post\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aa10f81f9d39800c7b8a62f5fb6b23c51}\label{classFoam_1_1FrontTrackingCloud_aa10f81f9d39800c7b8a62f5fb6b23c51}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!pressure\+Jump\+At\+The\+Interface\+From\+FT@{pressure\+Jump\+At\+The\+Interface\+From\+FT}}
+\index{pressure\+Jump\+At\+The\+Interface\+From\+FT@{pressure\+Jump\+At\+The\+Interface\+From\+FT}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{pressure\+Jump\+At\+The\+Interface\+From\+F\+T()}{pressureJumpAtTheInterfaceFromFT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+tmp$<$vol\+Vector\+Field\+::\+Internal$>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::pressure\+Jump\+At\+The\+Interface\+From\+FT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a670a8c0837d0b52b671eb2df4689dfb2}\label{classFoam_1_1FrontTrackingCloud_a670a8c0837d0b52b671eb2df4689dfb2}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!pressure\+Jump\+At\+The\+Interface\+From\+FT@{pressure\+Jump\+At\+The\+Interface\+From\+FT}}
+\index{pressure\+Jump\+At\+The\+Interface\+From\+FT@{pressure\+Jump\+At\+The\+Interface\+From\+FT}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{pressure\+Jump\+At\+The\+Interface\+From\+F\+T()}{pressureJumpAtTheInterfaceFromFT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::tmp$<$ Foam\+::\+Dimensioned\+Field$<$ Foam\+::vector, Foam\+::vol\+Mesh $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::pressure\+Jump\+At\+The\+Interface\+From\+FT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a469be911ad5cefdad34c29eb6256f6f7}\label{classFoam_1_1FrontTrackingCloud_a469be911ad5cefdad34c29eb6256f6f7}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref@{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref}}
+\index{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref@{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref()}{pressureJumpAtTheInterfaceFromFTRef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+vol\+Vector\+Field\+::\+Internal\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a96c2b9704ee7cead115cca5df4556e78}\label{classFoam_1_1FrontTrackingCloud_a96c2b9704ee7cead115cca5df4556e78}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref@{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref}}
+\index{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref@{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref()}{pressureJumpAtTheInterfaceFromFTRef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::\+Dimensioned\+Field$<$ Foam\+::vector, Foam\+::vol\+Mesh $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ac41e53c2edf0af4d0194555602435a5d}\label{classFoam_1_1FrontTrackingCloud_ac41e53c2edf0af4d0194555602435a5d}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!print\+Fronts\+For\+All\+Times@{print\+Fronts\+For\+All\+Times}}
+\index{print\+Fronts\+For\+All\+Times@{print\+Fronts\+For\+All\+Times}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{print\+Fronts\+For\+All\+Times()}{printFrontsForAllTimes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::print\+Fronts\+For\+All\+Times (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ac41e53c2edf0af4d0194555602435a5d}\label{classFoam_1_1FrontTrackingCloud_ac41e53c2edf0af4d0194555602435a5d}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!print\+Fronts\+For\+All\+Times@{print\+Fronts\+For\+All\+Times}}
+\index{print\+Fronts\+For\+All\+Times@{print\+Fronts\+For\+All\+Times}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{print\+Fronts\+For\+All\+Times()}{printFrontsForAllTimes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::print\+Fronts\+For\+All\+Times (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a94e1d0ebd73a8a41a79f0c178ca51e9d}\label{classFoam_1_1FrontTrackingCloud_a94e1d0ebd73a8a41a79f0c178ca51e9d}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!printing\+All\+Important\+Run\+Time\+Data@{printing\+All\+Important\+Run\+Time\+Data}}
+\index{printing\+All\+Important\+Run\+Time\+Data@{printing\+All\+Important\+Run\+Time\+Data}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{printing\+All\+Important\+Run\+Time\+Data()}{printingAllImportantRunTimeData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::printing\+All\+Important\+Run\+Time\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a94e1d0ebd73a8a41a79f0c178ca51e9d}\label{classFoam_1_1FrontTrackingCloud_a94e1d0ebd73a8a41a79f0c178ca51e9d}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!printing\+All\+Important\+Run\+Time\+Data@{printing\+All\+Important\+Run\+Time\+Data}}
+\index{printing\+All\+Important\+Run\+Time\+Data@{printing\+All\+Important\+Run\+Time\+Data}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{printing\+All\+Important\+Run\+Time\+Data()}{printingAllImportantRunTimeData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::printing\+All\+Important\+Run\+Time\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a0bb2522d2ddf9404386ba4b5a5a288ee}\label{classFoam_1_1FrontTrackingCloud_a0bb2522d2ddf9404386ba4b5a5a288ee}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!processing\+Thefront\+Meshes@{processing\+Thefront\+Meshes}}
+\index{processing\+Thefront\+Meshes@{processing\+Thefront\+Meshes}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{processing\+Thefront\+Meshes()}{processingThefrontMeshes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::processing\+Thefront\+Meshes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a0bb2522d2ddf9404386ba4b5a5a288ee_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a0bb2522d2ddf9404386ba4b5a5a288ee}\label{classFoam_1_1FrontTrackingCloud_a0bb2522d2ddf9404386ba4b5a5a288ee}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!processing\+Thefront\+Meshes@{processing\+Thefront\+Meshes}}
+\index{processing\+Thefront\+Meshes@{processing\+Thefront\+Meshes}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{processing\+Thefront\+Meshes()}{processingThefrontMeshes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::processing\+Thefront\+Meshes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a356c54185b3b13a1b75a8400e2676cf7}\label{classFoam_1_1FrontTrackingCloud_a356c54185b3b13a1b75a8400e2676cf7}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name@{read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name}}
+\index{read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name@{read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name()}{readDataOfTheFrontsAtTheCurrentTimeIntimeName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a356c54185b3b13a1b75a8400e2676cf7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a356c54185b3b13a1b75a8400e2676cf7}\label{classFoam_1_1FrontTrackingCloud_a356c54185b3b13a1b75a8400e2676cf7}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name@{read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name}}
+\index{read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name@{read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name()}{readDataOfTheFrontsAtTheCurrentTimeIntimeName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::read\+Data\+Of\+The\+Fronts\+At\+The\+Current\+Time\+Intime\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a27620f56aef54f92d9a050992af958ad}\label{classFoam_1_1FrontTrackingCloud_a27620f56aef54f92d9a050992af958ad}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!read\+Initial\+Bubbles@{read\+Initial\+Bubbles}}
+\index{read\+Initial\+Bubbles@{read\+Initial\+Bubbles}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{read\+Initial\+Bubbles()}{readInitialBubbles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::read\+Initial\+Bubbles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a27620f56aef54f92d9a050992af958ad}\label{classFoam_1_1FrontTrackingCloud_a27620f56aef54f92d9a050992af958ad}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!read\+Initial\+Bubbles@{read\+Initial\+Bubbles}}
+\index{read\+Initial\+Bubbles@{read\+Initial\+Bubbles}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{read\+Initial\+Bubbles()}{readInitialBubbles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::read\+Initial\+Bubbles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a32db2743973df01d6e8b509ffcbcab23}\label{classFoam_1_1FrontTrackingCloud_a32db2743973df01d6e8b509ffcbcab23}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!restore\+State@{restore\+State}}
+\index{restore\+State@{restore\+State}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{restore\+State()}{restoreState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::restore\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a32db2743973df01d6e8b509ffcbcab23}\label{classFoam_1_1FrontTrackingCloud_a32db2743973df01d6e8b509ffcbcab23}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!restore\+State@{restore\+State}}
+\index{restore\+State@{restore\+State}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{restore\+State()}{restoreState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::restore\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad891f47822721d3da1f015da2800df7c}\label{classFoam_1_1FrontTrackingCloud_ad891f47822721d3da1f015da2800df7c}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!search\+All\+Cells\+In\+Eeach\+Masket@{search\+All\+Cells\+In\+Eeach\+Masket}}
+\index{search\+All\+Cells\+In\+Eeach\+Masket@{search\+All\+Cells\+In\+Eeach\+Masket}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{search\+All\+Cells\+In\+Eeach\+Masket()}{searchAllCellsInEeachMasket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::search\+All\+Cells\+In\+Eeach\+Masket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad891f47822721d3da1f015da2800df7c}\label{classFoam_1_1FrontTrackingCloud_ad891f47822721d3da1f015da2800df7c}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!search\+All\+Cells\+In\+Eeach\+Masket@{search\+All\+Cells\+In\+Eeach\+Masket}}
+\index{search\+All\+Cells\+In\+Eeach\+Masket@{search\+All\+Cells\+In\+Eeach\+Masket}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{search\+All\+Cells\+In\+Eeach\+Masket()}{searchAllCellsInEeachMasket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::search\+All\+Cells\+In\+Eeach\+Masket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_ad891f47822721d3da1f015da2800df7c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a2c98143d36515d589f04cd973de83edc}\label{classFoam_1_1FrontTrackingCloud_a2c98143d36515d589f04cd973de83edc}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!set\+C\+R\+Flags@{set\+C\+R\+Flags}}
+\index{set\+C\+R\+Flags@{set\+C\+R\+Flags}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{set\+C\+R\+Flags()}{setCRFlags()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::set\+C\+R\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a2c98143d36515d589f04cd973de83edc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a2c98143d36515d589f04cd973de83edc}\label{classFoam_1_1FrontTrackingCloud_a2c98143d36515d589f04cd973de83edc}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!set\+C\+R\+Flags@{set\+C\+R\+Flags}}
+\index{set\+C\+R\+Flags@{set\+C\+R\+Flags}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{set\+C\+R\+Flags()}{setCRFlags()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::set\+C\+R\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a7122d2164461e7766c0aa1a101814944}\label{classFoam_1_1FrontTrackingCloud_a7122d2164461e7766c0aa1a101814944}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!set\+Length\+Scales\+Near\+The\+Front@{set\+Length\+Scales\+Near\+The\+Front}}
+\index{set\+Length\+Scales\+Near\+The\+Front@{set\+Length\+Scales\+Near\+The\+Front}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{set\+Length\+Scales\+Near\+The\+Front()}{setLengthScalesNearTheFront()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::set\+Length\+Scales\+Near\+The\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a7122d2164461e7766c0aa1a101814944}\label{classFoam_1_1FrontTrackingCloud_a7122d2164461e7766c0aa1a101814944}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!set\+Length\+Scales\+Near\+The\+Front@{set\+Length\+Scales\+Near\+The\+Front}}
+\index{set\+Length\+Scales\+Near\+The\+Front@{set\+Length\+Scales\+Near\+The\+Front}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{set\+Length\+Scales\+Near\+The\+Front()}{setLengthScalesNearTheFront()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::set\+Length\+Scales\+Near\+The\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a26181a6d9e732d8657f4152c0c08d612}\label{classFoam_1_1FrontTrackingCloud_a26181a6d9e732d8657f4152c0c08d612}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!set\+Models@{set\+Models}}
+\index{set\+Models@{set\+Models}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{set\+Models()}{setModels()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::set\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a26181a6d9e732d8657f4152c0c08d612_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a26181a6d9e732d8657f4152c0c08d612}\label{classFoam_1_1FrontTrackingCloud_a26181a6d9e732d8657f4152c0c08d612}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!set\+Models@{set\+Models}}
+\index{set\+Models@{set\+Models}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{set\+Models()}{setModels()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::set\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a4454726d277c31c277cfabb11b37dfa5}\label{classFoam_1_1FrontTrackingCloud_a4454726d277c31c277cfabb11b37dfa5}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!set\+Motion\+Flags@{set\+Motion\+Flags}}
+\index{set\+Motion\+Flags@{set\+Motion\+Flags}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{set\+Motion\+Flags()}{setMotionFlags()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::set\+Motion\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a4454726d277c31c277cfabb11b37dfa5}\label{classFoam_1_1FrontTrackingCloud_a4454726d277c31c277cfabb11b37dfa5}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!set\+Motion\+Flags@{set\+Motion\+Flags}}
+\index{set\+Motion\+Flags@{set\+Motion\+Flags}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{set\+Motion\+Flags()}{setMotionFlags()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::set\+Motion\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a0ae6d786992668f3b1c4d95eb793b9e7}\label{classFoam_1_1FrontTrackingCloud_a0ae6d786992668f3b1c4d95eb793b9e7}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!s\+Tension\+Force\+From\+FT@{s\+Tension\+Force\+From\+FT}}
+\index{s\+Tension\+Force\+From\+FT@{s\+Tension\+Force\+From\+FT}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{s\+Tension\+Force\+From\+F\+T()}{sTensionForceFromFT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::tmp$<$ Foam\+::\+Dimensioned\+Field$<$ Foam\+::vector, Foam\+::vol\+Mesh $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::s\+Tension\+Force\+From\+FT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a02932aae4789fd058874353c721a8418}\label{classFoam_1_1FrontTrackingCloud_a02932aae4789fd058874353c721a8418}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!s\+Tension\+Force\+From\+FT@{s\+Tension\+Force\+From\+FT}}
+\index{s\+Tension\+Force\+From\+FT@{s\+Tension\+Force\+From\+FT}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{s\+Tension\+Force\+From\+F\+T()}{sTensionForceFromFT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+tmp$<$vol\+Vector\+Field\+::\+Internal$>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::s\+Tension\+Force\+From\+FT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad53ea56fc9ffc915c31829cca0ea31db}\label{classFoam_1_1FrontTrackingCloud_ad53ea56fc9ffc915c31829cca0ea31db}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!s\+Tension\+Force\+From\+F\+T\+Ref@{s\+Tension\+Force\+From\+F\+T\+Ref}}
+\index{s\+Tension\+Force\+From\+F\+T\+Ref@{s\+Tension\+Force\+From\+F\+T\+Ref}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{s\+Tension\+Force\+From\+F\+T\+Ref()}{sTensionForceFromFTRef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+Foam\+::\+Dimensioned\+Field$<$ Foam\+::vector, Foam\+::vol\+Mesh $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::s\+Tension\+Force\+From\+F\+T\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a60533eab6ea8ce9ef1a7d3a4751e9f97}\label{classFoam_1_1FrontTrackingCloud_a60533eab6ea8ce9ef1a7d3a4751e9f97}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!s\+Tension\+Force\+From\+F\+T\+Ref@{s\+Tension\+Force\+From\+F\+T\+Ref}}
+\index{s\+Tension\+Force\+From\+F\+T\+Ref@{s\+Tension\+Force\+From\+F\+T\+Ref}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{s\+Tension\+Force\+From\+F\+T\+Ref()}{sTensionForceFromFTRef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+vol\+Vector\+Field\+::\+Internal\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::s\+Tension\+Force\+From\+F\+T\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ab42c0d5842ebbe4deef24d207c1f6a44}\label{classFoam_1_1FrontTrackingCloud_ab42c0d5842ebbe4deef24d207c1f6a44}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!store\+State@{store\+State}}
+\index{store\+State@{store\+State}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{store\+State()}{storeState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::store\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ab42c0d5842ebbe4deef24d207c1f6a44}\label{classFoam_1_1FrontTrackingCloud_ab42c0d5842ebbe4deef24d207c1f6a44}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!store\+State@{store\+State}}
+\index{store\+State@{store\+State}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{store\+State()}{storeState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::store\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a1dca4cd978105ce62b3fe4ad3dcdbba6}\label{classFoam_1_1FrontTrackingCloud_a1dca4cd978105ce62b3fe4ad3dcdbba6}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!surface\+Tension\+Model@{surface\+Tension\+Model}}
+\index{surface\+Tension\+Model@{surface\+Tension\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{surface\+Tension\+Model()}{surfaceTensionModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+const \hyperlink{classFoam_1_1SurfaceTensionModel}{Surface\+Tension\+Model}$<$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ $>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::surface\+Tension\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5b19489cbba64adfe1ac441f1415b5ac}\label{classFoam_1_1FrontTrackingCloud_a5b19489cbba64adfe1ac441f1415b5ac}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!surface\+Tension\+Model@{surface\+Tension\+Model}}
+\index{surface\+Tension\+Model@{surface\+Tension\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{surface\+Tension\+Model()}{surfaceTensionModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+const \hyperlink{classFoam_1_1SurfaceTensionModel}{Foam\+::\+Surface\+Tension\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::surface\+Tension\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_abe536bf6a88024005fcbb9aa1daaaa71}\label{classFoam_1_1FrontTrackingCloud_abe536bf6a88024005fcbb9aa1daaaa71}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!surface\+Tension\+Model@{surface\+Tension\+Model}}
+\index{surface\+Tension\+Model@{surface\+Tension\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{surface\+Tension\+Model()}{surfaceTensionModel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1SurfaceTensionModel}{Surface\+Tension\+Model}$<$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ $>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::surface\+Tension\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5caa79e8ad33026aeb369369f5e20803}\label{classFoam_1_1FrontTrackingCloud_a5caa79e8ad33026aeb369369f5e20803}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!surface\+Tension\+Model@{surface\+Tension\+Model}}
+\index{surface\+Tension\+Model@{surface\+Tension\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{surface\+Tension\+Model()}{surfaceTensionModel()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1SurfaceTensionModel}{Foam\+::\+Surface\+Tension\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::surface\+Tension\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a1d06be478c0ca9d2f7835f7c6a9b375e}\label{classFoam_1_1FrontTrackingCloud_a1d06be478c0ca9d2f7835f7c6a9b375e}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!undulation\+Removal\+Model@{undulation\+Removal\+Model}}
+\index{undulation\+Removal\+Model@{undulation\+Removal\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{undulation\+Removal\+Model()}{undulationRemovalModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+const \hyperlink{classFoam_1_1UndulationRemovalModel}{Undulation\+Removal\+Model}$<$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ $>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::undulation\+Removal\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a1d06be478c0ca9d2f7835f7c6a9b375e}\label{classFoam_1_1FrontTrackingCloud_a1d06be478c0ca9d2f7835f7c6a9b375e}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!undulation\+Removal\+Model@{undulation\+Removal\+Model}}
+\index{undulation\+Removal\+Model@{undulation\+Removal\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{undulation\+Removal\+Model()}{undulationRemovalModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+const \hyperlink{classFoam_1_1UndulationRemovalModel}{Undulation\+Removal\+Model}$<$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ $>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::undulation\+Removal\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a8c60743be0c8eab0391134f1b4206781}\label{classFoam_1_1FrontTrackingCloud_a8c60743be0c8eab0391134f1b4206781}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!undulation\+Removal\+Model@{undulation\+Removal\+Model}}
+\index{undulation\+Removal\+Model@{undulation\+Removal\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{undulation\+Removal\+Model()}{undulationRemovalModel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1UndulationRemovalModel}{Undulation\+Removal\+Model}$<$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ $>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::undulation\+Removal\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a8c60743be0c8eab0391134f1b4206781}\label{classFoam_1_1FrontTrackingCloud_a8c60743be0c8eab0391134f1b4206781}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!undulation\+Removal\+Model@{undulation\+Removal\+Model}}
+\index{undulation\+Removal\+Model@{undulation\+Removal\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{undulation\+Removal\+Model()}{undulationRemovalModel()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1UndulationRemovalModel}{Undulation\+Removal\+Model}$<$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ $>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::undulation\+Removal\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aa56916fe7ca5b51f58aebb1579733ce7}\label{classFoam_1_1FrontTrackingCloud_aa56916fe7ca5b51f58aebb1579733ce7}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!update\+Density\+From\+FT@{update\+Density\+From\+FT}}
+\index{update\+Density\+From\+FT@{update\+Density\+From\+FT}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{update\+Density\+From\+F\+T()}{updateDensityFromFT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::update\+Density\+From\+FT (\begin{DoxyParamCaption}\item[{vol\+Scalar\+Field \&}]{rho }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_aa56916fe7ca5b51f58aebb1579733ce7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_aa56916fe7ca5b51f58aebb1579733ce7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aa56916fe7ca5b51f58aebb1579733ce7}\label{classFoam_1_1FrontTrackingCloud_aa56916fe7ca5b51f58aebb1579733ce7}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!update\+Density\+From\+FT@{update\+Density\+From\+FT}}
+\index{update\+Density\+From\+FT@{update\+Density\+From\+FT}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{update\+Density\+From\+F\+T()}{updateDensityFromFT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::update\+Density\+From\+FT (\begin{DoxyParamCaption}\item[{vol\+Scalar\+Field \&}]{rho }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aa6fe428d5f06ec56363494e50dcddbef}\label{classFoam_1_1FrontTrackingCloud_aa6fe428d5f06ec56363494e50dcddbef}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!update\+El\+Centre\+Pos\+In\+Domain@{update\+El\+Centre\+Pos\+In\+Domain}}
+\index{update\+El\+Centre\+Pos\+In\+Domain@{update\+El\+Centre\+Pos\+In\+Domain}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{update\+El\+Centre\+Pos\+In\+Domain()}{updateElCentrePosInDomain()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::update\+El\+Centre\+Pos\+In\+Domain (\begin{DoxyParamCaption}\item[{\hyperlink{classFoam_1_1bubbleData}{bubble\+Data} \&}]{b\+Data }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_aa6fe428d5f06ec56363494e50dcddbef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_aa6fe428d5f06ec56363494e50dcddbef}\label{classFoam_1_1FrontTrackingCloud_aa6fe428d5f06ec56363494e50dcddbef}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!update\+El\+Centre\+Pos\+In\+Domain@{update\+El\+Centre\+Pos\+In\+Domain}}
+\index{update\+El\+Centre\+Pos\+In\+Domain@{update\+El\+Centre\+Pos\+In\+Domain}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{update\+El\+Centre\+Pos\+In\+Domain()}{updateElCentrePosInDomain()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::update\+El\+Centre\+Pos\+In\+Domain (\begin{DoxyParamCaption}\item[{\hyperlink{classFoam_1_1bubbleData}{bubble\+Data} \&}]{b\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a6a3db7a4b4111c52f10a81f56b2b2429}\label{classFoam_1_1FrontTrackingCloud_a6a3db7a4b4111c52f10a81f56b2b2429}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!update\+Parcels\+From\+Front@{update\+Parcels\+From\+Front}}
+\index{update\+Parcels\+From\+Front@{update\+Parcels\+From\+Front}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{update\+Parcels\+From\+Front()}{updateParcelsFromFront()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+template$<$class Track\+Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::update\+Parcels\+From\+Front (\begin{DoxyParamCaption}\item[{Track\+Cloud\+Type \&}]{cloud,  }\item[{typename parcel\+Type\+::tracking\+Data \&}]{td }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a6a3db7a4b4111c52f10a81f56b2b2429_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a6a3db7a4b4111c52f10a81f56b2b2429_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a6a3db7a4b4111c52f10a81f56b2b2429}\label{classFoam_1_1FrontTrackingCloud_a6a3db7a4b4111c52f10a81f56b2b2429}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!update\+Parcels\+From\+Front@{update\+Parcels\+From\+Front}}
+\index{update\+Parcels\+From\+Front@{update\+Parcels\+From\+Front}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{update\+Parcels\+From\+Front()}{updateParcelsFromFront()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+template$<$class Track\+Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::update\+Parcels\+From\+Front (\begin{DoxyParamCaption}\item[{Track\+Cloud\+Type \&}]{cloud,  }\item[{typename parcel\+Type\+::tracking\+Data \&}]{td }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ab2c887bd558ca828970699810da950fb}\label{classFoam_1_1FrontTrackingCloud_ab2c887bd558ca828970699810da950fb}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!update\+Pl\+Pos\+In\+Domain@{update\+Pl\+Pos\+In\+Domain}}
+\index{update\+Pl\+Pos\+In\+Domain@{update\+Pl\+Pos\+In\+Domain}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{update\+Pl\+Pos\+In\+Domain()}{updatePlPosInDomain()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::update\+Pl\+Pos\+In\+Domain (\begin{DoxyParamCaption}\item[{\hyperlink{classFoam_1_1bubbleData}{bubble\+Data} \&}]{b\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ab2c887bd558ca828970699810da950fb}\label{classFoam_1_1FrontTrackingCloud_ab2c887bd558ca828970699810da950fb}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!update\+Pl\+Pos\+In\+Domain@{update\+Pl\+Pos\+In\+Domain}}
+\index{update\+Pl\+Pos\+In\+Domain@{update\+Pl\+Pos\+In\+Domain}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{update\+Pl\+Pos\+In\+Domain()}{updatePlPosInDomain()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::update\+Pl\+Pos\+In\+Domain (\begin{DoxyParamCaption}\item[{\hyperlink{classFoam_1_1bubbleData}{bubble\+Data} \&}]{b\+Data }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_ab2c887bd558ca828970699810da950fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_ab2c887bd558ca828970699810da950fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a431fe5f20e5f9f9de43b1ffa7d208504}\label{classFoam_1_1FrontTrackingCloud_a431fe5f20e5f9f9de43b1ffa7d208504}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!update\+Viscosity\+From\+FT@{update\+Viscosity\+From\+FT}}
+\index{update\+Viscosity\+From\+FT@{update\+Viscosity\+From\+FT}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{update\+Viscosity\+From\+F\+T()}{updateViscosityFromFT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::update\+Viscosity\+From\+FT (\begin{DoxyParamCaption}\item[{vol\+Scalar\+Field \&}]{mu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a431fe5f20e5f9f9de43b1ffa7d208504}\label{classFoam_1_1FrontTrackingCloud_a431fe5f20e5f9f9de43b1ffa7d208504}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!update\+Viscosity\+From\+FT@{update\+Viscosity\+From\+FT}}
+\index{update\+Viscosity\+From\+FT@{update\+Viscosity\+From\+FT}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{update\+Viscosity\+From\+F\+T()}{updateViscosityFromFT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::update\+Viscosity\+From\+FT (\begin{DoxyParamCaption}\item[{vol\+Scalar\+Field \&}]{mu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a431fe5f20e5f9f9de43b1ffa7d208504_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a77925665dad6d56392702a9273c7d698}\label{classFoam_1_1FrontTrackingCloud_a77925665dad6d56392702a9273c7d698}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!volume\+Correction\+Model@{volume\+Correction\+Model}}
+\index{volume\+Correction\+Model@{volume\+Correction\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{volume\+Correction\+Model()}{volumeCorrectionModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+const \hyperlink{classFoam_1_1VolumeCorrectionModel}{Volume\+Correction\+Model}$<$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ $>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::volume\+Correction\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a13e331ab53bd43354e7d106bd6d1e66e}\label{classFoam_1_1FrontTrackingCloud_a13e331ab53bd43354e7d106bd6d1e66e}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!volume\+Correction\+Model@{volume\+Correction\+Model}}
+\index{volume\+Correction\+Model@{volume\+Correction\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{volume\+Correction\+Model()}{volumeCorrectionModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+const \hyperlink{classFoam_1_1VolumeCorrectionModel}{Foam\+::\+Volume\+Correction\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::volume\+Correction\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ae8081308aa2c529f4c5ae6341a28fdeb}\label{classFoam_1_1FrontTrackingCloud_ae8081308aa2c529f4c5ae6341a28fdeb}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!volume\+Correction\+Model@{volume\+Correction\+Model}}
+\index{volume\+Correction\+Model@{volume\+Correction\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{volume\+Correction\+Model()}{volumeCorrectionModel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+\hyperlink{classFoam_1_1VolumeCorrectionModel}{Volume\+Correction\+Model}$<$\hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$Cloud\+Type$>$ $>$\& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::volume\+Correction\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a64d9bd3b8314e7e00da69f5ba862258f}\label{classFoam_1_1FrontTrackingCloud_a64d9bd3b8314e7e00da69f5ba862258f}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!volume\+Correction\+Model@{volume\+Correction\+Model}}
+\index{volume\+Correction\+Model@{volume\+Correction\+Model}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{volume\+Correction\+Model()}{volumeCorrectionModel()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+\hyperlink{classFoam_1_1VolumeCorrectionModel}{Foam\+::\+Volume\+Correction\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \& \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::volume\+Correction\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ac141c7f5cca70abc443c730c2ce48720}\label{classFoam_1_1FrontTrackingCloud_ac141c7f5cca70abc443c730c2ce48720}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!write\+Bubble\+Positions@{write\+Bubble\+Positions}}
+\index{write\+Bubble\+Positions@{write\+Bubble\+Positions}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{write\+Bubble\+Positions()}{writeBubblePositions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::write\+Bubble\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ac141c7f5cca70abc443c730c2ce48720}\label{classFoam_1_1FrontTrackingCloud_ac141c7f5cca70abc443c730c2ce48720}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!write\+Bubble\+Positions@{write\+Bubble\+Positions}}
+\index{write\+Bubble\+Positions@{write\+Bubble\+Positions}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{write\+Bubble\+Positions()}{writeBubblePositions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::write\+Bubble\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ab5c55ecf9166e47afc104f89d9aaed02}\label{classFoam_1_1FrontTrackingCloud_ab5c55ecf9166e47afc104f89d9aaed02}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!write\+Bubble\+Sphericity@{write\+Bubble\+Sphericity}}
+\index{write\+Bubble\+Sphericity@{write\+Bubble\+Sphericity}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{write\+Bubble\+Sphericity()}{writeBubbleSphericity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::write\+Bubble\+Sphericity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ab5c55ecf9166e47afc104f89d9aaed02}\label{classFoam_1_1FrontTrackingCloud_ab5c55ecf9166e47afc104f89d9aaed02}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!write\+Bubble\+Sphericity@{write\+Bubble\+Sphericity}}
+\index{write\+Bubble\+Sphericity@{write\+Bubble\+Sphericity}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{write\+Bubble\+Sphericity()}{writeBubbleSphericity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::write\+Bubble\+Sphericity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ae0c2a7df61bf67ddecc30b59c8606010}\label{classFoam_1_1FrontTrackingCloud_ae0c2a7df61bf67ddecc30b59c8606010}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!write\+Bubble\+Velocity\+And\+Accelaration@{write\+Bubble\+Velocity\+And\+Accelaration}}
+\index{write\+Bubble\+Velocity\+And\+Accelaration@{write\+Bubble\+Velocity\+And\+Accelaration}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{write\+Bubble\+Velocity\+And\+Accelaration()}{writeBubbleVelocityAndAccelaration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::write\+Bubble\+Velocity\+And\+Accelaration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ae0c2a7df61bf67ddecc30b59c8606010}\label{classFoam_1_1FrontTrackingCloud_ae0c2a7df61bf67ddecc30b59c8606010}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!write\+Bubble\+Velocity\+And\+Accelaration@{write\+Bubble\+Velocity\+And\+Accelaration}}
+\index{write\+Bubble\+Velocity\+And\+Accelaration@{write\+Bubble\+Velocity\+And\+Accelaration}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{write\+Bubble\+Velocity\+And\+Accelaration()}{writeBubbleVelocityAndAccelaration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::write\+Bubble\+Velocity\+And\+Accelaration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5efc9601f8386505e595ed22cf7e425f}\label{classFoam_1_1FrontTrackingCloud_a5efc9601f8386505e595ed22cf7e425f}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name@{write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name}}
+\index{write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name@{write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name()}{writeDataOfTheFrontsAtTheOutputTimeIntimeName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type $>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFoam_1_1FrontTrackingCloud_a5efc9601f8386505e595ed22cf7e425f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5efc9601f8386505e595ed22cf7e425f}\label{classFoam_1_1FrontTrackingCloud_a5efc9601f8386505e595ed22cf7e425f}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name@{write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name}}
+\index{write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name@{write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name()}{writeDataOfTheFrontsAtTheOutputTimeIntimeName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+void \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::write\+Data\+Of\+The\+Fronts\+At\+The\+Output\+Time\+Intime\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a466080e2cde04ca36315706417b594ca}\label{classFoam_1_1FrontTrackingCloud_a466080e2cde04ca36315706417b594ca}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!all\+Cells\+In\+Eeach\+Masket\+\_\+@{all\+Cells\+In\+Eeach\+Masket\+\_\+}}
+\index{all\+Cells\+In\+Eeach\+Masket\+\_\+@{all\+Cells\+In\+Eeach\+Masket\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{all\+Cells\+In\+Eeach\+Masket\+\_\+}{allCellsInEeachMasket\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+List$<$ Dynamic\+List$<$ label $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::all\+Cells\+In\+Eeach\+Masket\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a78ecf54e866d0c0903234ca848614453}\label{classFoam_1_1FrontTrackingCloud_a78ecf54e866d0c0903234ca848614453}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!b\+Data\+L\+\_\+@{b\+Data\+L\+\_\+}}
+\index{b\+Data\+L\+\_\+@{b\+Data\+L\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{b\+Data\+L\+\_\+}{bDataL\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+Dynamic\+List$<$ \hyperlink{classFoam_1_1bubbleData}{bubble\+Data} $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::b\+Data\+L\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_abd84abb127ee5015b03174b19d3afdd2}\label{classFoam_1_1FrontTrackingCloud_abd84abb127ee5015b03174b19d3afdd2}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!cloud\+Copy\+Ptr\+\_\+@{cloud\+Copy\+Ptr\+\_\+}}
+\index{cloud\+Copy\+Ptr\+\_\+@{cloud\+Copy\+Ptr\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{cloud\+Copy\+Ptr\+\_\+}{cloudCopyPtr\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+auto\+Ptr$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::cloud\+Copy\+Ptr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a3a7ac928e82e6c43883efea1b3fbdbe5}\label{classFoam_1_1FrontTrackingCloud_a3a7ac928e82e6c43883efea1b3fbdbe5}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!factor\+For\+Max\+Aspect\+Ratio\+\_\+@{factor\+For\+Max\+Aspect\+Ratio\+\_\+}}
+\index{factor\+For\+Max\+Aspect\+Ratio\+\_\+@{factor\+For\+Max\+Aspect\+Ratio\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{factor\+For\+Max\+Aspect\+Ratio\+\_\+}{factorForMaxAspectRatio\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::factor\+For\+Max\+Aspect\+Ratio\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5cc86159fbaaf89837276e412b514231}\label{classFoam_1_1FrontTrackingCloud_a5cc86159fbaaf89837276e412b514231}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!factor\+For\+Max\+Edge\+\_\+@{factor\+For\+Max\+Edge\+\_\+}}
+\index{factor\+For\+Max\+Edge\+\_\+@{factor\+For\+Max\+Edge\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{factor\+For\+Max\+Edge\+\_\+}{factorForMaxEdge\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::factor\+For\+Max\+Edge\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a4f69a13dbcc1db3e2ae1e8bf8168dece}\label{classFoam_1_1FrontTrackingCloud_a4f69a13dbcc1db3e2ae1e8bf8168dece}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!factor\+For\+Min\+Edge\+\_\+@{factor\+For\+Min\+Edge\+\_\+}}
+\index{factor\+For\+Min\+Edge\+\_\+@{factor\+For\+Min\+Edge\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{factor\+For\+Min\+Edge\+\_\+}{factorForMinEdge\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::factor\+For\+Min\+Edge\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad5a0713261e5986c3969bd827cbffd6e}\label{classFoam_1_1FrontTrackingCloud_ad5a0713261e5986c3969bd827cbffd6e}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+Mesh\+Input\+Option\+\_\+@{front\+Mesh\+Input\+Option\+\_\+}}
+\index{front\+Mesh\+Input\+Option\+\_\+@{front\+Mesh\+Input\+Option\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+Mesh\+Input\+Option\+\_\+}{frontMeshInputOption\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+word \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+Mesh\+Input\+Option\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a89592a0ec164c9163666a4937b077fa6}\label{classFoam_1_1FrontTrackingCloud_a89592a0ec164c9163666a4937b077fa6}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!front\+To\+Field\+Model\+\_\+@{front\+To\+Field\+Model\+\_\+}}
+\index{front\+To\+Field\+Model\+\_\+@{front\+To\+Field\+Model\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{front\+To\+Field\+Model\+\_\+}{frontToFieldModel\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+auto\+Ptr$<$ \hyperlink{classFoam_1_1FrontToFieldModel}{Front\+To\+Field\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::front\+To\+Field\+Model\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a8055c749c5cf09a1f66a3a00450ea7b9}\label{classFoam_1_1FrontTrackingCloud_a8055c749c5cf09a1f66a3a00450ea7b9}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!how\+Finner\+\_\+@{how\+Finner\+\_\+}}
+\index{how\+Finner\+\_\+@{how\+Finner\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{how\+Finner\+\_\+}{howFinner\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::how\+Finner\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5311d35e04d6868a8ab01e31ee294568}\label{classFoam_1_1FrontTrackingCloud_a5311d35e04d6868a8ab01e31ee294568}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!initial\+Making\+File\+Of\+The\+Bubbles\+\_\+@{initial\+Making\+File\+Of\+The\+Bubbles\+\_\+}}
+\index{initial\+Making\+File\+Of\+The\+Bubbles\+\_\+@{initial\+Making\+File\+Of\+The\+Bubbles\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{initial\+Making\+File\+Of\+The\+Bubbles\+\_\+}{initialMakingFileOfTheBubbles\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+word \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::initial\+Making\+File\+Of\+The\+Bubbles\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a24414ca8fd554587955f269713fba000}\label{classFoam_1_1FrontTrackingCloud_a24414ca8fd554587955f269713fba000}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!length\+Scale\+Near\+The\+Front\+\_\+@{length\+Scale\+Near\+The\+Front\+\_\+}}
+\index{length\+Scale\+Near\+The\+Front\+\_\+@{length\+Scale\+Near\+The\+Front\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{length\+Scale\+Near\+The\+Front\+\_\+}{lengthScaleNearTheFront\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+List$<$ scalar $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::length\+Scale\+Near\+The\+Front\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a1a105d6a169fcc985dccf8da021de988}\label{classFoam_1_1FrontTrackingCloud_a1a105d6a169fcc985dccf8da021de988}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!length\+Scale\+Of\+The\+Mesh\+\_\+@{length\+Scale\+Of\+The\+Mesh\+\_\+}}
+\index{length\+Scale\+Of\+The\+Mesh\+\_\+@{length\+Scale\+Of\+The\+Mesh\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{length\+Scale\+Of\+The\+Mesh\+\_\+}{lengthScaleOfTheMesh\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::length\+Scale\+Of\+The\+Mesh\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a5272c63af64dbb739eaa4307313c1596}\label{classFoam_1_1FrontTrackingCloud_a5272c63af64dbb739eaa4307313c1596}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!mag\+Flow\+Velocity\+\_\+@{mag\+Flow\+Velocity\+\_\+}}
+\index{mag\+Flow\+Velocity\+\_\+@{mag\+Flow\+Velocity\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{mag\+Flow\+Velocity\+\_\+}{magFlowVelocity\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::mag\+Flow\+Velocity\+\_\+ = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a0609c051b76b8b9bc3e560c92bbeccc1}\label{classFoam_1_1FrontTrackingCloud_a0609c051b76b8b9bc3e560c92bbeccc1}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!max\+Aspect\+Ratio\+\_\+@{max\+Aspect\+Ratio\+\_\+}}
+\index{max\+Aspect\+Ratio\+\_\+@{max\+Aspect\+Ratio\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{max\+Aspect\+Ratio\+\_\+}{maxAspectRatio\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::max\+Aspect\+Ratio\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a7b2bc061f619b1390c8a4504248123e5}\label{classFoam_1_1FrontTrackingCloud_a7b2bc061f619b1390c8a4504248123e5}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!max\+Edge\+\_\+@{max\+Edge\+\_\+}}
+\index{max\+Edge\+\_\+@{max\+Edge\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{max\+Edge\+\_\+}{maxEdge\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::max\+Edge\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a87f5e00da8144c161926c69478479386}\label{classFoam_1_1FrontTrackingCloud_a87f5e00da8144c161926c69478479386}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!min\+Edge\+\_\+@{min\+Edge\+\_\+}}
+\index{min\+Edge\+\_\+@{min\+Edge\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{min\+Edge\+\_\+}{minEdge\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::min\+Edge\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a7543062bf7e222d98d4f7babd4843792}\label{classFoam_1_1FrontTrackingCloud_a7543062bf7e222d98d4f7babd4843792}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+\_\+@{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+\_\+}}
+\index{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+\_\+@{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+\_\+}{pressureJumpAtTheInterfaceFromFT\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+auto\+Ptr$<$ vol\+Vector\+Field\+::\+Internal $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::pressure\+Jump\+At\+The\+Interface\+From\+F\+T\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a62ad4e7ad79dc942f18db94c257eb350}\label{classFoam_1_1FrontTrackingCloud_a62ad4e7ad79dc942f18db94c257eb350}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!s\+Tension\+Force\+From\+F\+T\+\_\+@{s\+Tension\+Force\+From\+F\+T\+\_\+}}
+\index{s\+Tension\+Force\+From\+F\+T\+\_\+@{s\+Tension\+Force\+From\+F\+T\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{s\+Tension\+Force\+From\+F\+T\+\_\+}{sTensionForceFromFT\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+auto\+Ptr$<$ vol\+Vector\+Field\+::\+Internal $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::s\+Tension\+Force\+From\+F\+T\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a4c266354f4fecf0c98279ef3526a974c}\label{classFoam_1_1FrontTrackingCloud_a4c266354f4fecf0c98279ef3526a974c}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!surface\+Tension\+Model\+\_\+@{surface\+Tension\+Model\+\_\+}}
+\index{surface\+Tension\+Model\+\_\+@{surface\+Tension\+Model\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{surface\+Tension\+Model\+\_\+}{surfaceTensionModel\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+auto\+Ptr$<$ \hyperlink{classFoam_1_1SurfaceTensionModel}{Surface\+Tension\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::surface\+Tension\+Model\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_a7553675459d13a86f4fec209b0a4ed6d}\label{classFoam_1_1FrontTrackingCloud_a7553675459d13a86f4fec209b0a4ed6d}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!time\+Old\+\_\+@{time\+Old\+\_\+}}
+\index{time\+Old\+\_\+@{time\+Old\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{time\+Old\+\_\+}{timeOld\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+scalar \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::time\+Old\+\_\+ = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ad4ce78df1bea024e276ce3aceb8f235a}\label{classFoam_1_1FrontTrackingCloud_ad4ce78df1bea024e276ce3aceb8f235a}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!undulation\+Removal\+Model\+\_\+@{undulation\+Removal\+Model\+\_\+}}
+\index{undulation\+Removal\+Model\+\_\+@{undulation\+Removal\+Model\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{undulation\+Removal\+Model\+\_\+}{undulationRemovalModel\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+auto\+Ptr$<$ \hyperlink{classFoam_1_1UndulationRemovalModel}{Undulation\+Removal\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::undulation\+Removal\+Model\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFoam_1_1FrontTrackingCloud_ae3f484bc2bfa4e24e6f2dea4edfe4d32}\label{classFoam_1_1FrontTrackingCloud_ae3f484bc2bfa4e24e6f2dea4edfe4d32}} 
+\index{Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}!volume\+Correction\+Model\+\_\+@{volume\+Correction\+Model\+\_\+}}
+\index{volume\+Correction\+Model\+\_\+@{volume\+Correction\+Model\+\_\+}!Foam\+::\+Front\+Tracking\+Cloud@{Foam\+::\+Front\+Tracking\+Cloud}}
+\subsubsection{\texorpdfstring{volume\+Correction\+Model\+\_\+}{volumeCorrectionModel\_}}
+{\footnotesize\ttfamily template$<$class Cloud\+Type$>$ \\
+auto\+Ptr$<$ \hyperlink{classFoam_1_1VolumeCorrectionModel}{Volume\+Correction\+Model}$<$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$ $>$ $>$ \hyperlink{classFoam_1_1FrontTrackingCloud}{Foam\+::\+Front\+Tracking\+Cloud}$<$ Cloud\+Type $>$\+::volume\+Correction\+Model\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+clouds/\+Templates/\+Front\+Tracking\+Cloud/\hyperlink{clouds_2Templates_2FrontTrackingCloud_2FrontTrackingCloud_8H}{Front\+Tracking\+Cloud.\+H}\item 
+clouds/\+Templates/\+Front\+Tracking\+Cloud/\hyperlink{clouds_2Templates_2FrontTrackingCloud_2FrontTrackingCloud_8C}{Front\+Tracking\+Cloud.\+C}\item 
+clouds/\+Templates/\+Front\+Tracking\+Cloud/\hyperlink{clouds_2Templates_2FrontTrackingCloud_2FrontTrackingCloudI_8H}{Front\+Tracking\+Cloud\+I.\+H}\end{DoxyCompactItemize}

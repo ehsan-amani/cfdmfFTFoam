@@ -1,0 +1,83 @@
+\hypertarget{lnInclude_2SurfaceTensionModel_8H}{}\section{ln\+Include/\+Surface\+Tension\+Model.H File Reference}
+\label{lnInclude_2SurfaceTensionModel_8H}\index{ln\+Include/\+Surface\+Tension\+Model.\+H@{ln\+Include/\+Surface\+Tension\+Model.\+H}}
+{\ttfamily \#include \char`\"{}I\+Odictionary.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}auto\+Ptr.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}run\+Time\+Selection\+Tables.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cloud\+Sub\+Model\+Base.\+H\char`\"{}}\newline
+Include dependency graph for Surface\+Tension\+Model.\+H\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lnInclude_2SurfaceTensionModel_8H__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lnInclude_2SurfaceTensionModel_8H__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classFoam_1_1SurfaceTensionModel}{Foam\+::\+Surface\+Tension\+Model$<$ Cloud\+Type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceFoam}{Foam}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lnInclude_2SurfaceTensionModel_8H_a692725ae4bbd0648d76ab0b29189a764}{make\+Surface\+Tension\+Model}(Cloud\+Type)
+\item 
+\#define \hyperlink{lnInclude_2SurfaceTensionModel_8H_a41314ca177630cf962bd3e3c8f64aa97}{make\+Surface\+Tension\+Model\+Type}(SS,  Cloud\+Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{lnInclude_2SurfaceTensionModel_8H_a692725ae4bbd0648d76ab0b29189a764}\label{lnInclude_2SurfaceTensionModel_8H_a692725ae4bbd0648d76ab0b29189a764}} 
+\index{ln\+Include/\+Surface\+Tension\+Model.\+H@{ln\+Include/\+Surface\+Tension\+Model.\+H}!make\+Surface\+Tension\+Model@{make\+Surface\+Tension\+Model}}
+\index{make\+Surface\+Tension\+Model@{make\+Surface\+Tension\+Model}!ln\+Include/\+Surface\+Tension\+Model.\+H@{ln\+Include/\+Surface\+Tension\+Model.\+H}}
+\subsubsection{\texorpdfstring{make\+Surface\+Tension\+Model}{makeSurfaceTensionModel}}
+{\footnotesize\ttfamily \#define make\+Surface\+Tension\+Model(\begin{DoxyParamCaption}\item[{}]{Cloud\+Type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    typedef Foam::CloudType::FrontTrackingCloudType FrontTrackingCloudType;                    \(\backslash\)
+    defineNamedTemplateTypeNameAndDebug                                        \(\backslash\)
+    (                                                                          \(\backslash\)
+        Foam::SurfaceTensionModel<FrontTrackingCloudType>,                                   \(\backslash\)
+        0                                                                      \(\backslash\)
+    );                                                                         \(\backslash\)
+                                                                               \(\backslash\)
+    namespace \hyperlink{namespaceFoam}{Foam}                                                             \(\backslash\)
+    \{                                                                          \(\backslash\)
+        defineTemplateRunTimeSelectionTable                                    \(\backslash\)
+        (                                                                      \(\backslash\)
+            SurfaceTensionModel<FrontTrackingCloudType>,                                     \(\backslash\)
+            dictionary                                                         \(\backslash\)
+        );                                                                     \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{lnInclude_2SurfaceTensionModel_8H_a41314ca177630cf962bd3e3c8f64aa97}\label{lnInclude_2SurfaceTensionModel_8H_a41314ca177630cf962bd3e3c8f64aa97}} 
+\index{ln\+Include/\+Surface\+Tension\+Model.\+H@{ln\+Include/\+Surface\+Tension\+Model.\+H}!make\+Surface\+Tension\+Model\+Type@{make\+Surface\+Tension\+Model\+Type}}
+\index{make\+Surface\+Tension\+Model\+Type@{make\+Surface\+Tension\+Model\+Type}!ln\+Include/\+Surface\+Tension\+Model.\+H@{ln\+Include/\+Surface\+Tension\+Model.\+H}}
+\subsubsection{\texorpdfstring{make\+Surface\+Tension\+Model\+Type}{makeSurfaceTensionModelType}}
+{\footnotesize\ttfamily \#define make\+Surface\+Tension\+Model\+Type(\begin{DoxyParamCaption}\item[{}]{SS,  }\item[{}]{Cloud\+Type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    typedef Foam::CloudType::FrontTrackingCloudType FrontTrackingCloudType;                    \(\backslash\)
+    defineNamedTemplateTypeNameAndDebug                                        \(\backslash\)
+        (Foam::SurfaceTensionModels::SS<FrontTrackingCloudType>, 0);                         \(\backslash\)
+                                                                               \(\backslash\)
+    Foam::SurfaceTensionModel<FrontTrackingCloudType>::                                      \(\backslash\)
+        adddictionaryConstructorToTable                                        \(\backslash\)
+        <Foam::SurfaceTensionModels::SS<FrontTrackingCloudType>>                             \(\backslash\)
+            add##SS##CloudType##FrontTrackingCloudType##ConstructorToTable\_;
+\end{DoxyCode}

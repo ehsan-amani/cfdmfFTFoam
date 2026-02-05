@@ -1,0 +1,80 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  9.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     9.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     cfdmfFTFoam; 
+
+startFrom       latestTime;
+
+startTime       latestTime;
+
+stopAt          endTime;
+
+endTime         50; //1st
+
+deltaT          0.0005;
+
+//writeControl    timeStep;
+writeControl    adjustableRunTime;
+
+writeInterval   5;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  7;
+
+writeCompression uncompressed;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable no;
+
+adjustTimeStep  no;
+
+maxCo           0.2;
+maxAlphaCo      0.2;
+
+maxDeltaT       1;
+
+
+functions
+{
+    maxMagU
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+
+        operation   maxMag;
+
+        regionType      all;
+        name            maxMagU;
+
+        log             no;               // Write to log file
+        writeFields     no;
+
+        writeControl    timeStep;
+        writeInterval   20;                // every 20 time steps
+
+		fields (U);
+    }
+}
+
+
+// ************************************************************************* //

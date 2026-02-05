@@ -1,0 +1,122 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  9.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     9.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+//Run using:
+//m4 -P blockMeshDict.m4 > blockMeshDict
+
+//m4 definitions:
+
+
+
+
+
+//Mathematical constants:
+
+
+//*******************************************************************************
+ // the width of straight Channel
+ // the width of straight Channel
+ // the height of straight Channel
+
+//mesh
+ //number of radial mesh
+ //number of radial mesh
+ //number of radial mesh
+
+convertToMeters 1;
+vertices
+(
+//**********************************buttom nodes*********************************
+(0 0 0) // Vertex B1 = 0 
+(0.2088 0 0) // Vertex B2 = 1 
+(0.2088 0.2088 0) // Vertex B3 = 2 
+(0 0.2088 0) // Vertex B4 = 3 
+
+//********************************** upper nodes *********************************
+(0 0 0.3654) // Vertex U1 = 4 
+(0.2088 0 0.3654) // Vertex U2 = 5 
+(0.2088 0.2088 0.3654) // Vertex U3 = 6 
+(0 0.2088 0.3654) // Vertex U4 = 7 
+
+//************************************end upper nodes*****************************
+);
+
+// Defining blocks:
+
+blocks
+(
+
+    // block1 
+    hex (0 1 2 3 4 5 6 7) AB
+        (40 40 70)
+    simpleGrading (1 1 1)
+);
+
+edges
+(
+  //line B1 U1 
+  //line B2 U2 
+  //line B3 U3 
+  //line B4 U4
+
+  //line B1 B2 
+  //line B2 B3 
+  //line B3 B4 
+  //line B4 B1
+
+  //line U1 U2 
+  //line U2 U3 
+  //line U3 U4 
+  //line U4 U1  
+);
+
+boundary
+(
+
+    inlet
+    {
+		type patch;
+		faces
+		(
+		   (0 1 2 3)
+		);
+    }
+
+    walls
+    {
+		type patch;
+		faces
+		(
+		   (0 1 5 4)
+		   (1 2 6 5)
+		   (2 3 7 6)
+		   (3 0 4 7)
+		);  
+    }
+
+    outlet
+    {
+		type patch;
+		faces
+		(
+		   (4 5 6 7)	   
+		);
+    }
+);
+
+mergePatchPairs 
+(
+);

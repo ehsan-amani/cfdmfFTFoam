@@ -1,0 +1,5 @@
+<map id="Foam::FrontTrackingCloud::frontCoarsening" name="Foam::FrontTrackingCloud::frontCoarsening">
+<area shape="rect" id="node2" href="$classFoam_1_1FrontTrackingCloud.html#af71f0286cb6f689c9aa0e392b4ca8eca" title="Foam::FrontTrackingCloud\l::frontRefining" alt="" coords="231,5,408,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1FrontTrackingCloud.html#ada5f5e05db21f49b7d61c74fecc37db0" title="Foam::FrontTrackingCloud\l::adjustingTheCloudDataAfterChanges" alt="" coords="456,5,703,47"/>
+<area shape="rect" id="node4" href="$classFoam_1_1FrontTrackingCloud.html#a0bb2522d2ddf9404386ba4b5a5a288ee" title="Foam::FrontTrackingCloud\l::processingThefrontMeshes" alt="" coords="751,5,937,47"/>
+</map>

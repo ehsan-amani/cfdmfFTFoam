@@ -1,0 +1,4 @@
+<map id="Foam::VolumeCorrectionModels::NoVolumeCorrection::clone" name="Foam::VolumeCorrectionModels::NoVolumeCorrection::clone">
+<area shape="rect" id="node2" href="$classFoam_1_1VolumeCorrectionModels_1_1NoVolumeCorrection.html#a071b13d25393734658f7fa00a1c4b397" title="Foam::VolumeCorrectionModels\l::NoVolumeCorrection::~NoVolumeCorrection" alt="" coords="263,5,551,47"/>
+<area shape="rect" id="node3" href="$classFoam_1_1VolumeCorrectionModels_1_1NoVolumeCorrection.html#aa67a69c09ea5b320a0a143f41a90a77b" title="Foam::VolumeCorrectionModels\l::NoVolumeCorrection::calculate" alt="" coords="301,71,512,112"/>
+</map>

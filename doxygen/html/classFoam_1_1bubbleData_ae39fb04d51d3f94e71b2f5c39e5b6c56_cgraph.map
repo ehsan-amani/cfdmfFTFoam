@@ -1,0 +1,5 @@
+<map id="Foam::bubbleData::ptConnectedPoints" name="Foam::bubbleData::ptConnectedPoints">
+<area shape="rect" id="node2" href="$classFoam_1_1bubbleData.html#a200b32da9651717744e2c042c708550a" title="Foam::bubbleData::findNighboures" alt="" coords="264,5,488,32"/>
+<area shape="rect" id="node3" href="$classFoam_1_1bubbleData.html#acda4c6cfdf009e8e11f7b8f2d6b161dc" title="Foam::bubbleData::pointTo\lElementMapping" alt="" coords="286,57,466,98"/>
+<area shape="rect" id="node4" href="$classFoam_1_1elementInfo.html#a3318a932982b91d66075a89a2a860212" title="Foam::elementInfo::\lfindPointsOrder" alt="" coords="307,122,445,163"/>
+</map>

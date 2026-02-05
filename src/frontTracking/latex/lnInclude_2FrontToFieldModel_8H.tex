@@ -1,0 +1,83 @@
+\hypertarget{lnInclude_2FrontToFieldModel_8H}{}\section{ln\+Include/\+Front\+To\+Field\+Model.H File Reference}
+\label{lnInclude_2FrontToFieldModel_8H}\index{ln\+Include/\+Front\+To\+Field\+Model.\+H@{ln\+Include/\+Front\+To\+Field\+Model.\+H}}
+{\ttfamily \#include \char`\"{}I\+Odictionary.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}auto\+Ptr.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}run\+Time\+Selection\+Tables.\+H\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cloud\+Sub\+Model\+Base.\+H\char`\"{}}\newline
+Include dependency graph for Front\+To\+Field\+Model.\+H\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lnInclude_2FrontToFieldModel_8H__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lnInclude_2FrontToFieldModel_8H__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classFoam_1_1FrontToFieldModel}{Foam\+::\+Front\+To\+Field\+Model$<$ Cloud\+Type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceFoam}{Foam}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lnInclude_2FrontToFieldModel_8H_ad45676ff35eb71a053941fc0ce43b6de}{make\+Front\+To\+Field\+Model}(Cloud\+Type)
+\item 
+\#define \hyperlink{lnInclude_2FrontToFieldModel_8H_a8774b55b9939f1a4c0cc484fdf651426}{make\+Front\+To\+Field\+Model\+Type}(SS,  Cloud\+Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{lnInclude_2FrontToFieldModel_8H_ad45676ff35eb71a053941fc0ce43b6de}\label{lnInclude_2FrontToFieldModel_8H_ad45676ff35eb71a053941fc0ce43b6de}} 
+\index{ln\+Include/\+Front\+To\+Field\+Model.\+H@{ln\+Include/\+Front\+To\+Field\+Model.\+H}!make\+Front\+To\+Field\+Model@{make\+Front\+To\+Field\+Model}}
+\index{make\+Front\+To\+Field\+Model@{make\+Front\+To\+Field\+Model}!ln\+Include/\+Front\+To\+Field\+Model.\+H@{ln\+Include/\+Front\+To\+Field\+Model.\+H}}
+\subsubsection{\texorpdfstring{make\+Front\+To\+Field\+Model}{makeFrontToFieldModel}}
+{\footnotesize\ttfamily \#define make\+Front\+To\+Field\+Model(\begin{DoxyParamCaption}\item[{}]{Cloud\+Type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    typedef Foam::CloudType::FrontTrackingCloudType FrontTrackingCloudType;                    \(\backslash\)
+    defineNamedTemplateTypeNameAndDebug                                        \(\backslash\)
+    (                                                                          \(\backslash\)
+        Foam::FrontToFieldModel<FrontTrackingCloudType>,                                   \(\backslash\)
+        0                                                                      \(\backslash\)
+    );                                                                         \(\backslash\)
+                                                                               \(\backslash\)
+    namespace \hyperlink{namespaceFoam}{Foam}                                                             \(\backslash\)
+    \{                                                                          \(\backslash\)
+        defineTemplateRunTimeSelectionTable                                    \(\backslash\)
+        (                                                                      \(\backslash\)
+            FrontToFieldModel<FrontTrackingCloudType>,                                     \(\backslash\)
+            dictionary                                                         \(\backslash\)
+        );                                                                     \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{lnInclude_2FrontToFieldModel_8H_a8774b55b9939f1a4c0cc484fdf651426}\label{lnInclude_2FrontToFieldModel_8H_a8774b55b9939f1a4c0cc484fdf651426}} 
+\index{ln\+Include/\+Front\+To\+Field\+Model.\+H@{ln\+Include/\+Front\+To\+Field\+Model.\+H}!make\+Front\+To\+Field\+Model\+Type@{make\+Front\+To\+Field\+Model\+Type}}
+\index{make\+Front\+To\+Field\+Model\+Type@{make\+Front\+To\+Field\+Model\+Type}!ln\+Include/\+Front\+To\+Field\+Model.\+H@{ln\+Include/\+Front\+To\+Field\+Model.\+H}}
+\subsubsection{\texorpdfstring{make\+Front\+To\+Field\+Model\+Type}{makeFrontToFieldModelType}}
+{\footnotesize\ttfamily \#define make\+Front\+To\+Field\+Model\+Type(\begin{DoxyParamCaption}\item[{}]{SS,  }\item[{}]{Cloud\+Type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    typedef Foam::CloudType::FrontTrackingCloudType FrontTrackingCloudType;                    \(\backslash\)
+    defineNamedTemplateTypeNameAndDebug                                        \(\backslash\)
+        (Foam::FrontToFieldModels::SS<FrontTrackingCloudType>, 0);                         \(\backslash\)
+                                                                               \(\backslash\)
+    Foam::FrontToFieldModel<FrontTrackingCloudType>::                                      \(\backslash\)
+        adddictionaryConstructorToTable                                        \(\backslash\)
+        <Foam::FrontToFieldModels::SS<FrontTrackingCloudType>>                             \(\backslash\)
+            add##SS##CloudType##FrontTrackingCloudType##ConstructorToTable\_;
+\end{DoxyCode}
