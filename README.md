@@ -39,13 +39,13 @@
 
  This package includes
  
- 1- "doxygen.tar.xz" : A detailed doxygen manual containing the structure of the library, classes, files, etc.
+ 1- "doxygen" : A detailed doxygen manual containing the structure of the library, classes, files, etc.
  
- 2- "src.tar.xz" : The main library
+ 2- "src" : The main library
  
- 3- "solvers.tar.xz" : The main solver
+ 3- "solvers" : The main solver
  
- 4- "tutorials.tar.xz" : Tutorials, examples, and benchmarks (see the manuscript for the problem definitions)
+ 4- "tutorials" : Tutorials, examples, and benchmarks (see the manuscript for the problem definitions)
 
 ------------------------------------------------------------------------------------
 # Installation: 
@@ -64,6 +64,7 @@ git clone https://github.com/ehsan-amani/cfdmfFTFoam
 of9 #or similar alias in ~/.bashrc to set of9 environment variables, e.g., source /opt/openfoam9/etc/bashrc
 echo $WM_PROJECT_VERSION #check version 9
 cd cfdmfFTFoam
+chmod +x Allwmake
 ./Allwmake
 ```
 
