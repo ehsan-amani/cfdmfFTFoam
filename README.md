@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------
 
-# The Front-Tracking Method (FTM) package for OpenFOAM-9
+# cfdmfFTFoam: A Front-Tracking Method (FTM) package for OpenFOAM-9
  ## Main developer: 
  ### Dr. Ehsan Amani, 
  Head of the CFDMF group, https://sites.google.com/view/dramani, 2016-2025
