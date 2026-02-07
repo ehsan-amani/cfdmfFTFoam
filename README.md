@@ -118,7 +118,7 @@ cd $WM_PROJECT_USER_DIR/run/multiphase/cfdmf/3DDeform/FT3DDeform
 to run the doxygen manual (do not forget to activate OF9 environment variables by of9):
 
 ```bash
-xdg-open $WM_PROJECT_USER_DIR/src/lagrangian/frontTracking/doxygen/html/index.html
+xdg-open doxygen/html/index.html
 ```
 
 ------------------------------------------------------------------------------------
